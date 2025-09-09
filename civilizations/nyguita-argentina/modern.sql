@@ -1,0 +1,238 @@
+INSERT INTO Types 
+       (Type,                             Kind) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'KIND_CIVILIZATION');
+
+INSERT INTO Civilizations 
+       (CivilizationType,                 Adjective,                                      CapitalName,                                      Description,                                      FullName,                                       Name,                                      StartingCivilizationLevelType, UniqueCultureProgressionTree) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ADJECTIVE', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_FULL_NAME', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'CIVILIZATION_LEVEL_FULL_CIV', 'TREE_NYGUITA_ARGENTINA');
+
+INSERT INTO Types 
+       (Type,                      Kind) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA', 'KIND_TRAIT');
+
+INSERT INTO Traits 
+       (TraitType,                 InternalOnly) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA', 1);
+
+INSERT INTO CivilizationTraits 
+       (CivilizationType,                 TraitType) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'TRAIT_NYGUITA_ARGENTINA');
+
+INSERT INTO Types 
+       (Type,                              Kind) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'KIND_TRAIT');
+
+INSERT INTO Traits 
+       (TraitType,                         Description,                                       Name,                                       InternalOnly) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'LOC_TRAIT_NYGUITA_ARGENTINA_ABILITY_DESCRIPTION', 'LOC_TRAIT_NYGUITA_ARGENTINA_ABILITY_NAME', 1);
+
+INSERT INTO CivilizationTraits 
+       (CivilizationType,                 TraitType) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'TRAIT_NYGUITA_ARGENTINA_ABILITY');
+
+INSERT INTO CivilizationTraits 
+       (CivilizationType,                 TraitType) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'TRAIT_MODERN_CIV');
+
+INSERT INTO StartBiasAdjacentToCoasts 
+       (CivilizationType,                 Score) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 20);
+
+INSERT INTO StartBiasBiomes 
+       (CivilizationType,                 BiomeType,      Score) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BIOME_PLAINS', 15);
+
+INSERT INTO StartBiasBiomes 
+       (CivilizationType,                 BiomeType,      Score) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BIOME_TUNDRA', 5);
+
+INSERT INTO StartBiasResources 
+       (CivilizationType,                 ResourceType,      Score) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'RESOURCE_LLAMAS', 5);
+
+INSERT INTO VisArt_CivilizationBuildingCultures 
+       (CivilizationType,                 BuildingCulture) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BUILDING_CULTURE_SAM');
+
+INSERT INTO VisArt_CivilizationUnitCultures 
+       (CivilizationType,                 UnitCulture) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'SAmer');
+
+-- TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE
+INSERT INTO Types 
+       (Type,                                                             Kind) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'KIND_MODIFIER');
+
+INSERT INTO DynamicModifiers 
+       (ModifierType,                                                     CollectionType,             EffectType) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'COLLECTION_PLAYER_CITIES', 'EFFECT_PLOT_ADJUST_YIELD');
+
+INSERT INTO RequirementSets 
+       (RequirementSetId,                                                           RequirementSetType) 
+VALUES ('REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT', 'REQUIREMENTSET_TEST_ALL');
+
+INSERT INTO Requirements 
+       (RequirementId,                                                             RequirementType) 
+VALUES ('REQ_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT_0', 'REQUIREMENT_PLOT_RESOURCE_VISIBLE');
+
+INSERT INTO RequirementSetRequirements 
+       (RequirementId,                                                             RequirementSetId) 
+VALUES ('REQ_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT_0', 'REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT');
+
+INSERT INTO Modifiers 
+       (ModifierId,                                                  ModifierType,                                                     SubjectRequirementSetId) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT');
+
+INSERT INTO ModifierArguments 
+       (ModifierId,                                                  Name,     Value) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE', 'Amount', '1');
+
+INSERT INTO ModifierArguments 
+       (ModifierId,                                                  Name,        Value) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE', 'YieldType', 'YIELD_FOOD');
+
+INSERT INTO ModifierArguments 
+       (ModifierId,                                                  Name,        Value) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE', 'YieldType', 'YIELD_PRODUCTION');
+
+INSERT INTO ModifierArguments 
+       (ModifierId,                                                  Name,        Value) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE', 'YieldType', 'YIELD_GOLD');
+
+INSERT INTO TraitModifiers 
+       (TraitType,                         ModifierId) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE');
+
+-- TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP
+INSERT INTO Types 
+       (Type,                                                                 Kind) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP_TYPE', 'KIND_MODIFIER');
+
+INSERT INTO DynamicModifiers 
+       (ModifierType,                                                         CollectionType,             EffectType) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP_TYPE', 'COLLECTION_PLAYER_CITIES', 'EFFECT_CITY_ADJUST_RESOURCE_CAP');
+
+INSERT INTO Modifiers 
+       (ModifierId,                                                      ModifierType) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP_TYPE');
+
+INSERT INTO ModifierArguments 
+       (ModifierId,                                                      Name,     Value) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP', 'Amount', '1');
+
+INSERT INTO TraitModifiers 
+       (TraitType,                         ModifierId) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_CAP');
+
+-- MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA
+INSERT INTO Types 
+       (Type,                                               Kind) 
+VALUES ('MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_TYPE', 'KIND_MODIFIER');
+
+INSERT INTO DynamicModifiers 
+       (ModifierType,                                       CollectionType,             EffectType) 
+VALUES ('MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_TYPE', 'COLLECTION_PLAYER_CITIES', 'EFFECT_CITY_ADJUST_FAVORED_WONDER_PRODUCTION');
+
+INSERT INTO RequirementSets 
+       (RequirementSetId,                                             RequirementSetType) 
+VALUES ('REQSET_MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_SUBJECT', 'REQUIREMENTSET_TEST_ALL');
+
+INSERT INTO Requirements 
+       (RequirementId,                                               RequirementType) 
+VALUES ('REQ_MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_SUBJECT_0', 'REQUIREMENT_PLAYER_HAS_CIVILIZATION_OR_LEADER_TRAIT');
+
+INSERT INTO RequirementArguments 
+       (RequirementId,                                               Name,        Value) 
+VALUES ('REQ_MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_SUBJECT_0', 'TraitType', 'TRAIT_NYGUITA_ARGENTINA');
+
+INSERT INTO RequirementSetRequirements 
+       (RequirementId,                                               RequirementSetId) 
+VALUES ('REQ_MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_SUBJECT_0', 'REQSET_MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_SUBJECT');
+
+INSERT INTO Modifiers 
+       (ModifierId,                                    ModifierType,                                       SubjectRequirementSetId) 
+VALUES ('MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA', 'MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_TYPE', 'REQSET_MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA_SUBJECT');
+
+INSERT INTO TraitModifiers 
+       (TraitType,                         ModifierId) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'MOD_CIV_WONDER_PRODUCTION_NYGUITA_ARGENTINA');
+
+
+
+-- TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD
+INSERT INTO Adjacency_YieldChanges
+       (ID,                               Age,          YieldType, YieldChange, TilesRequired, AdjacentTerrain)
+VALUES ('NyguitaArgentinaPortenoFood', 'AGE_MODERN', 'YIELD_FOOD', '3', '1', 'TERRAIN_COAST');
+
+INSERT INTO Constructible_Adjacencies
+       (ConstructibleType, YieldChangeId, RequiresActivation)
+VALUES ('BUILDING_CITY_HALL', 'NyguitaArgentinaPortenoFood', 'true');
+
+INSERT INTO Types 
+       (Type,                                                                 Kind) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD_TYPE', 'KIND_MODIFIER');
+
+INSERT INTO DynamicModifiers 
+       (ModifierType,                                                         CollectionType,             EffectType) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD_TYPE', 'COLLECTION_PLAYER_CITIES', 'EFFECT_CITY_ACTIVATE_CONSTRUCTIBLE_ADJACENCY');
+
+INSERT INTO Modifiers 
+       (ModifierId,                                                      ModifierType) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD', 'TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD_TYPE');
+
+INSERT INTO ModifierArguments 
+       (ModifierId,                                                      Name,     Value) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD', 'ConstructibleAdjacency', 'NyguitaArgentinaPortenoFood'),
+       ('TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD', 'Tooltip', 'LOC_UNIT_NYGUITA_PORTENO_TOOLTIP');
+
+INSERT INTO TraitModifiers 
+       (TraitType,                         ModifierId) 
+VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_CITY_HALL_FOOD');
+
+INSERT INTO LoadingInfo_Civilizations 
+       (CivilizationType,                 Audio,               BackgroundImageHigh,                                                BackgroundImageLow,                                                 CivilizationText,                     ForegroundImage,                 Subtitle,                                    Tip)  
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'VO_Loading_Mexico', 'fs://game/nyguita-argentina/civ_sym_nyguita_argentina_background', 'fs://game/nyguita-argentina/civ_sym_nyguita_argentina_background', 'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'fs://game/civ_line_mexico.png', 'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA');
+
+INSERT INTO CityNames
+       (CivilizationType,   CityName)
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_1'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_2'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_3'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_4'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_5'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_6'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_7'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_8'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_9'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_10'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_11'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_12'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_13'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_14'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_15'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_16'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_17'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_18'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_19'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_20'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_21'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_22'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_23'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_24'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_25'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_26'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_27'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_28'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_29'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_30'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_31'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_32'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_33'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_34'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_35'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_36'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_37'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_38'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_39'),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_40');

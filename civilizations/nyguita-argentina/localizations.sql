@@ -1,0 +1,58 @@
+INSERT OR IGNORE INTO LocalizedText 
+       (Language, Tag,                                       Text) 
+VALUES ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'Argentina'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_FULL_NAME', 'Argentina'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', '[B]+1 [icon:YIELD_FOOD] Food, +1 [icon:YIELD_PRODUCTION] Production, +1 [icon:YIELD_GOLD] Gold[\B] on ressource tiles.[B] +1 [icon:RADIAL_RESOURCES]Resource Capacity[\B] in Cities.'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ADJECTIVE', 'Argentinian'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ABILITY_NAME', 'Patagonian Land Rush'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ABILITY_DESCRIPTION', '[BLIST][B]+1 [icon:YIELD_FOOD] Food, +1 [icon:YIELD_PRODUCTION] Production, +1 [icon:YIELD_GOLD]Gold[\B] on ressource tiles. [B]+1 [icon:RADIAL_RESOURCES]Resource Capacity[\B] in Cities. [B]+30% [icon:YIELD_PRODUCTION]Production[\B] towards [B]Palacio Barolo[/B][/BLIST]'),
+       ('en_US',  'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'While the rumored mountains of silver were never there, the settlers who arrived here still found a rich and arable land in the vastness of the pampas. Soon enough, they built their own identity, with roots between the Old and the New World. This dual condition bring them universal prosperity as all moves towards Argentina. Argentina will shine on the world like the sun.'),
+       ('en_US',  'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'The Sun of May rises on the pampa, shining light on vast empty lands ready to be worked on.'),
+       ('en_US',  'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA', 'Argentinian cities thrive on settling on the Coast with a lot of resources. Do not hesistate to disperse City-States if needed. Argentina can generate a lot of Golf and Food.');
+
+
+-- Cities
+
+INSERT OR IGNORE INTO LocalizedText 
+       (Language, Tag,                                       Text) 
+VALUES ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0', 'Buenos Aires'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_1', 'Córdoba'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_2', 'Rosario'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_3', 'La Plata'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_4', 'Mar del Plata'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_5', 'San Miguel de Tucumán'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_6', 'Salta'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_7', 'Sante Fe de la Vera Cruz'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_8', 'Vicente López Partido'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_9', 'Corrientes'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_10', 'Pilar'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_11', 'Bahía Blanca'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_12', 'Resistencia'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_13', 'Posadas'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_14', 'San Salvador de Jujuy'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_15', 'Santiago del Estero'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_16', 'Paraná'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_17', 'Merlo'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_18', 'Neuquén'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_19', 'Quilmes'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_20', 'Banfield'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_21', 'Formosa'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_22', 'José C. Paz'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_23', 'Lanús'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_24', 'Godoy Cruz'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_25', 'Las Heras'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_26', 'La Rioja'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_27', 'Gregorio de Laferrère'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_28', 'Comodorro Rivadavia'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_29', 'San Luis'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_30', 'Ituzaingó'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_31', 'Berazategui'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_32', 'González Catán'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_33', 'Ezeiza'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_34', 'San Fernando del Valle de Catamarca'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_35', 'San Miguel'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_36', 'Río Cuarto'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_37', 'Concordia'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_38', 'Moreno'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_39', 'San Fernando de la Buena Vista'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_40', 'Isidro Casanova');
