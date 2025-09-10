@@ -197,7 +197,7 @@ VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_
 
 INSERT INTO LoadingInfo_Civilizations 
        (CivilizationType,                 Audio,               BackgroundImageHigh,                                                BackgroundImageLow,                                                 CivilizationText,                     ForegroundImage,                 Subtitle,                                    Tip)  
-VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'VO_Loading_Mexico', 'fs://game/nyguita-argentina/civ_sym_nyguita_argentina_background', 'fs://game/nyguita-argentina/civ_sym_nyguita_argentina_background', 'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'fs://game/civ_line_mexico.png', 'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA');
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'VO_Loading_Mexico', 'fs://game/nyguita-argentina/argentina_background.png', 'fs://game/nyguita-argentina/argentina_background.png', 'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'fs://game/civ_line_mexico.png', 'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA');
 
 INSERT INTO CityNames
        (CivilizationType,   CityName)
