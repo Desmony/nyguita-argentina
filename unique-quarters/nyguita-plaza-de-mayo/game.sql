@@ -6,6 +6,12 @@ INSERT INTO UniqueQuarters
        (UniqueQuarterType,               BuildingType1,                   BuildingType2,               Description,                                     Name,                                     Tooltip,                                     TraitType) 
 VALUES ('QUARTER_NYGUITA_PLAZA_DE_MAYO', 'BUILDING_NYGUITA_BANCO_NACION', 'BUILDING_NYGUITA_SALADERO', 'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_DESCRIPTION', 'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_NAME', 'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_TOOLTIP', 'TRAIT_NYGUITA_ARGENTINA');
 
+
+INSERT INTO GameModifiers 
+       (ModifierId) 
+VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS'),
+       ('MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE');
+
 -- MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE
 INSERT INTO Types 
        (Type,                                                     Kind) 
@@ -103,8 +109,3 @@ INSERT INTO UniqueQuarterModifiers
        (UniqueQuarterType,               ModifierID) 
 VALUES ('QUARTER_NYGUITA_PLAZA_DE_MAYO', 'MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE'),
        ('QUARTER_NYGUITA_PLAZA_DE_MAYO', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS');
-
-INSERT INTO GameModifiers 
-       (ModifierId) 
-VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS'),
-       ('MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE');
