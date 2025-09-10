@@ -58,10 +58,10 @@ VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'SAmer');
 -- TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE
 
 INSERT INTO Warehouse_YieldChanges 
-       (ID,                               Age,          ConstructibleInCity, LakeInCity, MinorRiverInCity, NaturalWonderInCity, NavigableRiverInCity, Overbuilt, ResourceInCity, RouteInCity, YieldChange, YieldType) 
-VALUES ('NyguitaPatagonianLandRushFood', 'AGE_MODERN',          0,  0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_FOOD'), 
-       ('NyguitaPatagonianLandRushProduction', 'AGE_MODERN',    0,  0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_PRODUCTION'), 
-       ('NyguitaPatagonianLandRushGold', 'AGE_MODERN',          0,  0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_GOLD');
+       (ID,                               Age,           LakeInCity, MinorRiverInCity, NaturalWonderInCity, NavigableRiverInCity, Overbuilt, ResourceInCity, RouteInCity, YieldChange, YieldType) 
+VALUES ('NyguitaPatagonianLandRushFood', 'AGE_MODERN',            0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_FOOD'), 
+       ('NyguitaPatagonianLandRushProduction', 'AGE_MODERN',      0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_PRODUCTION'), 
+       ('NyguitaPatagonianLandRushGold', 'AGE_MODERN',            0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_GOLD');
 
 
 INSERT INTO Types 
