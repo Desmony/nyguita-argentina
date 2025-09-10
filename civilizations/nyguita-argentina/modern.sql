@@ -3,8 +3,8 @@ INSERT OR IGNORE INTO Types
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'KIND_CIVILIZATION');
 
 INSERT OR IGNORE INTO Civilizations 
-       (CivilizationType,                 Adjective,                                      CapitalName,                                      Description,                                      FullName,                                       Name,                                      StartingCivilizationLevelType, UniqueCultureProgressionTree) 
-VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ADJECTIVE', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_FULL_NAME', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'CIVILIZATION_LEVEL_FULL_CIV', 'TREE_NYGUITA_ARGENTINA');
+       (CivilizationType,                 Adjective,                                      CapitalName,                                      Description,                                      FullName,                                       Name,                                      StartingCivilizationLevelType, UniqueCultureProgressionTree, RandomCityNameDepth) 
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ADJECTIVE', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_FULL_NAME', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'CIVILIZATION_LEVEL_FULL_CIV', 'TREE_NYGUITA_ARGENTINA', '10');
 
 INSERT OR IGNORE INTO Types 
        (Type,                      Kind) 
