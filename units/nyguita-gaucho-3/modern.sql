@@ -2,6 +2,10 @@ INSERT OR IGNORE INTO Tags
        (Tag,                           Category) 
 VALUES ('UNIT_CLASS_NYGUITA_GAUCHO_3', 'UNIT_CLASS');
 
+INSERT INTO Types 
+       (Type,                  Kind) 
+VALUES ('UNIT_NYGUITA_GAUCHO_3', 'KIND_UNIT');
+
 INSERT INTO TypeTags 
        (Type,                    Tag) 
 VALUES ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_NYGUITA_GAUCHO');
