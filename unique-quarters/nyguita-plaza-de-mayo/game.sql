@@ -46,7 +46,8 @@ VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPIN
 INSERT INTO Modifiers 
        (ModifierId,                                          ModifierType,                                             Permanent, SubjectRequirementSetId) 
 VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_TYPE', 1,         'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
-----------
+
+---------- MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                          Name,         Value) 
@@ -71,6 +72,8 @@ VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'Amount', 
 INSERT INTO ModifierArguments 
        (ModifierId,                                            Name,        Value) 
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'YieldType', 'YIELD_HAPPINESS');
+
+--- MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                          Name,         Value) 

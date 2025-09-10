@@ -58,7 +58,6 @@
                     <Item>constructibles/nyguita-saladero/localizations.sql</Item>
                     <Item>constructibles/nyguita-banco-nacion/localizations.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
                     <Item>unique-quarters/nyguita-plaza-de-mayo/localizations.sql</Item>
                 </UpdateText>
                 <ImportFiles>
@@ -72,9 +71,6 @@
                     <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.png</Item>
                     <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
                     <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
                 </ImportFiles>
                 <UpdateIcons>
                     <Item>civilizations/nyguita-argentina/images.sql</Item>
@@ -84,7 +80,6 @@
                     <Item>units/nyguita-gaucho-3/images.sql</Item>
                     <Item>constructibles/nyguita-saladero/images.sql</Item>
                     <Item>constructibles/nyguita-banco-nacion/images.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
                 </UpdateIcons>
             </Actions>
@@ -111,7 +106,6 @@
                     <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
                     <Item>traditions/nyguita-nuevo-tango/localizations.sql</Item>
                     <Item>progression-trees/nyguita-argentina/localizations.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
                     <Item>unique-quarters/nyguita-plaza-de-mayo/localizations.sql</Item>
                 </UpdateText>
                 <UpdateDatabase>
@@ -126,12 +120,11 @@
                     <Item>constructibles/nyguita-banco-nacion/game.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/game.sql</Item>
                     <Item>traditions/nyguita-nuevo-tango/game.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/game.sql</Item>
                     <Item>unique-quarters/nyguita-plaza-de-mayo/game.sql</Item>
                 </UpdateDatabase>
                 <ImportFiles>
-                    <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
-                    <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina_background</Item>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_background.png</Item>
                     <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
                     <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
                     <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
@@ -140,9 +133,6 @@
                     <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.png</Item>
                     <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
                     <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
                 </ImportFiles>
                 <UpdateIcons>
                     <Item>civilizations/nyguita-argentina/images.sql</Item>
@@ -154,7 +144,6 @@
                     <Item>constructibles/nyguita-banco-nacion/images.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
                     <Item>progression-trees/nyguita-argentina/images.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
                 </UpdateIcons>
             </Actions>
         </ActionGroup>
