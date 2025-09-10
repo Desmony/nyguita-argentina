@@ -9,4 +9,4 @@ VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Angentinian Civics Tree'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_QUOTE', 'One does not renounce such an immense future, such a lofty mission, because of an accumulation of contradictions and difficulties. Difficulties are overcome: contradictions are overcome by contradicting them.'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_AUTHOR', 'Domingo Faustino Sarmiento'),
        ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_QUOTE', 'A writer — and, I believe, generally all persons — must think that whatever happens to him or her is a resource. All things have been given to us for a purpose, and an artist must feel this more intensely.'),
-       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR', 'Jorge Luis Borges'),;
+       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR', 'Jorge Luis Borges');
