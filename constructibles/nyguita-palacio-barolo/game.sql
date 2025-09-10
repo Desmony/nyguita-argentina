@@ -83,3 +83,8 @@ INSERT INTO ProgressionTreeNodeUnlocks
        (ProgressionTreeNodeType, TargetKind, TargetType, UnlockDepth)
 VALUES ('NODE_CIVIC_MO_MAIN_HEGEMONY','KIND_CONSTRUCTIBLE','WONDER_NYGUITA_PALACIO_BAROLO','1');
 
+INSERT INTO Constructible_Advisories
+       (ConstructibleType,       AdvisoryClassType) 
+VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'ADVISORY_CLASS_CULTURE'),
+       ('WONDER_NYGUITA_PALACIO_BAROLO', 'ADVISORY_CLASS_ECONOMIC');
+

@@ -74,3 +74,7 @@ VALUES ('MOD_NYGUITA_BANCO_NACION_GOLD_RURAL', 'YieldType', 'YIELD_GOLD');
 INSERT INTO ConstructibleModifiers 
        (ConstructibleType,               ModifierId) 
 VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'MOD_NYGUITA_BANCO_NACION_GOLD_RURAL');
+
+INSERT INTO Constructible_Advisories
+       (ConstructibleType,       AdvisoryClassType) 
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'ADVISORY_CLASS_ECONOMIC');

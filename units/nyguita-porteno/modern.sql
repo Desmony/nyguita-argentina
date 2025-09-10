@@ -29,3 +29,7 @@ VALUES ('UNIT_NYGUITA_PORTENO', 'YIELD_PRODUCTION', 60);
 INSERT INTO UnitReplaces 
        (CivUniqueUnitType,      ReplacesUnitType) 
 VALUES ('UNIT_NYGUITA_PORTENO', 'UNIT_SETTLER');
+
+INSERT INTO Unit_Advisories
+       (UnitType,       AdvisoryClassType) 
+VALUES ('UNIT_NYGUITA_PORTENO', 'ADVISORY_CLASS_EMPIRE_EXPANSION');

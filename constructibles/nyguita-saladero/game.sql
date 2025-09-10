@@ -77,3 +77,8 @@ VALUES ('NyguitaPastureFood', 'AGE_MODERN', 'IMPROVEMENT_PASTURE', 0,          0
 INSERT INTO Constructible_WarehouseYields 
        (ConstructibleType,           YieldChangeId) 
 VALUES ('BUILDING_NYGUITA_SALADERO', 'NyguitaPastureFood');
+
+INSERT INTO Constructible_Advisories
+       (ConstructibleType,       AdvisoryClassType) 
+VALUES ('BUILDING_NYGUITA_SALADERO', 'ADVISORY_CLASS_FOOD'),
+       ('BUILDING_NYGUITA_SALADERO', 'ADVISORY_CLASS_ECONOMIC');
