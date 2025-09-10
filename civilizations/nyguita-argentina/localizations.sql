@@ -2,10 +2,10 @@ INSERT OR IGNORE INTO LocalizedText
        (Language, Tag,                                       Text) 
 VALUES ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'Argentina'),
        ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_FULL_NAME', 'Argentina'),
-       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', '[B]+1 [icon:YIELD_FOOD] Food[\B], [B]+1 [icon:YIELD_PRODUCTION] Production[\B], [B]+1 [icon:YIELD_GOLD] Gold[\B] on ressource tiles. [B]+1 [icon:RADIAL_RESOURCES]Resource Capacity[\B] in Cities.'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', '[B]+1 [icon:YIELD_FOOD] Food[/B], [B]+1 [icon:YIELD_PRODUCTION] Production[/B], [B]+1 [icon:YIELD_GOLD] Gold[/B] on ressource tiles. [B]+1 [icon:RADIAL_RESOURCES]Resource Capacity[/B] in Cities.'),
        ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ADJECTIVE', 'Argentinian'),
        ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ABILITY_NAME', 'Patagonian Land Rush'),
-       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ABILITY_DESCRIPTION', '[BLIST][B]+1 [icon:YIELD_FOOD] Food[\B], [B]+1 [icon:YIELD_PRODUCTION] Production[\B], [B]+1 [icon:YIELD_GOLD] Gold[\B] on ressource tiles. [B]+1 [icon:RADIAL_RESOURCES]Resource Capacity[\B] in Cities. [B]+30% [icon:YIELD_PRODUCTION]Production[\B] towards [B]Palacio Barolo[/B][/BLIST]'),
+       ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ABILITY_DESCRIPTION', '[BLIST][B]+1 [icon:YIELD_FOOD] Food[/B], [B]+1 [icon:YIELD_PRODUCTION] Production[/B], [B]+1 [icon:YIELD_GOLD] Gold[/B] on ressource tiles. [B]+1 [icon:RADIAL_RESOURCES]Resource Capacity[/B] in Cities. [B]+30% [icon:YIELD_PRODUCTION]Production[/B] towards [B]Palacio Barolo[/B][/BLIST]'),
        ('en_US',  'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'While the rumored mountains of silver were never there, the settlers who arrived here still found a rich and arable land in the vastness of the pampas. Soon enough, they built their own identity, with roots between the Old and the New World. This dual condition bring them universal prosperity as all moves towards Argentina. Argentina will shine on the world like the sun.'),
        ('en_US',  'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'The Sun of May rises on the pampa, shining light on vast empty lands ready to be worked on.'),
        ('en_US',  'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA', 'Argentinian cities thrive on settling on the Coast with a lot of resources. Do not hesitate to disperse City-States if needed. Argentina can generate a lot of Gold and Food.');
