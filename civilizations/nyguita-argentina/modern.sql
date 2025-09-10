@@ -56,52 +56,33 @@ INSERT OR IGNORE INTO VisArt_CivilizationUnitCultures
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'SAmer');
 
 -- TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE
+
+INSERT INTO Warehouse_YieldChanges 
+       (ID,                               Age,          ConstructibleInCity, LakeInCity, MinorRiverInCity, NaturalWonderInCity, NavigableRiverInCity, Overbuilt, ResourceInCity, RouteInCity, YieldChange, YieldType) 
+VALUES ('NyguitaPatagonianLandRushFood', 'AGE_MODERN',          0,  0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_FOOD'), 
+       ('NyguitaPatagonianLandRushProduction', 'AGE_MODERN',    0,  0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_PRODUCTION'), 
+       ('NyguitaPatagonianLandRushGold', 'AGE_MODERN',          0,  0,          0,                0,                   0,                    0,         1,              0,           1,           'YIELD_GOLD');
+
+
 INSERT INTO Types 
        (Type,                                                             Kind) 
 VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'KIND_MODIFIER');
 
 INSERT INTO DynamicModifiers 
        (ModifierType,                                                     CollectionType,             EffectType) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'COLLECTION_PLAYER_CITIES', 'EFFECT_PLOT_ADJUST_YIELD');
-
-INSERT INTO RequirementSets 
-       (RequirementSetId,                                                           RequirementSetType) 
-VALUES ('REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT', 'REQUIREMENTSET_TEST_ALL');
-
-INSERT INTO Requirements 
-       (RequirementId,                                                             RequirementType) 
-VALUES ('REQ_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT_0', 'REQUIREMENT_PLOT_RESOURCE_VISIBLE');
-
-INSERT INTO RequirementSetRequirements 
-       (RequirementId,                                                             RequirementSetId) 
-VALUES ('REQ_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT_0', 'REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT');
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'COLLECTION_PLAYER_CITIES', 'EFFECT_CITY_GRANT_WAREHOUSE_YIELD');
 
 INSERT INTO Modifiers 
-       (ModifierId,                                                  ModifierType,                                                     SubjectRequirementSetId) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_FOOD', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT');
+       (ModifierId,                                                  ModifierType) 
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_FOOD', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE'),
+       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_PRODUCTION', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE'),
+       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_GOLD', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE');
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                                  Name,     Value) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_FOOD', 'Amount', '1'),
-       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_FOOD', 'YieldType', 'YIELD_FOOD');
-
-INSERT INTO Modifiers 
-       (ModifierId,                                                  ModifierType,                                                     SubjectRequirementSetId) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_PRODUCTION', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                                  Name,     Value) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_PRODUCTION', 'Amount', '1'),
-       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_PRODUCTION', 'YieldType', 'YIELD_PRODUCTION');
-
-INSERT INTO Modifiers 
-       (ModifierId,                                                  ModifierType,                                                     SubjectRequirementSetId) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_GOLD', 'TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_TYPE', 'REQSET_TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_SUBJECT');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                                  Name,     Value) 
-VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_GOLD', 'Amount', '1'),
-       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_GOLD', 'YieldType', 'YIELD_GOLD');
+VALUES ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_FOOD', 'WarehouseYieldChange', 'NyguitaPatagonianLandRushFood'),
+       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_PRODUCTION', 'WarehouseYieldChange', 'NyguitaPatagonianLandRushProduction'),
+       ('TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE_GOLD', 'WarehouseYieldChange', 'NyguitaPatagonianLandRushGold');
 
 INSERT INTO TraitModifiers 
        (TraitType,                         ModifierId) 
