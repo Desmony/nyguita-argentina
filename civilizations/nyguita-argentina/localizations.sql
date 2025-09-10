@@ -56,3 +56,28 @@ VALUES ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0', 'Buenos Aire
        ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_38', 'Moreno'),
        ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_39', 'San Fernando de la Buena Vista'),
        ('en_US',  'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_40', 'Isidro Casanova');
+
+-- Citizens
+
+INSERT OR IGNORE INTO LocalizedText 
+       (Language, Tag,                                       Text) 
+VALUES ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_1', 'Jose'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_2', 'Antonio'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_3', 'Juan'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_4', 'Juan Carlos'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_5', 'Francisco'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_6', 'Luis'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_7', 'Pedro'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_8', 'Manuel'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_9', 'Alberto'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_MALE_10', 'Miguel'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_1', 'Maria'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_2', 'Rosa'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_3', 'Maria Esther'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_4', 'Maria Luisa'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_5', 'Carmen'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_6', 'Juana'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_7', 'Ana'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_8', 'Maria Elena'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_9', 'Nelida'),
+       ('en_US',  'LOC_CITIZEN_NYGUITA_ARGENTINA_FEMALE_10', 'Angela');
