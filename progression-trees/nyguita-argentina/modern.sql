@@ -19,15 +19,10 @@ VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'TREE_NYGUITA_ARGENTINA', 2000, 'LO
 
 INSERT INTO ProgressionTreeNodeUnlocks 
        (ProgressionTreeNodeType,             TargetType,                     Hidden, TargetKind,       UnlockDepth) 
-VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'TRADITION_NYGUITA_CAUDILLISM', 0,      'KIND_TRADITION', 1);
-
-INSERT INTO ProgressionTreeNodeUnlocks 
-       (ProgressionTreeNodeType,             TargetType,                  Hidden, TargetKind,           UnlockDepth) 
-VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'BUILDING_NYGUITA_SALADERO', 0,      'KIND_CONSTRUCTIBLE', 1);
-
-INSERT INTO ProgressionTreeNodeUnlocks 
-       (ProgressionTreeNodeType,             TargetType,                                  Hidden, TargetKind,      UnlockDepth) 
-VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE', 0,      'KIND_MODIFIER', 2);
+VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'TRADITION_NYGUITA_CAUDILLISM', 0,      'KIND_TRADITION', 1),
+       ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'BUILDING_NYGUITA_SALADERO', 0,      'KIND_CONSTRUCTIBLE', 1),
+       ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE', 0,      'KIND_MODIFIER', 2),
+       ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'MOD_NYGUITA_VASTNESS_OF_THE_PAMPAS', 0,      'KIND_MODIFIER', 2);
 
 
 -- MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE
@@ -46,10 +41,6 @@ VALUES ('MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE', 'MOD_NYGUITA_GREAT_EUROPEAN
 INSERT INTO ModifierArguments 
        (ModifierId,                                  Name,      Value) 
 VALUES ('MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE', 'Percent', '15');
-
-INSERT INTO ProgressionTreeNodeUnlocks 
-       (ProgressionTreeNodeType,             TargetType,                           Hidden, TargetKind,      UnlockDepth) 
-VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'MOD_NYGUITA_VASTNESS_OF_THE_PAMPAS', 0,      'KIND_MODIFIER', 2);
 
 
 -- MOD_NYGUITA_VASTNESS_OF_THE_PAMPAS
