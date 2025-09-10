@@ -16,7 +16,7 @@ VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'DISTRICT_WONDER');
 
 INSERT INTO Wonders
        (ConstructibleType, MaxWorldInstances)
-VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', '1')
+VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', '1');
 
 -- MOD_WONDER_NYGUITA_PALACIO_BAROLO
 INSERT INTO Types 
@@ -40,16 +40,14 @@ INSERT INTO ModifierArguments
 VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'YieldType', 'YIELD_GOLD');
 
 INSERT INTO ModifierArguments 
-       (ModifierId,                          Name,        Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO', 'YieldType', 'YIELD_CULTURE');
-
-INSERT INTO ModifierArguments 
        (ModifierId,                          Name,                 Value) 
 VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'ConstructibleClass', 'WONDER');
 
 INSERT INTO ConstructibleModifiers 
        (ConstructibleType,               ModifierId) 
 VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD');
+
+--- Culture
 
 INSERT INTO Modifiers 
        (ModifierId,                          ModifierType) 
