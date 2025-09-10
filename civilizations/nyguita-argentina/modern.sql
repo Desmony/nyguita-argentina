@@ -1,57 +1,57 @@
-INSERT INTO Types 
+INSERT OR IGNORE INTO Types 
        (Type,                             Kind) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'KIND_CIVILIZATION');
 
-INSERT INTO Civilizations 
+INSERT OR IGNORE INTO Civilizations 
        (CivilizationType,                 Adjective,                                      CapitalName,                                      Description,                                      FullName,                                       Name,                                      StartingCivilizationLevelType, UniqueCultureProgressionTree) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_ADJECTIVE', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_CITY_NAME_0', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_FULL_NAME', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'CIVILIZATION_LEVEL_FULL_CIV', 'TREE_NYGUITA_ARGENTINA');
 
-INSERT INTO Types 
+INSERT OR IGNORE INTO Types 
        (Type,                      Kind) 
 VALUES ('TRAIT_NYGUITA_ARGENTINA', 'KIND_TRAIT');
 
-INSERT INTO Traits 
+INSERT OR IGNORE INTO Traits 
        (TraitType,                 InternalOnly) 
 VALUES ('TRAIT_NYGUITA_ARGENTINA', 1);
 
-INSERT INTO CivilizationTraits 
+INSERT OR IGNORE INTO CivilizationTraits 
        (CivilizationType,                 TraitType) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'TRAIT_NYGUITA_ARGENTINA');
 
-INSERT INTO Types 
+INSERT OR IGNORE INTO Types 
        (Type,                              Kind) 
 VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'KIND_TRAIT');
 
-INSERT INTO Traits 
+INSERT OR IGNORE INTO Traits 
        (TraitType,                         Description,                                       Name,                                       InternalOnly) 
 VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'LOC_TRAIT_NYGUITA_ARGENTINA_ABILITY_DESCRIPTION', 'LOC_TRAIT_NYGUITA_ARGENTINA_ABILITY_NAME', 1);
 
-INSERT INTO CivilizationTraits 
+INSERT OR IGNORE INTO CivilizationTraits 
        (CivilizationType,                 TraitType) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'TRAIT_NYGUITA_ARGENTINA_ABILITY');
 
-INSERT INTO CivilizationTraits 
+INSERT OR IGNORE INTO CivilizationTraits 
        (CivilizationType,                 TraitType) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'TRAIT_MODERN_CIV');
 
-INSERT INTO StartBiasAdjacentToCoasts 
+INSERT OR IGNORE INTO StartBiasAdjacentToCoasts 
        (CivilizationType,                 Score) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 20);
 
-INSERT INTO StartBiasBiomes 
+INSERT OR IGNORE INTO StartBiasBiomes 
        (CivilizationType,                 BiomeType,      Score) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BIOME_PLAINS', 15),
        ('CIVILIZATION_NYGUITA_ARGENTINA', 'BIOME_TUNDRA', 5);
 
-INSERT INTO StartBiasResources 
+INSERT OR IGNORE INTO StartBiasResources 
        (CivilizationType,                 ResourceType,      Score) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'RESOURCE_LLAMAS', 5);
 
-INSERT INTO VisArt_CivilizationBuildingCultures 
+INSERT OR IGNORE INTO VisArt_CivilizationBuildingCultures 
        (CivilizationType,                 BuildingCulture) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BUILDING_CULTURE_SAM');
 
-INSERT INTO VisArt_CivilizationUnitCultures 
+INSERT OR IGNORE INTO VisArt_CivilizationUnitCultures 
        (CivilizationType,                 UnitCulture) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'SAmer');
 
