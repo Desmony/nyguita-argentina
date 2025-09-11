@@ -22,15 +22,9 @@ VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'MOD_
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                                        Name,     Value) 
-VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'Amount', '3');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                                        Name,  Value) 
-VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'Tag', 'CULTURE');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                                        Name,        Value) 
-VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'YieldType', 'YIELD_HAPPINESS');
+VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'Amount', '3'),
+       ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'Tag', 'CULTURE'),
+       ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_HAPPINESS_ON_CULTURE_BUILDING', 'YieldType', 'YIELD_HAPPINESS');
 
 INSERT INTO ModifierStrings 
        (ModifierId,                                                        Context,       Text) 
@@ -56,15 +50,9 @@ VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'MOD_
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                                        Name,     Value) 
-VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'Amount', '3');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                                        Name,  Value) 
-VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'Tag', 'HAPPINESS');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                                        Name,        Value) 
-VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'YieldType', 'YIELD_CULTURE');
+VALUES ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'Amount', '3'),
+       ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'Tag', 'HAPPINESS'),
+       ('MOD_TRADITION_NYGUITA_NUEVO_TANGO_CULTURE_ON_HAPPINESS_BUILDING', 'YieldType', 'YIELD_CULTURE');
 
 INSERT INTO ModifierStrings 
        (ModifierId,                                                        Context,       Text) 
