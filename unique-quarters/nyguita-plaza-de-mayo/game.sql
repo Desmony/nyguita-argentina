@@ -37,21 +37,29 @@ INSERT INTO RequirementSetRequirements
        (RequirementId,                                                     RequirementSetId) 
 VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_0', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
 
+INSERT INTO Modifiers 
+       (ModifierId,                             ModifierType,                                            Permanent, SubjectRequirementSetId) 
+VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_TYPE', 'true',         'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT'),
+       ('MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_TYPE', 'true',         'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
+
+INSERT INTO RequirementSets 
+       (RequirementSetId,                                                   RequirementSetType) 
+VALUES ('REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT', 'REQUIREMENTSET_TEST_ANY');
+
 INSERT INTO Requirements 
        (RequirementId,                                                     RequirementType) 
-VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_1', 'REQUIREMENT_PLOT_IS_QUARTER');
+VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'REQUIREMENT_PLOT_DISTRICT_CLASS'),
+       ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'REQUIREMENT_PLOT_DISTRICT_CLASS');
+
+INSERT INTO RequirementArguments 
+       (RequirementId,                                                     Name,                Value) 
+VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'DistrictClass', 'CITY_CENTER'),
+       ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'DistrictClass', 'URBAN');
 
 INSERT INTO RequirementSetRequirements 
        (RequirementId,                                                     RequirementSetId) 
-VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_1', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
-
-INSERT INTO Modifiers 
-       (ModifierId,                                          ModifierType,                                             Permanent, SubjectRequirementSetId) 
-VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_TYPE', 1,         'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
-
-INSERT INTO Modifiers 
-       (ModifierId,                                          ModifierType,                                             Permanent, SubjectRequirementSetId) 
-VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_TYPE', 1,         'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
+VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_0', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT'),
+       ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_1', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
 
 ---------- MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS
 
@@ -68,16 +76,13 @@ INSERT INTO DynamicModifiers
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS_TYPE', 'COLLECTION_CITY_PLOT_YIELDS', 'EFFECT_PLOT_ADJUST_YIELD');
 
 INSERT INTO Modifiers 
-       (ModifierId,                                            ModifierType,                                               Permanent) 
-VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS_TYPE', 1);
+       (ModifierId,                                            ModifierType,                                               Permanent, SubjectRequirementSetId) 
+VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS_TYPE', 'true', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                            Name,     Value) 
-VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'Amount', '1');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                            Name,        Value) 
-VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'YieldType', 'YIELD_HAPPINESS');
+VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'Amount', '1'),
+       ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'YieldType', 'YIELD_HAPPINESS');
 
 --- MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE
 
@@ -94,16 +99,13 @@ INSERT INTO DynamicModifiers
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE_TYPE', 'COLLECTION_CITY_PLOT_YIELDS', 'EFFECT_PLOT_ADJUST_YIELD');
 
 INSERT INTO Modifiers 
-       (ModifierId,                                            ModifierType,                                               Permanent) 
-VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE_TYPE', 1);
+       (ModifierId,                                            ModifierType,                                               Permanent, SubjectRequirementSetId) 
+VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE_TYPE', 'true', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
 
 INSERT INTO ModifierArguments 
        (ModifierId,                                            Name,     Value) 
-VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE', 'Amount', '1');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                                            Name,        Value) 
-VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE', 'YieldType', 'YIELD_DIPLOMACY');
+VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE', 'Amount', '1'),
+       ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE', 'YieldType', 'YIELD_DIPLOMACY');
 
 INSERT INTO UniqueQuarterModifiers 
        (UniqueQuarterType,               ModifierID) 
