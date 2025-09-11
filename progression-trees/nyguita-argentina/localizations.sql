@@ -1,6 +1,6 @@
 INSERT OR IGNORE INTO LocalizedText 
        (Language, Tag,                                                                               Text) 
-VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Angentinian Civics Tree'),
+VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Argentinian Civics Tree'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_NAME', 'Congress of Tucumán'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_NAME', 'Civilization and Barbarism'),
        ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_NAME', 'Tango and Poetry'),
