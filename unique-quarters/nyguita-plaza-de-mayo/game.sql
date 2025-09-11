@@ -33,10 +33,6 @@ INSERT INTO RequirementArguments
        (RequirementId,                                                     Name,                Value) 
 VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_0', 'UniqueQuarterType', 'QUARTER_NYGUITA_PLAZA_DE_MAYO');
 
-INSERT INTO RequirementSetRequirements 
-       (RequirementId,                                                     RequirementSetId) 
-VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_0', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
-
 INSERT INTO Modifiers 
        (ModifierId,                             ModifierType,                                            Permanent, SubjectRequirementSetId) 
 VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_TYPE', 'true',         'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT'),
@@ -52,7 +48,7 @@ VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'REQUIREMENT_PLOT_
        ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'REQUIREMENT_PLOT_DISTRICT_CLASS');
 
 INSERT INTO RequirementArguments 
-       (RequirementId,                                                     Name,                Value) 
+       (RequirementId,                                        Name,                Value) 
 VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'DistrictClass', 'CITY_CENTER'),
        ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'DistrictClass', 'URBAN');
 
@@ -64,7 +60,7 @@ VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT_0', 'REQS
 ---------- MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS
 
 INSERT INTO ModifierArguments 
-       (ModifierId,                                          Name,         Value) 
+       (ModifierId,                            Name,         Value) 
 VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS', 'ModifierId', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS');
 
 INSERT INTO Types 
@@ -76,18 +72,18 @@ INSERT INTO DynamicModifiers
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS_TYPE', 'COLLECTION_CITY_PLOT_YIELDS', 'EFFECT_PLOT_ADJUST_YIELD');
 
 INSERT INTO Modifiers 
-       (ModifierId,                                            ModifierType,                                               Permanent, SubjectRequirementSetId) 
+       (ModifierId,                                                   ModifierType,                                                   Permanent, SubjectRequirementSetId) 
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS_TYPE', 'true', 'REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS_AND_INFLUENCE_SUBJECT');
 
 INSERT INTO ModifierArguments 
-       (ModifierId,                                            Name,     Value) 
+       (ModifierId,                                                   Name,     Value) 
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'Amount', '1'),
        ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_HAPPINESS', 'YieldType', 'YIELD_HAPPINESS');
 
 --- MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE
 
 INSERT INTO ModifierArguments 
-       (ModifierId,                                          Name,         Value) 
+       (ModifierId,                            Name,         Value) 
 VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_INFLUENCE', 'ModifierId', 'ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE');
 
 INSERT INTO Types 
@@ -95,7 +91,7 @@ INSERT INTO Types
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE_TYPE', 'KIND_MODIFIER');
 
 INSERT INTO DynamicModifiers 
-       (ModifierType,                                               CollectionType,                EffectType) 
+       (ModifierType,                                                        CollectionType,                EffectType) 
 VALUES ('ATTACH_MOD_NYGUITA_ARGENTINA_PLAZA_DE_MAYO_URBAN_INFLUENCE_TYPE', 'COLLECTION_CITY_PLOT_YIELDS', 'EFFECT_PLOT_ADJUST_YIELD');
 
 INSERT INTO Modifiers 
