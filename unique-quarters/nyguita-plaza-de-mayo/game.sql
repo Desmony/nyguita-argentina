@@ -40,17 +40,16 @@ VALUES ('MOD_NYGUITA_PLAZA_DE_MAYO_HAPPINESS', 'MOD_NYGUITA_PLAZA_DE_MAYO_HAPPIN
 
 INSERT INTO RequirementSets 
        (RequirementSetId,                                                   RequirementSetType) 
-VALUES ('REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT', 'REQUIREMENTSET_TEST_ANY');
+VALUES ('REQSET_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT', 'REQUIREMENTSET_TEST_ALL');
 
 INSERT INTO Requirements 
        (RequirementId,                                                     RequirementType) 
-VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'REQUIREMENT_PLOT_DISTRICT_CLASS'),
-       ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'REQUIREMENT_PLOT_DISTRICT_CLASS');
+VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'REQUIREMENT_PLOT_IS_QUARTER'),
+       ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'REQUIREMENT_CITY_HAS_UNIQUE_QUARTER');
 
 INSERT INTO RequirementArguments 
        (RequirementId,                                        Name,                Value) 
-VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_0', 'DistrictClass', 'CITY_CENTER'),
-       ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'DistrictClass', 'URBAN');
+VALUES ('REQ_MOD_NYGUITA_PLAZA_DE_MAYO_IS_QUARTER_SUBJECT_1', 'UniqueQuarterType', 'QUARTER_NYGUITA_PLAZA_DE_MAYO');
 
 INSERT INTO RequirementSetRequirements 
        (RequirementId,                                                     RequirementSetId) 
