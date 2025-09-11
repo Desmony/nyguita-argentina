@@ -4,8 +4,9 @@
         <Name>Nyguita's Argentina</Name>
         <Description>Adds [B]Argentina[/B] as an Modern Age civilization</Description>
         <Authors>Nyguita</Authors>
+		<SpecialThanks>izica, orion, Civ'ed, slothoth</SpecialThanks>
         <Package>Mod</Package>
-        <Version>1</Version>
+        <Version>1.0.0</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <ActionCriteria>
