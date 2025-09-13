@@ -9,15 +9,104 @@
         <Version>1.0.0</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
+    <References>
+		<Mod id="bolivar" title="LOC_MODULE_BOLIVAR_NAME"/>
+	</References>
     <ActionCriteria>
+		<Criteria id="antiquity-age-current">
+			<AgeInUse>AGE_ANTIQUITY</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration-age-current">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+		</Criteria>
+		<Criteria id="exploration-age-persist" any="true">
+			<AgeInUse>AGE_EXPLORATION</AgeInUse>
+			<AgeInUse>AGE_MODERN</AgeInUse>
+		</Criteria>
         <Criteria id="age-modern-current">
             <AgeInUse>AGE_MODERN</AgeInUse>
+        </Criteria>
+        <Criteria id="has_bolivar_dlc">
+            <AgeInUse>bolivar</AgeInUse>
         </Criteria>
         <Criteria id="always">
             <AlwaysMet/>
         </Criteria>
     </ActionCriteria>
     <ActionGroups>
+        <ActionGroup id="game-always" scope="game" criteria="always">
+            <Properties>
+                <LoadOrder>500</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateText>
+                    <Item>civilizations/nyguita-argentina/localizations.sql</Item>
+                    <Item>units/nyguita-gaucho/localizations.sql</Item>
+                    <Item>units/nyguita-porteno/localizations.sql</Item>
+                    <Item>units/nyguita-gaucho-2/localizations.sql</Item>
+                    <Item>units/nyguita-gaucho-3/localizations.sql</Item>
+                    <Item>civilization-unlocks/from-inca/localizations.sql</Item>
+                    <Item>civilization-unlocks/from-spain/localizations.sql</Item>
+                    <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
+                    <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
+                    <Item>traditions/nyguita-caudillism/localizations.sql</Item>
+                    <Item>constructibles/nyguita-saladero/localizations.sql</Item>
+                    <Item>traditions/nyguita-conquest-of-the-desert/localizations.sql</Item>
+                    <Item>constructibles/nyguita-banco-nacion/localizations.sql</Item>
+                    <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
+                    <Item>traditions/nyguita-nuevo-tango/localizations.sql</Item>
+                    <Item>progression-trees/nyguita-argentina/localizations.sql</Item>
+                    <Item>unique-quarters/nyguita-plaza-de-mayo/localizations.sql</Item>
+                </UpdateText>
+                <UpdateDatabase>
+                    <Item>civilizations/nyguita-argentina/legacy.sql</Item>
+                    <Item>civilization-unlocks/from-inca/game.sql</Item>
+                    <Item>civilization-unlocks/from-spain/game.sql</Item>
+                    <Item>civilization-unlocks/has-3-llamas/game.sql</Item>
+                    <Item>civilization-unlocks/base_leaders_unlock/game.sql</Item>
+                    <Item>traditions/nyguita-caudillism/game.sql</Item>
+                    <Item>traditions/nyguita-conquest-of-the-desert/game.sql</Item>
+                    <Item>traditions/nyguita-nuevo-tango/game.sql</Item>
+                </UpdateDatabase>
+                <ImportFiles>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_background.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon</Item>
+                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina</Item>
+                    <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
+                    <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
+                    <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
+                    <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
+                    <Item>units/nyguita-gaucho-3/assets/gaucho_unit_icon.png</Item>
+                    <Item>constructibles/nyguita-saladero/assets/Saladeros.png</Item>
+                    <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.png</Item>
+                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
+                </ImportFiles>
+                <UpdateIcons>
+                    <Item>civilizations/nyguita-argentina/images.sql</Item>
+                    <Item>units/nyguita-gaucho/images.sql</Item>
+                    <Item>units/nyguita-porteno/images.sql</Item>
+                    <Item>units/nyguita-gaucho-2/images.sql</Item>
+                    <Item>units/nyguita-gaucho-3/images.sql</Item>
+                    <Item>constructibles/nyguita-saladero/images.sql</Item>
+                    <Item>constructibles/nyguita-banco-nacion/images.sql</Item>
+                    <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
+                    <Item>progression-trees/nyguita-argentina/images.sql</Item>
+                </UpdateIcons>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="bolivar_unlock" scope="game" criteria="has_bolivar_dlc">
+            <Properties>
+                <LoadOrder>500</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>civilization-unlocks/by_bolivar/game.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
         <ActionGroup id="game-age-modern-current" scope="game" criteria="age-modern-current">
             <Properties>
                 <LoadOrder>500</LoadOrder>
@@ -27,6 +116,10 @@
                     <Item>progression-trees/nyguita-argentina/modern.sql</Item>
                     <Item>civilizations/nyguita-argentina/modern.sql</Item>
                     <Item>civilizations/nyguita-argentina/unlock.sql</Item>
+                    <Item>constructibles/nyguita-saladero/game.sql</Item>
+                    <Item>constructibles/nyguita-banco-nacion/game.sql</Item>
+                    <Item>constructibles/nyguita-palacio-barolo/game.sql</Item>
+                    <Item>unique-quarters/nyguita-plaza-de-mayo/game.sql</Item>
                     <Item>units/nyguita-gaucho/modern.sql</Item>
                     <Item>units/nyguita-porteno/modern.sql</Item>
                     <Item>units/nyguita-gaucho-2/modern.sql</Item>
@@ -86,73 +179,6 @@
                     <Item>constructibles/nyguita-saladero/images.sql</Item>
                     <Item>constructibles/nyguita-banco-nacion/images.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
-                </UpdateIcons>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="game-always" scope="game" criteria="always">
-            <Properties>
-                <LoadOrder>500</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateText>
-                    <Item>civilizations/nyguita-argentina/localizations.sql</Item>
-                    <Item>units/nyguita-gaucho/localizations.sql</Item>
-                    <Item>units/nyguita-porteno/localizations.sql</Item>
-                    <Item>units/nyguita-gaucho-2/localizations.sql</Item>
-                    <Item>units/nyguita-gaucho-3/localizations.sql</Item>
-                    <Item>civilization-unlocks/from-inca/localizations.sql</Item>
-                    <Item>civilization-unlocks/from-spain/localizations.sql</Item>
-                    <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
-                    <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
-                    <Item>traditions/nyguita-caudillism/localizations.sql</Item>
-                    <Item>constructibles/nyguita-saladero/localizations.sql</Item>
-                    <Item>traditions/nyguita-conquest-of-the-desert/localizations.sql</Item>
-                    <Item>constructibles/nyguita-banco-nacion/localizations.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
-                    <Item>traditions/nyguita-nuevo-tango/localizations.sql</Item>
-                    <Item>progression-trees/nyguita-argentina/localizations.sql</Item>
-                    <Item>unique-quarters/nyguita-plaza-de-mayo/localizations.sql</Item>
-                </UpdateText>
-                <UpdateDatabase>
-                    <Item>civilizations/nyguita-argentina/legacy.sql</Item>
-                    <Item>civilization-unlocks/from-inca/game.sql</Item>
-                    <Item>civilization-unlocks/from-spain/game.sql</Item>
-                    <Item>civilization-unlocks/has-3-llamas/game.sql</Item>
-                    <Item>civilization-unlocks/by-bolivar/game.sql</Item>
-                    <Item>traditions/nyguita-caudillism/game.sql</Item>
-                    <Item>constructibles/nyguita-saladero/game.sql</Item>
-                    <Item>traditions/nyguita-conquest-of-the-desert/game.sql</Item>
-                    <Item>constructibles/nyguita-banco-nacion/game.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/game.sql</Item>
-                    <Item>traditions/nyguita-nuevo-tango/game.sql</Item>
-                    <Item>unique-quarters/nyguita-plaza-de-mayo/game.sql</Item>
-                </UpdateDatabase>
-                <ImportFiles>
-                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
-                    <Item>civilizations/nyguita-argentina/assets/argentina_background.png</Item>
-                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina.png</Item>
-                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon</Item>
-                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina</Item>
-                    <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
-                    <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
-                    <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
-                    <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
-                    <Item>units/nyguita-gaucho-3/assets/gaucho_unit_icon.png</Item>
-                    <Item>constructibles/nyguita-saladero/assets/Saladeros.png</Item>
-                    <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.png</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
-                </ImportFiles>
-                <UpdateIcons>
-                    <Item>civilizations/nyguita-argentina/images.sql</Item>
-                    <Item>units/nyguita-gaucho/images.sql</Item>
-                    <Item>units/nyguita-porteno/images.sql</Item>
-                    <Item>units/nyguita-gaucho-2/images.sql</Item>
-                    <Item>units/nyguita-gaucho-3/images.sql</Item>
-                    <Item>constructibles/nyguita-saladero/images.sql</Item>
-                    <Item>constructibles/nyguita-banco-nacion/images.sql</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
-                    <Item>progression-trees/nyguita-argentina/images.sql</Item>
                 </UpdateIcons>
             </Actions>
         </ActionGroup>

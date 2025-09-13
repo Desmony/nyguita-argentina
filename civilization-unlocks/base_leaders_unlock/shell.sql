@@ -1,0 +1,9 @@
+INSERT OR IGNORE INTO LeaderUnlocks 
+       (LeaderDomain,      LeaderType,       AgeDomain,      AgeType,      Type,                             Kind,                Name,                                      Description,                                      Icon) 
+VALUES ('StandardLeaders', 'LEADER_AMINA', 'StandardAges', 'AGE_MODERN', 'CIVILIZATION_NYGUITA_ARGENTINA', 'KIND_CIVILIZATION', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', 'CIVILIZATION_NYGUITA_ARGENTINA'),
+       ('StandardLeaders', 'LEADER_PACHACUTI', 'StandardAges', 'AGE_MODERN', 'CIVILIZATION_NYGUITA_ARGENTINA', 'KIND_CIVILIZATION', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION', 'CIVILIZATION_NYGUITA_ARGENTINA');
+
+INSERT OR IGNORE INTO LeaderCivilizationBias 
+       (LeaderDomain,      LeaderType,       CivilizationDomain,       CivilizationType,                 Bias, ReasonType,                                             ChoiceType) 
+VALUES ('StandardLeaders', 'LEADER_AMINA', 'ModernAgeCivilizations', 'CIVILIZATION_NYGUITA_ARGENTINA', 1,    'LOC_UNLOCK_PLAY_AS_AMINA_NYGUITA_ARGENTINA_TOOLTIP', 'LOC_CREATE_GAME_STRATEGIC_CHOICE'),
+       ('StandardLeaders', 'LEADER_PACHACUTI', 'ModernAgeCivilizations', 'CIVILIZATION_NYGUITA_ARGENTINA', 2,    'LOC_UNLOCK_PLAY_AS_PACHACUTI_NYGUITA_ARGENTINA_TOOLTIP', 'LOC_CREATE_GAME_GEOGRAPHIC_CHOICE');
