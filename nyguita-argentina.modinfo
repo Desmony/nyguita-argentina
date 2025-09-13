@@ -48,7 +48,7 @@
                     <Item>civilization-unlocks/from-inca/localizations.sql</Item>
                     <Item>civilization-unlocks/from-spain/localizations.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
-                    <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
+                    <Item>civilization-unlocks/base_leaders_unlock/localizations.sql</Item>
                     <Item>traditions/nyguita-caudillism/localizations.sql</Item>
                     <Item>constructibles/nyguita-saladero/localizations.sql</Item>
                     <Item>traditions/nyguita-conquest-of-the-desert/localizations.sql</Item>
@@ -102,8 +102,11 @@
                 <LoadOrder>500</LoadOrder>
             </Properties>
             <Actions>
+                <UpdateText>
+                    <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
+                </UpdateText>
                 <UpdateDatabase>
-                    <Item>civilization-unlocks/by_bolivar/game.sql</Item>
+                    <Item>civilization-unlocks/by-bolivar/game.sql</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -138,6 +141,7 @@
                     <Item>civilization-unlocks/from-inca/shell.sql</Item>
                     <Item>civilization-unlocks/from-spain/shell.sql</Item>
                     <Item>civilization-unlocks/by-bolivar/shell.sql</Item>
+                    <Item>civilization-unlocks/base_leaders_unlock/shell.sql</Item>
                 </UpdateDatabase>
                 <UpdateText>
                     <Item>civilizations/nyguita-argentina/localizations.sql</Item>
@@ -149,6 +153,7 @@
                     <Item>civilization-unlocks/from-spain/localizations.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
                     <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
+                    <Item>civilization-unlocks/base_leaders_unlock/localizations.sql</Item>
                     <Item>constructibles/nyguita-saladero/localizations.sql</Item>
                     <Item>constructibles/nyguita-banco-nacion/localizations.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
