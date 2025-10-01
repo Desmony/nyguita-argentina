@@ -4,7 +4,7 @@ VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'KIND_CONSTRUCTIBLE');
 
 INSERT INTO Constructibles 
        (ConstructibleType,               Age,          ConstructibleClass, Cost, Description,                                     Name,                                     Population, Tooltip) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'AGE_MODERN', 'BUILDING',         650,  'LOC_BUILDING_NYGUITA_BANCO_NACION_DESCRIPTION', 'LOC_BUILDING_NYGUITA_BANCO_NACION_NAME', 1,          'LOC_BUILDING_NYGUITA_BANCO_NACION_TOOLTIP');
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'AGE_MODERN', 'BUILDING',         600,  'LOC_BUILDING_NYGUITA_BANCO_NACION_DESCRIPTION', 'LOC_BUILDING_NYGUITA_BANCO_NACION_NAME', 1,          'LOC_BUILDING_NYGUITA_BANCO_NACION_TOOLTIP');
 
 INSERT INTO Buildings 
        (ConstructibleType,               Movable, TraitType) 
@@ -24,7 +24,7 @@ VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'UNIQUE');
 
 INSERT INTO Constructible_YieldChanges 
        (ConstructibleType,               YieldType,    YieldChange) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'YIELD_GOLD', 5);
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'YIELD_GOLD', 9);
 
 INSERT INTO Constructible_Plunders 
        (ConstructibleType,               PlunderType,    Amount) 

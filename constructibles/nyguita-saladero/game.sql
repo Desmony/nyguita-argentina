@@ -4,7 +4,7 @@ VALUES ('BUILDING_NYGUITA_SALADERO', 'KIND_CONSTRUCTIBLE');
 
 INSERT INTO Constructibles 
        (ConstructibleType,           Age,          ConstructibleClass, Cost, Description,                                 Name,                                 Population, Tooltip) 
-VALUES ('BUILDING_NYGUITA_SALADERO', 'AGE_MODERN', 'BUILDING',         650,  'LOC_BUILDING_NYGUITA_SALADERO_DESCRIPTION', 'LOC_BUILDING_NYGUITA_SALADERO_NAME', 1,          'LOC_BUILDING_NYGUITA_SALADERO_TOOLTIP');
+VALUES ('BUILDING_NYGUITA_SALADERO', 'AGE_MODERN', 'BUILDING',         600,  'LOC_BUILDING_NYGUITA_SALADERO_DESCRIPTION', 'LOC_BUILDING_NYGUITA_SALADERO_NAME', 1,          'LOC_BUILDING_NYGUITA_SALADERO_TOOLTIP');
 
 INSERT INTO Buildings 
        (ConstructibleType,           Movable, TraitType) 
@@ -24,7 +24,7 @@ VALUES ('BUILDING_NYGUITA_SALADERO', 'UNIQUE');
 
 INSERT INTO Constructible_YieldChanges 
        (ConstructibleType,           YieldType,    YieldChange) 
-VALUES ('BUILDING_NYGUITA_SALADERO', 'YIELD_FOOD', 5);
+VALUES ('BUILDING_NYGUITA_SALADERO', 'YIELD_FOOD', 9);
 
 INSERT INTO Constructible_Plunders 
        (ConstructibleType,           PlunderType,    Amount) 
