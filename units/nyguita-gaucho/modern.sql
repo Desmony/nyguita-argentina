@@ -8,23 +8,14 @@ VALUES ('UNIT_CLASS_NYGUITA_GAUCHO', 'UNIT_CLASS');
 
 INSERT INTO TypeTags 
        (Type,                  Tag) 
-VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_NYGUITA_GAUCHO');
-
-INSERT INTO TypeTags 
-       (Type,                  Tag) 
-VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_CAVALRY');
-
-INSERT INTO TypeTags 
-       (Type,                  Tag) 
-VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_COMBAT');
-
-INSERT INTO TypeTags 
-       (Type,                  Tag) 
-VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_MOUNTED');
+VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_NYGUITA_GAUCHO'),
+       ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_CAVALRY'),
+       ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_COMBAT'),
+       ('UNIT_NYGUITA_GAUCHO', 'UNIT_CLASS_MOUNTED');
 
 INSERT INTO Units 
        (UnitType,              BaseMoves, BaseSightRange, CoreClass,             Description,                           Domain,        FormationClass,                Maintenance, Name,                           ReligionEvictPercent, ReligiousHealCharges, ReligiousStrength, SpreadCharges, Tier, TraitType,                 UnitMovementClass,             ZoneOfControl) 
-VALUES ('UNIT_NYGUITA_GAUCHO', 3,         2,              'CORE_CLASS_MILITARY', 'LOC_UNIT_NYGUITA_GAUCHO_DESCRIPTION', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 4,           'LOC_UNIT_NYGUITA_GAUCHO_NAME', 0,                    0,                    0,                 0,             1,    'TRAIT_NYGUITA_ARGENTINA', 'UNIT_MOVEMENT_CLASS_MOUNTED', 1);
+VALUES ('UNIT_NYGUITA_GAUCHO', 3,         2,              'CORE_CLASS_MILITARY', 'LOC_UNIT_NYGUITA_GAUCHO_DESCRIPTION', 'DOMAIN_LAND', 'FORMATION_CLASS_LAND_COMBAT', 5,           'LOC_UNIT_NYGUITA_GAUCHO_NAME', 0,                    0,                    0,                 0,             1,    'TRAIT_NYGUITA_ARGENTINA', 'UNIT_MOVEMENT_CLASS_MOUNTED', 1);
 
 INSERT INTO Unit_Costs 
        (UnitType,              YieldType,          Cost) 
