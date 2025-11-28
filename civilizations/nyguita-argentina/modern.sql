@@ -55,6 +55,14 @@ INSERT OR IGNORE INTO VisArt_CivilizationUnitCultures
        (CivilizationType,                 UnitCulture) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'SAmer');
 
+INSERT OR IGNORE INTO LeaderCivPriorities
+       (Leader,             Civilization,                      Priority)
+VALUES ('LEADER_PACHACUTI', 'CIVILIZATION_NYGUITA_ARGENTINA',  3),
+       ('LEADER_ISABELLA',  'CIVILIZATION_NYGUITA_ARGENTINA',  3),
+       ('LEADER_AMINA',     'CIVILIZATION_NYGUITA_ARGENTINA',  1),
+       ('LEADER_MACHIAVELLI',  'CIVILIZATION_NYGUITA_ARGENTINA',  1),
+       ('LEADER_JOSE_RIZAL',  'CIVILIZATION_NYGUITA_ARGENTINA',  1);
+
 -- TRAIT_MOD_NYGUITA_ARGENTINA_PATAGONIAN_LAND_RUSH_RESOURCE
 
 INSERT INTO Warehouse_YieldChanges 
@@ -178,7 +186,7 @@ VALUES ('TRAIT_NYGUITA_ARGENTINA_ABILITY', 'TRAIT_MOD_NYGUITA_ARGENTINA_PORTENO_
 
 INSERT INTO LoadingInfo_Civilizations 
        (CivilizationType,                 Audio,               BackgroundImageHigh,                                                BackgroundImageLow,                                                 CivilizationText,                     ForegroundImage,                 Subtitle,                                    Tip)  
-VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'VO_Loading_Mexico', 'fs://game/nyguita-argentina/argentina_background.png', 'fs://game/nyguita-argentina/argentina_background.png', 'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'fs://game/civ_line_mexico.png', 'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA');
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'VO_Loading_Mexico', 'fs://game/nyguita-argentina/argentina_background_1080.png', 'fs://game/nyguita-argentina/argentina_background.png', 'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'fs://game/civ_line_mexico.png', 'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA');
 
 INSERT INTO CityNames
        (CivilizationType,   CityName)

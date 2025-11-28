@@ -33,15 +33,9 @@ VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'MOD_WONDER_NYGUITA_PALACIO_BA
 
 INSERT INTO ModifierArguments 
        (ModifierId,                          Name,     Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'Amount', '3');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                          Name,        Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'YieldType', 'YIELD_GOLD');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                          Name,                 Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'ConstructibleClass', 'WONDER');
+VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'Amount', '3'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'YieldType', 'YIELD_GOLD'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'ConstructibleClass', 'WONDER');
 
 INSERT INTO ConstructibleModifiers 
        (ConstructibleType,               ModifierId) 
@@ -55,15 +49,9 @@ VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'MOD_WONDER_NYGUITA_PALACIO
 
 INSERT INTO ModifierArguments 
        (ModifierId,                          Name,     Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'Amount', '3');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                          Name,        Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'YieldType', 'YIELD_CULTURE');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                          Name,                 Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'ConstructibleClass', 'WONDER');
+VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'Amount', '3'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'YieldType', 'YIELD_CULTURE'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'ConstructibleClass', 'WONDER');
 
 INSERT INTO ConstructibleModifiers 
        (ConstructibleType,               ModifierId) 

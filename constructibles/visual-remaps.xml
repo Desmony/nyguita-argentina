@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <VisualRemaps>
+        <Row>
+            <ID>REMAP_BUILDING_NYGUITA_BANCO_NACION</ID>
+            <DisplayName>LOC_BUILDING_NYGUITA_BANCO_NACION_NAME</DisplayName>
+            <Kind>BUILDING</Kind>
+            <From>BUILDING_NYGUITA_BANCO_NACION</From>
+            <To>BUILDING_BANK</To>
+        </Row>
+        <Row>
+            <ID>REMAP_BUILDING_NYGUITA_SALADERO</ID>
+            <DisplayName>LOC_BUILDING_NYGUITA_SALADERO_NAME</DisplayName>
+            <Kind>BUILDING</Kind>
+            <From>BUILDING_NYGUITA_SALADERO</From>
+            <To>BUILDING_CANNERY</To>
+        </Row>
+    </VisualRemaps>
+</Database>

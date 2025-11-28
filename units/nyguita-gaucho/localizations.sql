@@ -9,3 +9,5 @@ VALUES ('en_US',  'LOC_UNIT_NYGUITA_GAUCHO_NAME', 'Gaucho'),
        ('en_US',  'LOC_NYGUITA_GAUCHO_MOD_CS_ON_FARMS_PREVIEW', '+{1_Value} on farms'),
        ('en_US',  'LOC_ABILITY_NYGUITA_GAUCHO_DESCRIPTION', '+3 Combat Strength when on flat terrain. Doubled when on a farm.'),
        ('en_US',  'LOC_ABILITY_NYGUITA_GAUCHO_NAME', 'Boladeros');
+
+

@@ -1,5 +1,9 @@
 INSERT OR IGNORE INTO LocalizedText 
        (Language, Tag,                            Text) 
 VALUES ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_NAME', 'Plaza de Mayo'),
-        ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_DESCRIPTION', 'Argentinian Unique Quarter. Created by constructing the Saladero and Banco Nación in the same District. +1[icon:YIELD_HAPPINESS] Happiness and +1[icon:YIELD_DIPLOMACY] Influence on Quarters in this City.'),
-        ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_TOOLTIP', '+1[icon:YIELD_HAPPINESS] Happiness and +1[icon:YIELD_DIPLOMACY] Influence on Quarters in this City.');
+       ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_DESCRIPTION', 'Argentinian Unique Quarter. Created by constructing the Saladero and Banco Nación in the same District. +1[icon:YIELD_HAPPINESS] Happiness and +1[icon:YIELD_DIPLOMACY] Influence on Quarters in this City.'),
+       ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_TOOLTIP', '+1[icon:YIELD_HAPPINESS] Happiness and +1[icon:YIELD_DIPLOMACY] Influence on Quarters in this City.');
+
+INSERT OR IGNORE INTO LocalizedText 
+       (Language, Tag,                                       Text) 
+VALUES ('en_US',  'LOC_PEDIA_PAGE_QUARTER_NYGUITA_PLAZA_DE_MAYO_CHAPTER_HISTORY_PARA_1',  "The Plaza de Mayo is the main square of Buenos Aires. It has been the scene of the most momentous events in Argentine history, as well as the largest popular demonstrations in the country. On the occasion of the first anniversary of the May Revolution in 1811, the Pirámide de Mayo was inaugurated in the square's hub, becoming Buenos Aires' first national monument. The Plaza de Mayo has traditionally been the focal point of political life in Buenos Aires. Its current name commemorates the May Revolution of 1810, which started the process towards the country's independence from Spain in 1816.");

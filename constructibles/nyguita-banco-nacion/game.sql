@@ -12,15 +12,9 @@ VALUES ('BUILDING_NYGUITA_BANCO_NACION', 0,       'TRAIT_NYGUITA_ARGENTINA');
 
 INSERT INTO TypeTags 
        (Type,                            Tag) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'GOLD');
-
-INSERT INTO TypeTags 
-       (Type,                            Tag) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'AGELESS');
-
-INSERT INTO TypeTags 
-       (Type,                            Tag) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'UNIQUE');
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'GOLD'),
+       ('BUILDING_NYGUITA_BANCO_NACION', 'AGELESS'),
+       ('BUILDING_NYGUITA_BANCO_NACION', 'UNIQUE');
 
 INSERT INTO Constructible_YieldChanges 
        (ConstructibleType,               YieldType,    YieldChange) 
@@ -32,11 +26,8 @@ VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'PLUNDER_GOLD', 360);
 
 INSERT INTO Constructible_ValidDistricts 
        (ConstructibleType,               DistrictType) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'DISTRICT_CITY_CENTER');
-
-INSERT INTO Constructible_ValidDistricts 
-       (ConstructibleType,               DistrictType) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'DISTRICT_URBAN');
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'DISTRICT_CITY_CENTER'),
+       ('BUILDING_NYGUITA_BANCO_NACION', 'DISTRICT_URBAN');
 
 -- MOD_NYGUITA_BANCO_NACION_GOLD_RURAL
 INSERT INTO Types 
@@ -65,11 +56,8 @@ VALUES ('MOD_NYGUITA_BANCO_NACION_GOLD_RURAL', 'MOD_NYGUITA_BANCO_NACION_GOLD_RU
 
 INSERT INTO ModifierArguments 
        (ModifierId,                            Name,     Value) 
-VALUES ('MOD_NYGUITA_BANCO_NACION_GOLD_RURAL', 'Amount', '1');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                            Name,        Value) 
-VALUES ('MOD_NYGUITA_BANCO_NACION_GOLD_RURAL', 'YieldType', 'YIELD_GOLD');
+VALUES ('MOD_NYGUITA_BANCO_NACION_GOLD_RURAL', 'Amount', '1'),
+       ('MOD_NYGUITA_BANCO_NACION_GOLD_RURAL', 'YieldType', 'YIELD_GOLD');
 
 INSERT INTO ConstructibleModifiers 
        (ConstructibleType,               ModifierId) 
