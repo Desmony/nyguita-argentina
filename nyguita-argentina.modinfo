@@ -4,9 +4,9 @@
         <Name>Nyguita's Argentina</Name>
         <Description>Adds [B]Argentina[/B] as an Modern Age civilization</Description>
         <Authors>Nyguita</Authors>
-		<SpecialThanks>izica, orion, Civ'ed, slothoth</SpecialThanks>
+		<SpecialThanks>izica, orion, Civ'ed, slothoth, beezany</SpecialThanks>
         <Package>Mod</Package>
-        <Version>1.2.0</Version>
+        <Version>1.3.0</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <References>
@@ -14,6 +14,7 @@
 		<Mod id="seelingcat-rosetta" title=""/>
 		<Mod id="ged-ynamp" title=""/>
 		<Mod id="ml-city-states-expanded" title=""/>
+		<Mod id="orions-gridlock" title=""/>
 	</References>
     <ActionCriteria>
 		<Criteria id="antiquity-age-current">
@@ -30,7 +31,7 @@
             <AgeInUse>AGE_MODERN</AgeInUse>
         </Criteria>
         <Criteria id="has_bolivar_dlc">
-            <ModInUse>bolivar</AgeInUse>
+            <ModInUse>bolivar</ModInUse>
         </Criteria>
         <Criteria id="always">
             <AlwaysMet/>
@@ -47,6 +48,21 @@
         </Criteria>
 		<Criteria all="true" id="modern_bolivar">
             <ModInUse>bolivar</ModInUse>
+            <AgeInUse>AGE_MODERN</AgeInUse>
+        </Criteria>
+		<Criteria all="true" id="orion-gridlock-enable">
+            <ModInUse>orions-gridlock</ModInUse>
+        </Criteria>
+		<Criteria all="true" id="orion-gridlock-antiquity-enable">
+            <ModInUse>orions-gridlock</ModInUse>
+            <AgeInUse>AGE_ANTIQUITY</AgeInUse>
+        </Criteria>
+		<Criteria all="true" id="orion-gridlock-exploration-enable">
+            <ModInUse>orions-gridlock</ModInUse>
+            <AgeInUse>AGE_EXPLORATION</AgeInUse>
+        </Criteria>
+		<Criteria all="true" id="orion-gridlock-modern-enable">
+            <ModInUse>orions-gridlock</ModInUse>
             <AgeInUse>AGE_MODERN</AgeInUse>
         </Criteria>
     </ActionCriteria>
@@ -124,6 +140,9 @@
                     <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-card-nyguita_argentina</Item>
+                    <Item>civilizations/nyguita-argentina/assets/bg-card-nyguita_argentina.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina</Item>
+                    <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina.png</Item>
                     <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
                     <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
                     <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
@@ -199,7 +218,7 @@
         </ActionGroup>
         <ActionGroup id="shell-always" scope="shell" criteria="always">
             <Properties>
-                <LoadOrder>500</LoadOrder>
+                <LoadOrder>50</LoadOrder>
             </Properties>
             <Actions>
                 <UpdateDatabase>
@@ -235,6 +254,8 @@
                     <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-card-nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-card-nyguita_argentina.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina</Item>
+                    <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina.png</Item>
                     <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
                     <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
                     <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
@@ -256,7 +277,7 @@
                 </UpdateIcons>
             </Actions>
         </ActionGroup>
-        <ActionGroup id="izica-visual-remaps-argentina-game" scope="game" criteria="always">
+        <!--ActionGroup id="izica-visual-remaps-argentina-game" scope="game" criteria="always">
             <Properties>
                 <LoadOrder>2000</LoadOrder>
             </Properties>
@@ -270,6 +291,106 @@
                 <UpdateVisualRemaps>
                     <Item>constructibles/visual-remaps.xml</Item>
                 </UpdateVisualRemaps>
+            </Actions>
+        </ActionGroup-->
+        <ActionGroup id="gridlock-argentina-deletes-game" scope="game" criteria="orion-gridlock-enable">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-antiquity-deletes-game" scope="game" criteria="orion-gridlock-antiquity-enable">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-exploration-deletes-game" scope="game" criteria="orion-gridlock-exploration-enable">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-modern-deletes-game" scope="game" criteria="orion-gridlock-modern-enable">
+            <Properties>
+                <LoadOrder>1000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-game" scope="game" criteria="orion-gridlock-enable">
+            <Properties>
+                <LoadOrder>1005</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
+                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
+                </UpdateDatabase>
+				<UpdateText>
+					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
+				</UpdateText>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-game-antiquity" scope="game" criteria="orion-gridlock-antiquity-enable">
+            <Properties>
+                <LoadOrder>1005</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-antiquity.xml</Item>
+                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-game-exploration" scope="game" criteria="orion-gridlock-exploration-enable">
+            <Properties>
+                <LoadOrder>1005</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-exploration.xml</Item>
+                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-game-modern" scope="game" criteria="orion-gridlock-modern-enable">
+            <Properties>
+                <LoadOrder>1005</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-modern.xml</Item>
+                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="gridlock-argentina-shell" scope="shell" criteria="orion-gridlock-enable">
+            <Properties>
+                <LoadOrder>1005</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-config-arg.xml</Item>
+                </UpdateDatabase>
+				<UpdateText>
+					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
+				</UpdateText>
             </Actions>
         </ActionGroup>
     </ActionGroups>

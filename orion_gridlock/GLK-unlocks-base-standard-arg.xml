@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <UnlockRequirements>
+        <!--NARG3AM_SPachaBoliv-->
+        <InsertOrIgnore UnlockType="UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA" RequirementSetId="SET_GRIDLOCK_FEATURE_MOUNTAIN_MOD" Description="GRIDLOC_AM_S_DESC_MOD" Tooltip="GRIDLOC_AM_S_TOOLTIP" NarrativeText="GRIDLOC_AM_S_NARRATIVE"/>
+        <InsertOrIgnore UnlockType="UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA" RequirementSetId="REQSET_LEADER_IS_PACHACUTI" Description="LOC_UNLOCK_PLAY_AS_PACHACUTI_DESCRIPTION" Tooltip="GRIDLOC_Pacha_NARG_TOOLTIP"/>
+        <InsertOrIgnore UnlockType="UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA" RequirementSetId="REQSET_LEADER_IS_BOLIVAR" Description="LOC_UNLOCK_PLAY_AS_BOLIVAR_DESCRIPTION" Tooltip="GRIDLOC_Boliv_NARG_TOOLTIP"/>
+    </UnlockRequirements>
+</Database>

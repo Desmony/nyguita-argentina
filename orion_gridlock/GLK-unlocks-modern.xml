@@ -1,0 +1,9 @@
+<Database>
+
+    <LeaderCivPriorities>   
+        <Row Leader="LEADER_ISABELLA" Civilization="CIVILIZATION_NYGUITA_ARGENTINA" Priority="1"/>
+        <Row Leader="LEADER_PACHACUTI" Civilization="CIVILIZATION_NYGUITA_ARGENTINA" Priority="2"/>
+        <Row Leader="LEADER_BOLIVAR" Civilization="CIVILIZATION_NYGUITA_ARGENTINA" Priority="2"/>
+    </LeaderCivPriorities>
+
+</Database>

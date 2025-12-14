@@ -1,0 +1,24 @@
+<Database>
+    <CivilizationTags>
+        <Row CivilizationDomain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_NYGUITA_ARGENTINA" TagType="TAG_GRIDLOCK_AM_S"/>
+    </CivilizationTags>
+
+    <LeaderCivilizationBias>
+    <!--NARG3NYGUITA_ARGENTINAx-->
+
+        <Row CivilizationDomain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_NYGUITA_ARGENTINA" LeaderDomain="StandardLeaders" LeaderType="LEADER_PACHACUTI" Bias="2" ReasonType="GRIDLOC_Pacha_NARG_TOOLTIP" ChoiceType="LOC_CREATE_GAME_GEOGRAPHIC_CHOICE" />
+        <Row CivilizationDomain="ModernAgeCivilizations" CivilizationType="CIVILIZATION_NYGUITA_ARGENTINA" LeaderDomain="StandardLeaders" LeaderType="LEADER_BOLIVAR" Bias="2" ReasonType="GRIDLOC_Boliv_NARG_TOOLTIP" ChoiceType="LOC_CREATE_GAME_GEOGRAPHIC_CHOICE" />
+    </LeaderCivilizationBias>
+    <LeaderUnlocks>
+        <!--NARG3-->
+        <!--Gameplay row gets ignoredNYGUITA_ARGENTINA"/>-->
+        <Row LeaderDomain="StandardLeaders" LeaderType="LEADER_PACHACUTI" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_NYGUITA_ARGENTINA" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME" Description="LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION" Icon="CIVILIZATION_NYGUITA_ARGENTINA"/>
+        <Row LeaderDomain="StandardLeaders" LeaderType="LEADER_BOLIVAR" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_NYGUITA_ARGENTINA" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME" Description="LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION" Icon="CIVILIZATION_NYGUITA_ARGENTINA"/>
+    </LeaderUnlocks>
+    <CivilizationUnlocks>
+        <!--NARG-->
+        <Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_INCA" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_NYGUITA_ARGENTINA" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME" Description="LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION" Icon="CIVILIZATION_NYGUITA_ARGENTINA_TOOLTIP"/>
+        <Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_SPAIN" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_NYGUITA_ARGENTINA" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME" Description="LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION" Icon="CIVILIZATION_NYGUITA_ARGENTINA_TOOLTIP"/>
+        <Row CivilizationDomain="ExplorationAgeCivilizations" CivilizationType="CIVILIZATION_HAWAII" AgeDomain="StandardAges" AgeType="AGE_MODERN" Type="CIVILIZATION_NYGUITA_ARGENTINA" Kind="KIND_CIVILIZATION" Name="LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME" Description="LOC_CIVILIZATION_NYGUITA_ARGENTINA_DESCRIPTION" Icon="CIVILIZATION_NYGUITA_ARGENTINA_TOOLTIP"/>  
+    </CivilizationUnlocks>
+</Database>

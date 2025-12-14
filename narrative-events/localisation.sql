@@ -26,4 +26,16 @@ VALUES  ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_01_STORYTITLE', 'The Purpose of
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_05A_NAME', "Ask about the Sun of May."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_05B_NAME', "Learn how they manage the cattle."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_05A_DESCRIPTION', "{1_Reward} on Line Infantry."),
-        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_05B_DESCRIPTION', "{1_Reward} in all Settlements.");
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_05B_DESCRIPTION', "{1_Reward} in all Settlements."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07_STORYTITLE', "The Dreadnought Race"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07_COMPLETION', "Our military advisor has warned us about the naval activities of our neighbors. It seems that they have acquired more and more ships to contest our naval dominance. We must quickly react in order quell our minister's concerns."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07A_NAME', "We must not let them control the sea."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07A_DESCRIPTION', "Story continues."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07A_IMPERATIVE', "Build 5 Heavy Naval Units in {1_turn_timer}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07A_COMPLETION', "The Argentinian navy stands proud and ready to defeat any invasion."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07AA_NAME', "Now we need a place to let those ships rest."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07AB_NAME', "We have learned a lot about naval construction."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07AA_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07AB_DESCRIPTION', "{1_Reward} Naval Units."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07B_NAME', "Maybe we can find a diplomatic solution."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07B_DESCRIPTION', "{1_Reward}.");

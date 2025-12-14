@@ -383,18 +383,125 @@ INSERT INTO NarrativeStory_TextReplacements
 VALUES	('EVENT_NYGUITA_ARGENTINA_05A',	'REWARD',					'REWARD',							1),
         ('EVENT_NYGUITA_ARGENTINA_05B',	'REWARD',					'REWARD',							1);
 
---- Event 6: The Crossing of the Andes (Defeating a unit next to a mountain)
---- Event 7: The South American Dreadnought race (Neighbor has a lot of ships)
---- Event 8: European Migration Wave
+--- Event 6: The Crossing of the Andes (Defeating a unit next to a mountain) TODO
+--- Event 7: The South American Dreadnought race (Research Militarism and have at least one naval unit, Quest to build 5 heavy ships, reward between +25% production towards naval units or +25% production towards ports)
+INSERT INTO Types
+		(Type,                          Kind)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07',    		'KIND_NARRATIVE_STORY'),
+        ('EVENT_NYGUITA_ARGENTINA_07A',    		'KIND_NARRATIVE_STORY'),
+        ('EVENT_NYGUITA_ARGENTINA_07AA',    		'KIND_NARRATIVE_STORY'),
+        ('EVENT_NYGUITA_ARGENTINA_07AB',    		'KIND_NARRATIVE_STORY'),
+        ('EVENT_NYGUITA_ARGENTINA_07B',    		'KIND_NARRATIVE_STORY');
+
+INSERT INTO NarrativeStories
+        (NarrativeStoryType,            StoryTitle,                                     Name,                                   Description,                                    Completion,                                     Imperative, Age,       IsQuest,  Hidden, Activation, UIActivation,   ActivationRequirementSetId,            RequirementSetId, Timeout, ShowProgress)
+VALUES  ('EVENT_NYGUITA_ARGENTINA_07',  'LOC_EVENT_NYGUITA_ARGENTINA_07_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_07_NAME',  'LOC_EVENT_NYGUITA_ARGENTINA_07_DESCRIPTION',   'LOC_EVENT_NYGUITA_ARGENTINA_07_COMPLETION',    null,   'AGE_MODERN',   0,  0,  'REQUISITE',    'STANDARD', 'REQSET_EVENT_NYGUITA_ARGENTINA_01_REQUISITE',  'REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE', null, 0),
+        ('EVENT_NYGUITA_ARGENTINA_07A', 'LOC_EVENT_NYGUITA_ARGENTINA_07_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_07A_NAME', 'LOC_EVENT_NYGUITA_ARGENTINA_07A_DESCRIPTION',  'LOC_EVENT_NYGUITA_ARGENTINA_07A_COMPLETION',   'LOC_EVENT_NYGUITA_ARGENTINA_07A_IMPERATIVE',   'AGE_MODERN',   1,  0,  'LINKED',       'STANDARD', null, 'REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE', 15, 1),
+        ('EVENT_NYGUITA_ARGENTINA_07AA', 'LOC_EVENT_NYGUITA_ARGENTINA_07_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_07AA_NAME', 'LOC_EVENT_NYGUITA_ARGENTINA_07AA_DESCRIPTION',  'LOC_EVENT_NYGUITA_ARGENTINA_07AA_COMPLETION',   null,   'AGE_MODERN',   0,  1,  'LINKED',       'STANDARD', null, 'Met', null, 0),
+        ('EVENT_NYGUITA_ARGENTINA_07AB', 'LOC_EVENT_NYGUITA_ARGENTINA_07_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_07AB_NAME', 'LOC_EVENT_NYGUITA_ARGENTINA_07AB_DESCRIPTION',  'LOC_EVENT_NYGUITA_ARGENTINA_07AB_COMPLETION',   null,   'AGE_MODERN',   0,  1,  'LINKED',       'STANDARD', null, 'Met', null, 0),
+        ('EVENT_NYGUITA_ARGENTINA_07B', 'LOC_EVENT_NYGUITA_ARGENTINA_07_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_07B_NAME', 'LOC_EVENT_NYGUITA_ARGENTINA_07B_DESCRIPTION',  'LOC_EVENT_NYGUITA_ARGENTINA_07B_COMPLETION',   null,   'AGE_MODERN',   0,  1,  'LINKED',       'STANDARD', null, 'Met', null, 0);
+
+INSERT INTO NarrativeStory_Links
+		(FromNarrativeStoryType,		ToNarrativeStoryType,		Priority,	Name,									Description,									Imperative)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07',	'EVENT_NYGUITA_ARGENTINA_07A',	0,  'LOC_EVENT_NYGUITA_ARGENTINA_07A_NAME',	'LOC_EVENT_NYGUITA_ARGENTINA_07A_DESCRIPTION',		null),
+		('EVENT_NYGUITA_ARGENTINA_07',	'EVENT_NYGUITA_ARGENTINA_07B',	1,  'LOC_EVENT_NYGUITA_ARGENTINA_07B_NAME',	'LOC_EVENT_NYGUITA_ARGENTINA_07B_DESCRIPTION',		null),
+		('EVENT_NYGUITA_ARGENTINA_07A',	'EVENT_NYGUITA_ARGENTINA_07AA',	0,	'LOC_EVENT_NYGUITA_ARGENTINA_07AA_NAME',	'LOC_EVENT_NYGUITA_ARGENTINA_07AA_DESCRIPTION',		null),
+		('EVENT_NYGUITA_ARGENTINA_07A',	'EVENT_NYGUITA_ARGENTINA_07AB',	1,	'LOC_EVENT_NYGUITA_ARGENTINA_07AB_NAME',	'LOC_EVENT_NYGUITA_ARGENTINA_07AB_DESCRIPTION',		null);
+
+INSERT INTO NarrativeRewards
+		(NarrativeRewardType,				ModifierID)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA_REWARD',	'EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER'),
+        ('EVENT_NYGUITA_ARGENTINA_07AB_REWARD',	'EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER'),
+        ('EVENT_NYGUITA_ARGENTINA_07B_REWARD',	'EVENT_NYGUITA_ARGENTINA_07B_MODIFIER');
+
+INSERT INTO NarrativeRewardIcons
+		(NarrativeStoryType,			RewardIconType,			Negative)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07A',	'CUSTOM',	    0),
+		('EVENT_NYGUITA_ARGENTINA_07A',	'QUEST',	    0),
+		('EVENT_NYGUITA_ARGENTINA_07B',	'YIELD_DIPLOMACY',	    0),
+		('EVENT_NYGUITA_ARGENTINA_07AB',	'YIELD_PRODUCTION',	0),
+		('EVENT_NYGUITA_ARGENTINA_07AB',	'UNIT_DREADNOUGHT',	0),
+		('EVENT_NYGUITA_ARGENTINA_07AA',	'YIELD_PRODUCTION',	0),
+		('EVENT_NYGUITA_ARGENTINA_07AA',	'BUILDING_PORT',	0);
+
+INSERT INTO NarrativeStory_Rewards
+		(NarrativeStoryType,			NarrativeRewardType,				Activation)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA',	'EVENT_NYGUITA_ARGENTINA_07AA_REWARD',	'START'),
+		('EVENT_NYGUITA_ARGENTINA_07AB',	'EVENT_NYGUITA_ARGENTINA_07AB_REWARD',	'START'),
+		('EVENT_NYGUITA_ARGENTINA_07B',		'EVENT_NYGUITA_ARGENTINA_07B_REWARD',	'COMPLETE');
+
+INSERT INTO RequirementSets
+		(RequirementSetId,									RequirementSetType)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE',     'REQUIREMENTSET_TEST_ALL'),
+		('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE',     'REQUIREMENTSET_TEST_ALL');
+
+INSERT INTO RequirementSetRequirements
+		(RequirementSetId,									RequirementId)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE',		'REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE_1'),
+		('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE',	'REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE_1');
+
+INSERT INTO Requirements
+		(RequirementId,										RequirementType,								ProgressWeight)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE_1',	'REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS',	1),
+		('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE_1',	'REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS',	1);
+
+INSERT INTO RequirementArguments
+		(RequirementId,										Name,						Value)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE_1',		'GossipTypes',	'GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01,GOSSIP_TRAIN_UNIT02'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE_1',		'GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01',	'Hash,ProgressionTreeNodeType,NODE_CIVIC_MO_MAIN_MILITARISM'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE_1',		'GOSSIP_TRAIN_UNIT02',	'Hash,DomainType,DOMAIN_SEA'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07_NARRATIVE_1',		'Amount',	2),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE_1',		'GossipTypes',	'GOSSIP_TRAIN_UNIT01'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE_1',		'GOSSIP_TRAIN_UNIT01',	'Hash,DomainType,DOMAIN_SEA,Hash,RangedUnit,True'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE_1',		'AfterInit','1'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_07A_NARRATIVE_1',		'DuplicateCount','5');
+
+INSERT INTO Modifiers
+		(ModifierId,									ModifierType,										SubjectRequirementSetId,											Permanent)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER',			'EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER_TYPE',			null,																1),
+		('EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER',			'EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER_TYPE',			null,																1),
+		('EVENT_NYGUITA_ARGENTINA_07B_MODIFIER',			'EVENT_NYGUITA_ARGENTINA_07B_MODIFIER_TYPE',			null,																1);
+
+INSERT INTO Types
+		(Type,												Kind)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER_TYPE',		'KIND_MODIFIER'),
+		('EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER_TYPE',		'KIND_MODIFIER'),
+		('EVENT_NYGUITA_ARGENTINA_07B_MODIFIER_TYPE',		'KIND_MODIFIER');
+
+INSERT INTO DynamicModifiers
+		(ModifierType,										CollectionType,					EffectType)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER_TYPE',		'COLLECTION_PLAYER_CITIES',		'EFFECT_CITY_ADJUST_CONSTRUCTIBLE_PRODUCTION'),
+		('EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER_TYPE',		'COLLECTION_PLAYER_CITIES',		'EFFECT_CITY_ADJUST_UNIT_PRODUCTION'),
+		('EVENT_NYGUITA_ARGENTINA_07B_MODIFIER_TYPE',		'COLLECTION_OWNER',		        'EFFECT_PLAYER_GRANT_YIELD_NARRATIVE');
+
+INSERT INTO ModifierArguments
+		(ModifierId,									Name,				Value)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER',		'Percent',	    25),
+		('EVENT_NYGUITA_ARGENTINA_07AA_MODIFIER',		'ConstructibleType',	    'BUILDING_PORT'),
+		('EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER',	    'Percent',		25),
+		('EVENT_NYGUITA_ARGENTINA_07AB_MODIFIER',	    'Domain',	'DOMAIN_SEA'),
+		('EVENT_NYGUITA_ARGENTINA_07B_MODIFIER',	    'YieldType',		'YIELD_DIPLOMACY'),
+		('EVENT_NYGUITA_ARGENTINA_07B_MODIFIER',	    'MultiplierType',	'REWARD_TYPE_MEDIUM_EARLY');
+
+INSERT INTO NarrativeStory_TextReplacements
+		(NarrativeStoryType,			NarrativeStoryTextType,		NarrativeTextReplacementType,		Priority)
+VALUES	('EVENT_NYGUITA_ARGENTINA_07AA',	'REWARD',					'REWARD',							1),
+        ('EVENT_NYGUITA_ARGENTINA_07AB',	'REWARD',					'REWARD',							1),
+        ('EVENT_NYGUITA_ARGENTINA_07A',		'REWARD',					'REWARD',							1),
+        ('EVENT_NYGUITA_ARGENTINA_07A',		'IMPERATIVE',				'TURN_TIMER',						1),
+        ('EVENT_NYGUITA_ARGENTINA_07B',		'REWARD',					'REWARD',							1);
+
+--- Event 8: European Migration Wave (Congress of Tucuman II, have at least 2 ports and Living Standards policy card)
 --- Event 9: The Conquest of the Desert (Disperse an IP)
 --- Event 10: Yellow Fever Epidemic (Building a Saladero next to a river)
 --- Event 11: Peinetón (Research Capitalism and Nationalism, have Turtle and a Plaza de Mayo)
 --- Event 12: The rise of polo/pato (Have 4 Horses)
 --- Event 13: Cry of Alcorta (Unhappy settlement with 10 rural tiles)
---- Event 14: The Oil Battle
+--- Event 14: The Oil Battle (Research Combustion, have less than 3 Oil)
 --- Event 15: War of the Triple Alliance (Being in a war with two allies) (choice between War support and influence)
 --- Event 16: The Inca plan (Was Inca, research Congress of Tucuman, is Bureaucratic Monarchy)
 --- Event 17: Argentine university reform of 1918 (Must have 3 Schoolhouses)
 --- Event 18: Malón (IP pillaging a tile)
 --- Event 19: Tierra del Fuego gold rush (Settlement in Tundra with access to gold)
 --- Event 20: Maté (Have 3 Teas, 3 Coffees and 3 Gauchos)
+--- Event 21: Building the Palacio Barolo as Machiavelli
