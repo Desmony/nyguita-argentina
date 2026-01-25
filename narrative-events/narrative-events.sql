@@ -491,7 +491,89 @@ VALUES	('EVENT_NYGUITA_ARGENTINA_07AA',	'REWARD',					'REWARD',							1),
         ('EVENT_NYGUITA_ARGENTINA_07A',		'IMPERATIVE',				'TURN_TIMER',						1),
         ('EVENT_NYGUITA_ARGENTINA_07B',		'REWARD',					'REWARD',							1);
 
---- Event 8: European Migration Wave (Congress of Tucuman II, have at least 2 ports and Living Standards policy card)
+--- Event 8: European Migration Wave (Congress of Tucuman II, Steam machine, have at least 2 ports and Living Standards policy card)
+INSERT INTO Types
+		(Type,                          Kind)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08',    		'KIND_NARRATIVE_STORY'),
+        ('EVENT_NYGUITA_ARGENTINA_08A',    		'KIND_NARRATIVE_STORY'),
+        ('EVENT_NYGUITA_ARGENTINA_08B',    		'KIND_NARRATIVE_STORY');
+
+INSERT INTO NarrativeStories
+        (NarrativeStoryType,            StoryTitle,                                     Name,                                   Description,                                    Completion,                                     Imperative, Age,       IsQuest,  Hidden, Activation, UIActivation,   ActivationRequirementSetId,            RequirementSetId)
+VALUES  ('EVENT_NYGUITA_ARGENTINA_08',  'LOC_EVENT_NYGUITA_ARGENTINA_08_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_08_NAME',  'LOC_EVENT_NYGUITA_ARGENTINA_08_DESCRIPTION',   'LOC_EVENT_NYGUITA_ARGENTINA_08_COMPLETION',    null,   'AGE_MODERN',   0,  0,  'REQUISITE',    'STANDARD', 'REQSET_EVENT_NYGUITA_ARGENTINA_01_REQUISITE',  'REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE'),
+        ('EVENT_NYGUITA_ARGENTINA_08A', 'LOC_EVENT_NYGUITA_ARGENTINA_08_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_08A_NAME', 'LOC_EVENT_NYGUITA_ARGENTINA_08A_DESCRIPTION',  'LOC_EVENT_NYGUITA_ARGENTINA_08A_COMPLETION',   null,   'AGE_MODERN',   0,  1,  'LINKED',       'STANDARD', null,                                           'Met'),
+        ('EVENT_NYGUITA_ARGENTINA_08B', 'LOC_EVENT_NYGUITA_ARGENTINA_08_STORYTITLE',    'LOC_EVENT_NYGUITA_ARGENTINA_08B_NAME', 'LOC_EVENT_NYGUITA_ARGENTINA_08B_DESCRIPTION',  'LOC_EVENT_NYGUITA_ARGENTINA_08B_COMPLETION',   null,   'AGE_MODERN',   0,  1,  'LINKED',       'STANDARD', null,                                           'Met');
+
+INSERT INTO NarrativeStory_Links
+		(FromNarrativeStoryType,		ToNarrativeStoryType,		Priority,	Name,									Description,									Imperative)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08',	'EVENT_NYGUITA_ARGENTINA_08A',	0,  'LOC_EVENT_NYGUITA_ARGENTINA_08A_NAME',	'LOC_EVENT_NYGUITA_ARGENTINA_08A_DESCRIPTION',		null),
+		('EVENT_NYGUITA_ARGENTINA_08',	'EVENT_NYGUITA_ARGENTINA_08B',	1,	'LOC_EVENT_NYGUITA_ARGENTINA_08B_NAME',	'LOC_EVENT_NYGUITA_ARGENTINA_08B_DESCRIPTION',		null);
+
+INSERT INTO NarrativeRewards
+		(NarrativeRewardType,				ModifierID)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A_REWARD',	'EVENT_NYGUITA_ARGENTINA_08A_MODIFIER'),
+        ('EVENT_NYGUITA_ARGENTINA_08B_REWARD',	'EVENT_NYGUITA_ARGENTINA_08B_MODIFIER');
+
+INSERT INTO NarrativeRewardIcons
+		(NarrativeStoryType,			RewardIconType,			Negative)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A',	'CUSTOM',	0),
+		('EVENT_NYGUITA_ARGENTINA_08B',	'CUSTOM',	0);
+
+INSERT INTO NarrativeStory_Rewards
+		(NarrativeStoryType,			NarrativeRewardType,				Activation)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A',	'EVENT_NYGUITA_ARGENTINA_08A_REWARD',	'COMPLETE'),
+		('EVENT_NYGUITA_ARGENTINA_08B',	'EVENT_NYGUITA_ARGENTINA_08B_REWARD',	'COMPLETE');
+
+INSERT INTO RequirementSets
+		(RequirementSetId,									RequirementSetType)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE',     'REQUIREMENTSET_TEST_ALL');
+
+INSERT INTO RequirementSetRequirements
+		(RequirementSetId,									RequirementId)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE',		'REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1'),
+		('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE',		'REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_2');
+
+INSERT INTO Requirements
+		(RequirementId,										RequirementType,								ProgressWeight,	inverse)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1',	'REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_GOSSIPS',	1,	0),
+		('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_2',	'REQUIREMENT_PLAYER_HAS_ACTIVE_TRADITION',	1,	0);
+
+INSERT INTO RequirementArguments
+		(RequirementId,										Name,						Value)
+VALUES	('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1',		'GossipTypes',	'GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01,GOSSIP_CONSTRUCT_BUILDING02,GOSSIP_COMPLETED_PROGRESSION_TREE_NODE03'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1',		'GOSSIP_COMPLETED_PROGRESSION_TREE_NODE01',	'Hash,ProgressionTreeNodeType,CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN,Numeric,TreeDepth,2'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1',		'GOSSIP_CONSTRUCT_BUILDING02',	'Hash,ConstructibleType,BUILDING_PORT,Numeric,PlayerCount,2'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1',		'GOSSIP_COMPLETED_PROGRESSION_TREE_NODE03',	'Hash,ProgressionTreeNodeType,NODE_TECH_MO_STEAM_ENGINE'),
+        ('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_1',		'Amount',	3),
+		('REQSET_EVENT_NYGUITA_ARGENTINA_08_NARRATIVE_2',		'TraditionType',	'TRADITION_LIVING_STANDARDS');
+
+INSERT INTO Modifiers
+		(ModifierId,									ModifierType,										SubjectRequirementSetId,											Permanent)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A_MODIFIER',			'EVENT_NYGUITA_ARGENTINA_08A_MODIFIER_TYPE',			null,																1),
+		('EVENT_NYGUITA_ARGENTINA_08B_MODIFIER',			'EVENT_NYGUITA_ARGENTINA_08B_MODIFIER_TYPE',			null,																1);
+
+INSERT INTO Types
+		(Type,												Kind)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A_MODIFIER_TYPE',		'KIND_MODIFIER'),
+		('EVENT_NYGUITA_ARGENTINA_08B_MODIFIER_TYPE',		'KIND_MODIFIER');
+
+INSERT INTO DynamicModifiers
+		(ModifierType,										CollectionType,					EffectType)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A_MODIFIER_TYPE',		'COLLECTION_PLAYER_CAPITAL_CITY',		'EFFECT_CITY_GRANT_UNIT'),
+		('EVENT_NYGUITA_ARGENTINA_08B_MODIFIER_TYPE',		'COLLECTION_PLAYER_CAPITAL_CITY',		'EFFECT_CITY_GRANT_UNIT');
+
+INSERT INTO ModifierArguments
+		(ModifierId,									Name,				Value)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A_MODIFIER',		'UnitType',		'UNIT_NYGUITA_PORTENO'),
+		('EVENT_NYGUITA_ARGENTINA_08A_MODIFIER',		'Amount',	1),
+		('EVENT_NYGUITA_ARGENTINA_08B_MODIFIER',	    'UnitType',		'UNIT_MIGRANT'),
+		('EVENT_NYGUITA_ARGENTINA_08B_MODIFIER',	    'Amount',	3);
+
+INSERT INTO NarrativeStory_TextReplacements
+		(NarrativeStoryType,			NarrativeStoryTextType,		NarrativeTextReplacementType,		Priority)
+VALUES	('EVENT_NYGUITA_ARGENTINA_08A',	'REWARD',					'REWARD',							1),
+        ('EVENT_NYGUITA_ARGENTINA_08B',	'REWARD',					'REWARD',							1);
+
 --- Event 9: The Conquest of the Desert (Disperse an IP)
 --- Event 10: Yellow Fever Epidemic (Building a Saladero next to a river)
 --- Event 11: Peinetón (Research Capitalism and Nationalism, have Turtle and a Plaza de Mayo)

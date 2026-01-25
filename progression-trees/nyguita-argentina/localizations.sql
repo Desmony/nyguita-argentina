@@ -9,7 +9,13 @@ VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Argentinian Civics'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_QUOTE', 'One does not renounce such an immense future, such a lofty mission, because of an accumulation of contradictions and difficulties. Difficulties are overcome: contradictions are overcome by contradicting them.'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_AUTHOR', 'Domingo Faustino Sarmiento'),
        ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_QUOTE', 'A writer — and, I believe, generally all persons — must think that whatever happens to him or her is a resource. All things have been given to us for a purpose, and an artist must feel this more intensely.'),
-       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR', 'Jorge Luis Borges');
+       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR', 'Jorge Luis Borges'),
+       ('en_US',  'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_QUOTE_2', 'To govern is to populate.'),
+       ('en_US',  'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_AUTHOR_2', 'Juan Bautista Alberdi'),
+       ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_QUOTE_2', 'We shall seal with our blood and our swords, once and for ever, this Argentine nationality, which must develop like the Egyptian Pyramids and the power of Empires at the price of the blood and sweat of many generations.'),
+       ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_AUTHOR_2', 'Julio Argentino Roca'),
+       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_QUOTE_2', 'Let us admit, in any case, that among us now — if mostly still hidden — are many or all of the seeds of our future art, and not in museums overseas, and not in the homes of famous foreign dealers. Let us honor the rare ones, our rebellious spirits who, like this artist, before denying others, find affirmation in themselves; that instead of destroying, seek to build. Let us honor those who struggle so that the soul of our country can be more beautiful.'),
+       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR_2', 'Xul Solar');
 
 INSERT INTO LocalizedText
         (Tag, Language, Text)

@@ -38,4 +38,10 @@ VALUES  ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_01_STORYTITLE', 'The Purpose of
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07AA_DESCRIPTION', "{1_Reward}."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07AB_DESCRIPTION', "{1_Reward} Naval Units."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07B_NAME', "Maybe we can find a diplomatic solution."),
-        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07B_DESCRIPTION', "{1_Reward}.");
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_07B_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08_STORYTITLE', "The Great Migration Wave"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08_COMPLETION', "The story of our riches has reached the faraway lands and now, flocks of migrants are arriving in our ports. The question is now of where they should go as they can't wait eternally in our immigration offices."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08A_NAME', "Let them settle the vast empty lands."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08A_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08B_NAME', "Surely our cities already have the infrastructure to receive them."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08B_DESCRIPTION', "{1_Reward}.");
