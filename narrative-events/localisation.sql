@@ -44,4 +44,16 @@ VALUES  ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_01_STORYTITLE', 'The Purpose of
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08A_NAME', "Let them settle the vast empty lands."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08A_DESCRIPTION', "{1_Reward}."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08B_NAME', "Surely our cities already have the infrastructure to receive them."),
-        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08B_DESCRIPTION', "{1_Reward}.");
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_08B_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_09_STORYTITLE', "The Conquest of the Desert"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_09_COMPLETION', "At the end the battle, a soldier looks around him. A village in flames, natives crying and soaked in blood. This land is no longer theirs and they won't approach our borders anymore. Soon, this land will be flooded with settlers and become beautiful Argentinian land but the pain of the past will never be forgotten."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_09A_NAME', "It is time to make peace with them."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_09A_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_09B_NAME', "We must continue until we subdue them all."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_09B_DESCRIPTION', "{1_Homeland_Independent} becomes Hostile (removes all progress towards Befriending) and sends a Raid to {2_capital}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10_STORYTITLE', "Yellow faces and Black vomit"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10_COMPLETION', "Three hundred cases of yellow fever were diagnosed in a neighbourhood today. Businesses closed, streets deserted, a shortage of doctors, corpses without assistance, everyone flees if they can... What was supposed to be a carnival day turned out to be a disaster. It seems the disease came from the pollution of the water from our saladeros who threw their debris in the river. While the saladeros promise to do better in the future, we must focus on the current problem: the scrouge of black vomit."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10A_NAME', "We must put them in quarantine."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10A_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10B_NAME', "Send them to the hospital!"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10B_DESCRIPTION', "{1_Reward}.");
