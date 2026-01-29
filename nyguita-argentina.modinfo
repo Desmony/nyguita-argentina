@@ -51,18 +51,18 @@
             <AgeInUse>AGE_MODERN</AgeInUse>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-enable">
-            <ModInUse>orions-gridlock</ModInUse>
+            <ModIsEnabled>orions-gridlock</ModIsEnabled>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-antiquity-enable">
-            <ModInUse>orions-gridlock</ModInUse>
+            <ModIsEnabled>orions-gridlock</ModIsEnablede>
             <AgeInUse>AGE_ANTIQUITY</AgeInUse>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-exploration-enable">
-            <ModInUse>orions-gridlock</ModInUse>
+            <ModIsEnabled>orions-gridlock</ModIsEnabled>
             <AgeInUse>AGE_EXPLORATION</AgeInUse>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-modern-enable">
-            <ModInUse>orions-gridlock</ModInUse>
+            <ModIsEnabled>orions-gridlock</ModIsEnabled>
             <AgeInUse>AGE_MODERN</AgeInUse>
         </Criteria>
     </ActionCriteria>
