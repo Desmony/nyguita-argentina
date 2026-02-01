@@ -56,4 +56,10 @@ VALUES  ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_01_STORYTITLE', 'The Purpose of
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10A_NAME', "We must put them in quarantine."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10A_DESCRIPTION', "{1_Reward}."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10B_NAME', "Send them to the hospital!"),
-        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10B_DESCRIPTION', "{1_Reward}.");
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_10B_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_11_STORYTITLE', "A curious headdress"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_11_COMPLETION', "A new fashion has hit our streets! Rich women have started wearing some sort of giant comb in their hair. These profusely decorated combs, made with tortoiseshell, have become so large that some women have blocked sidewalks because they were too narrow. Despite those impracticalities, they have been sold everywhere under the name of peinetón, especially in the Plaza de Mayo. It seems that no matter you go, peinetónes - and therefore women - have invaded the public space."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_11A_NAME', "Bigger is better! I want to see how big they can be."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_11A_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_11B_NAME', "We should put some regulation of their size."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_11B_DESCRIPTION', "{1_Reward}.");

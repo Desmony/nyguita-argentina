@@ -24,7 +24,9 @@ VALUES  ('LOC_MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE_DESCRIPTION',	'en_US', '
         ('LOC_MOD_NYGUITA_LIGA_DE_GOBERNADORES_DESCRIPTION',		'en_US', '+5 [icon:YIELD_GOLD] Gold per Tradition slotted.'),
         ('LOC_MOD_NYGUITA_PATRIA_GRANDE_DESCRIPTION',			'en_US','+1 [icon:SETTLEMENT_LIMIT] Settlement limit.'),
   	('LOC_MOD_NYGUITA_FLORIDA_AND_BOEDO_DESCRIPTION',		'en_US','+5 [icon:YIELD_CULTURE] Culture per non-Tradition slotted.'),
-  	('LOC_MOD_NYGUITA_GIANTS_OF_PATAGONIA_DESCRIPTION',		'en_US','+30% [icon:YIELD_PRODUCTION] Production towards Archeologists. +3 [icon:YIELD_SCIENCE] Science on [icon:GREATWORK] Artifacts.');
+  	('LOC_MOD_NYGUITA_GIANTS_OF_PATAGONIA_DESCRIPTION',		'en_US','+30% [icon:YIELD_PRODUCTION] Production towards Archeologists. +3 [icon:YIELD_SCIENCE] Science on [icon:GREATWORK] Artifacts.'),
+  	('LOC_MOD_NYGUITA_GAUCHESCO_DESCRIPTION',		        'en_US','+3 [icon:YIELD_CULTURE] Culture on Farms if a Gaucho is on it.'),
+  	('LOC_MOD_NYGUITA_PAYADOR_DESCRIPTION',		                'en_US','+3 [icon:YIELD_HAPPINESS] Happiness on Farms if a Gaucho is on it.');
 
 INSERT OR IGNORE INTO LocalizedText 
        	(Language, Tag,                                       Text) 

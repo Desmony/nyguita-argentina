@@ -29,9 +29,9 @@ INSERT INTO UnitUpgrades
        (Unit,                  UpgradeUnit) 
 VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_NYGUITA_GAUCHO_2');
 
-INSERT INTO UnitReplaces 
-       (CivUniqueUnitType,     ReplacesUnitType) 
-VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CUIRASSIER');
+--INSERT INTO UnitReplaces 
+--       (CivUniqueUnitType,     ReplacesUnitType) 
+--VALUES ('UNIT_NYGUITA_GAUCHO', 'UNIT_CUIRASSIER');
 
 INSERT INTO Types 
        (Type,                     Kind) 

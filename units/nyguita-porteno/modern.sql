@@ -8,15 +8,9 @@ VALUES ('UNIT_CLASS_NYGUITA_PORTENO', 'UNIT_CLASS');
 
 INSERT INTO TypeTags 
        (Type,                   Tag) 
-VALUES ('UNIT_NYGUITA_PORTENO', 'UNIT_CLASS_NYGUITA_PORTENO');
-
-INSERT INTO TypeTags 
-       (Type,                   Tag) 
-VALUES ('UNIT_NYGUITA_PORTENO', 'UNIT_CLASS_NON_COMBAT');
-
-INSERT INTO TypeTags 
-       (Type,                   Tag) 
-VALUES ('UNIT_NYGUITA_PORTENO', 'UNIT_CLASS_CREATE_TOWN');
+VALUES ('UNIT_NYGUITA_PORTENO', 'UNIT_CLASS_NYGUITA_PORTENO'),
+       ('UNIT_NYGUITA_PORTENO', 'UNIT_CLASS_NON_COMBAT'),
+       ('UNIT_NYGUITA_PORTENO', 'UNIT_CLASS_CREATE_TOWN');
 
 INSERT INTO Units 
        (UnitType,               AirSlots, AntiAirCombat, BaseMoves, BaseSightRange, BuildCharges, CoreClass,            CostProgressionModel,               CostProgressionParam1, Description,                            Domain,        FormationClass,                FoundCity, Maintenance, Name,                            NumRandomChoices, PrereqPopulation, ReligionEvictPercent, ReligiousHealCharges, ReligiousStrength, SpreadCharges, Tier, TraitType,                 UnitMovementClass) 

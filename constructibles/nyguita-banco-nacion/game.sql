@@ -3,8 +3,8 @@ INSERT INTO Types
 VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'KIND_CONSTRUCTIBLE');
 
 INSERT INTO Constructibles 
-       (ConstructibleType,               Age,          ConstructibleClass, Cost, Description,                                     Name,                                     Population, Tooltip) 
-VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'AGE_MODERN', 'BUILDING',         600,  'LOC_BUILDING_NYGUITA_BANCO_NACION_DESCRIPTION', 'LOC_BUILDING_NYGUITA_BANCO_NACION_NAME', 1,          'LOC_BUILDING_NYGUITA_BANCO_NACION_TOOLTIP');
+       (ConstructibleType,               Age,          ConstructibleClass, Cost, Description,                                     Name,                                     Population, Tooltip, CostProgressionModel) 
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'AGE_MODERN', 'BUILDING',         600,  'LOC_BUILDING_NYGUITA_BANCO_NACION_DESCRIPTION', 'LOC_BUILDING_NYGUITA_BANCO_NACION_NAME', 1,          'LOC_BUILDING_NYGUITA_BANCO_NACION_TOOLTIP', 'COST_PROGRESSION_PREVIOUS_BUILDINGS_CITY');
 
 INSERT INTO Buildings 
        (ConstructibleType,               Movable, TraitType) 

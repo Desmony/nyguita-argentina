@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <VisualRemaps>
+        <Row>
+            <ID>REMAP_UNIT_NYGUITA_GAUCHO</ID>
+            <DisplayName>LOC_UNIT_NYGUITA_GAUCHO_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_NYGUITA_GAUCHO</From>
+            <To>UNIT_CUIRASSIER</To>
+        </Row>
+        <Row>
+            <ID>REMAP_UNIT_NYGUITA_GAUCHO_2</ID>
+            <DisplayName>LOC_UNIT_NYGUITA_GAUCHO_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_NYGUITA_GAUCHO_2</From>
+            <To>UNIT_CUIRASSIER</To>
+        </Row>
+        <Row>
+            <ID>REMAP_UNIT_NYGUITA_GAUCHO_3</ID>
+            <DisplayName>LOC_UNIT_NYGUITA_GAUCHO_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_NYGUITA_GAUCHO_3</From>
+            <To>UNIT_CUIRASSIER</To>
+        </Row>
+        <Row>
+            <ID>REMAP_UNIT_NYGUITA_PORTENO</ID>
+            <DisplayName>LOC_UNIT_NYGUITA_PORTENO_NAME</DisplayName>
+            <Kind>UNIT</Kind>
+            <From>UNIT_NYGUITA_PORTENO</From>
+            <To>UNIT_SETTLER</To>
+        </Row>
+    </VisualRemaps>
+</Database>

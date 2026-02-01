@@ -26,9 +26,9 @@ INSERT INTO Unit_Stats
        (UnitType,                Combat) 
 VALUES ('UNIT_NYGUITA_GAUCHO_3', 60);
 
-INSERT INTO UnitReplaces 
-       (CivUniqueUnitType,       ReplacesUnitType) 
-VALUES ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_TANK');
+--INSERT INTO UnitReplaces 
+--       (CivUniqueUnitType,       ReplacesUnitType) 
+--VALUES ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_TANK');
 
 INSERT INTO Unit_Advisories
        (UnitType,       AdvisoryClassType) 
@@ -40,5 +40,5 @@ VALUES ('UNIT_NYGUITA_GAUCHO', 'ADVISORY_CLASS_MILITARY'),
 
 INSERT INTO ProgressionTreeNodeUnlocks 
        (ProgressionTreeNodeType,       TargetKind, TargetType, UnlockDepth, RequiredTraitType) 
-VALUES ('NODE_TECH_MO_COMBUSTION', 'KIND_UNIT', 'UNIT_NYGUITA_GAUCHO_2', '1', 'TRAIT_NYGUITA_ARGENTINA'),
-       ('NODE_TECH_MO_ARMOR', 'KIND_UNIT', 'UNIT_NYGUITA_GAUCHO_3', '1', 'TRAIT_NYGUITA_ARGENTINA');
+VALUES ('NODE_CIVIC_MO_MAIN_MODERNIZATION', 'KIND_UNIT', 'UNIT_NYGUITA_GAUCHO_2', '1', 'TRAIT_NYGUITA_ARGENTINA'),
+       ('NODE_CIVIC_MO_MAIN_NATIONALISM', 'KIND_UNIT', 'UNIT_NYGUITA_GAUCHO_3', '1', 'TRAIT_NYGUITA_ARGENTINA');
