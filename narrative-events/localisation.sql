@@ -79,4 +79,16 @@ VALUES  ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_01_STORYTITLE', 'The Purpose of
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_13C_DESCRIPTION', "Three tiles are pillaged in all Towns but 1 Melee Unit in all Towns."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_13D_NAME', "The immigrant farmer is also part of the proletariat."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_13D_DESCRIPTION', "{1_Reward}."),
-        ('en_US',   'LOC_CRY_OF_ALCORTA_NAME', "Cry of Alcorta");
+        ('en_US',   'LOC_CRY_OF_ALCORTA_NAME', "Cry of Alcorta"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14_STORYTITLE', "The Oil Battle"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14_COMPLETION', "With the advent of the petrol engine, it seems that we will require more and more oil, both for civilian and military use. As of now, our oil supply is too low to keep up with the demand. In order to continue as a modern nation, we must find a way to get more oil, in the name and for the benefit of national sovereignty." ),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14A_NAME', "We must achieve self-sufficiency no matter what."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14A_DESCRIPTION', "Story continues."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14A_IMPERATIVE', "Have 5 Oil improved."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14A_COMPLETION', "Argentina can now rest as we."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14AA_NAME', "This will save up quite a lot of money."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14AB_NAME', "No more blackout and energy rationing."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14AA_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14AB_DESCRIPTION', "{1_Reward}."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14B_NAME', "There will always be someone willing to trade."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_14B_DESCRIPTION', "{1_Reward}.");

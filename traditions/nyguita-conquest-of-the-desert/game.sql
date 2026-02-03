@@ -3,8 +3,8 @@ INSERT INTO Types
 VALUES ('TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT', 'KIND_TRADITION');
 
 INSERT INTO Traditions 
-       (TraditionType,                              TraitType,                 AgeType,      Name,                                                Description) 
-VALUES ('TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT', 'TRAIT_NYGUITA_ARGENTINA', 'AGE_MODERN', 'LOC_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_NAME', 'LOC_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_DESCRIPTION');
+       (TraditionType,                              TraitType,                 AgeType,      Name,                                                Description, CultureSlotType) 
+VALUES ('TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT', 'TRAIT_NYGUITA_ARGENTINA', 'AGE_MODERN', 'LOC_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_NAME', 'LOC_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_DESCRIPTION', 'TRADITION_CULTURE_SLOT');
 
 
 -- MOD_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_COMBAT
