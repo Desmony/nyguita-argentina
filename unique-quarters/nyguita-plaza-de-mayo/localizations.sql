@@ -1,8 +1,8 @@
 INSERT OR IGNORE INTO LocalizedText 
        (Language, Tag,                            Text) 
 VALUES ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_NAME', 'Plaza de Mayo'),
-       ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_DESCRIPTION', 'Argentinian Unique Quarter. Created by constructing the Saladero and Banco Nación in the same District. +1[icon:YIELD_HAPPINESS] Happiness and +1[icon:YIELD_DIPLOMACY] Influence on Quarters in this City.'),
-       ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_TOOLTIP', '+1[icon:YIELD_HAPPINESS] Happiness and +1[icon:YIELD_DIPLOMACY] Influence on Quarters in this City.');
+       ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_DESCRIPTION', 'Argentinian [TIP:LOC_PEDIA_CONCEPTS_UNIQUE_QUARTER_TOOLTIP]Unique Quarter[/TIP]. Created by constructing the Saladero and Banco Nación in the same [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]District[/TIP]. +1 [icon:YIELD_HAPPINESS] Happiness and +1 [icon:YIELD_DIPLOMACY] Influence on [icon:CITY_UNIQUE_QUARTER] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Quarters[/TIP] in this [icon:YIELD_CITIES] [TIP:LOC_PEDIA_CONCEPTS_CITIES_TOOLTIP]City[/TIP].'),
+       ('en_US',  'LOC_QUARTER_NYGUITA_PLAZA_DE_MAYO_TOOLTIP', '+1 [icon:YIELD_HAPPINESS] Happiness and +1 [icon:YIELD_DIPLOMACY] Influence on [icon:CITY_UNIQUE_QUARTER] [TIP:LOC_PEDIA_CONCEPTS_DISTRICT_TOOLTIP]Quarters[/TIP] in this [icon:YIELD_CITIES] [TIP:LOC_PEDIA_CONCEPTS_CITIES_TOOLTIP]City[/TIP].');
 
 INSERT OR IGNORE INTO LocalizedText 
        (Language, Tag,                                       Text) 

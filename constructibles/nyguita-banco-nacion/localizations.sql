@@ -1,8 +1,8 @@
 INSERT OR IGNORE INTO LocalizedText 
        (Language, Tag,                                  Text) 
 VALUES ('en_US',  'LOC_BUILDING_NYGUITA_BANCO_NACION_NAME', 'Banco Nación'),
-       ('en_US',  'LOC_BUILDING_NYGUITA_BANCO_NACION_DESCRIPTION', '+9 [icon:YIELD_GOLD] Gold. +1 [icon:YIELD_GOLD] on all Rural tiles. Argentinian Unique Gold Building. Ageless.'),
-       ('en_US',  'LOC_BUILDING_NYGUITA_BANCO_NACION_TOOLTIP', '+1 [icon:YIELD_GOLD] on all Rural tiles. Argentinian Unique Gold Building. Ageless.');
+       ('en_US',  'LOC_BUILDING_NYGUITA_BANCO_NACION_DESCRIPTION', '+9 [icon:YIELD_GOLD] Gold. +1 [icon:YIELD_GOLD] on all [icon:CITY_RURAL] Rural tiles. Argentinian [TIP:LOC_PEDIA_CONCEPTS_UNIQUE_BUILDING_TOOLTIP]Unique Gold Building[/TIP]. [TIP:LOC_PEDIA_CONCEPTS_AGELESS_TOOLTIP]Ageless[/TIP].'),
+       ('en_US',  'LOC_BUILDING_NYGUITA_BANCO_NACION_TOOLTIP', '+1 [icon:YIELD_GOLD] on all [icon:CITY_RURAL] Rural tiles. Argentinian [TIP:LOC_PEDIA_CONCEPTS_UNIQUE_BUILDING_TOOLTIP]Unique Gold Building[/TIP]. [TIP:LOC_PEDIA_CONCEPTS_AGELESS_TOOLTIP]Ageless[/TIP].');
 
 INSERT OR IGNORE INTO LocalizedText 
        (Language, Tag,                                       Text) 

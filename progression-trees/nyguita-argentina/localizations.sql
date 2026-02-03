@@ -19,14 +19,14 @@ VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Argentinian Civics'),
 
 INSERT INTO LocalizedText
         (Tag, Language, Text)
-VALUES  ('LOC_MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE_DESCRIPTION',	'en_US', '+15% Growth in all settlements.'),
-        ('LOC_MOD_NYGUITA_VASTNESS_OF_THE_PAMPAS_DESCRIPTION', 		'en_US', '+1 [icon:SETTLEMENT_LIMIT] Settlement limit.'),
-        ('LOC_MOD_NYGUITA_LIGA_DE_GOBERNADORES_DESCRIPTION',		'en_US', '+5 [icon:YIELD_GOLD] Gold per Tradition slotted.'),
-        ('LOC_MOD_NYGUITA_PATRIA_GRANDE_DESCRIPTION',			'en_US','+1 [icon:SETTLEMENT_LIMIT] Settlement limit.'),
-  	('LOC_MOD_NYGUITA_FLORIDA_AND_BOEDO_DESCRIPTION',		'en_US','+5 [icon:YIELD_CULTURE] Culture per non-Tradition slotted.'),
-  	('LOC_MOD_NYGUITA_GIANTS_OF_PATAGONIA_DESCRIPTION',		'en_US','+30% [icon:YIELD_PRODUCTION] Production towards Archeologists. +3 [icon:YIELD_SCIENCE] Science on [icon:GREATWORK] Artifacts.'),
-  	('LOC_MOD_NYGUITA_GAUCHESCO_DESCRIPTION',		        'en_US','+3 [icon:YIELD_CULTURE] Culture on Farms if a Gaucho is on it.'),
-  	('LOC_MOD_NYGUITA_PAYADOR_DESCRIPTION',		                'en_US','+3 [icon:YIELD_HAPPINESS] Happiness on Farms if a Gaucho is on it.');
+VALUES  ('LOC_MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE_DESCRIPTION',	'en_US', '+15% [icon:GROWTH_RATE] [TIP:LOC_PEDIA_CONCEPTS_GROWTH_RATE_TOOLTIP]Growth Rate[/TIP] in all [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_TOOLTIP]Settlements[/TIP].'),
+        ('LOC_MOD_NYGUITA_VASTNESS_OF_THE_PAMPAS_DESCRIPTION', 		'en_US', '+1 [icon:SETTLEMENT_LIMIT] [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_LIMIT_TOOLTIP]Settlement Limit[/TIP].'),
+        ('LOC_MOD_NYGUITA_LIGA_DE_GOBERNADORES_DESCRIPTION',		'en_US', '+5 [icon:YIELD_GOLD] Gold for every [icon:TRADITION] [TIP:LOC_PEDIA_CONCEPTS_TRADITION_TOOLTIP]Tradition[/TIP] in the [icon:GOVERNMENT] Government.'),
+        ('LOC_MOD_NYGUITA_PATRIA_GRANDE_DESCRIPTION',			'en_US','+1 [icon:SETTLEMENT_LIMIT] [TIP:LOC_PEDIA_CONCEPTS_SETTLEMENT_LIMIT_TOOLTIP]Settlement Limit[/TIP].'),
+  	('LOC_MOD_NYGUITA_FLORIDA_AND_BOEDO_DESCRIPTION',		'en_US','+5 [icon:YIELD_CULTURE] Culture for each [icon:SOCIAL_POLICY] [TIP:LOC_PEDIA_CONCEPTS_SOCIAL_POLICY_TOOLTIP]Social Policy[/TIP], but not [icon:TRADITION] [TIP:LOC_PEDIA_CONCEPTS_TRADITION_TOOLTIP]Tradition[/TIP], slotted in the [icon:GOVERNMENT] Government.'),
+  	('LOC_MOD_NYGUITA_GIANTS_OF_PATAGONIA_DESCRIPTION',		'en_US','+30% [icon:YIELD_PRODUCTION] Production towards Archeologists. +3 [icon:YIELD_SCIENCE] Science on [icon:NAR_REW_GREATWORK] [TIP:LOC_PEDIA_CONCEPTS_ARTIFACT_TOOLTIP]Artifacts[/TIP].'),
+  	('LOC_MOD_NYGUITA_GAUCHESCO_DESCRIPTION',		        'en_US','+3 [icon:YIELD_CULTURE] Culture on Farms if a [icon:UNIT_NYGUITA_GAUCHO] Gaucho is on it.'),
+  	('LOC_MOD_NYGUITA_PAYADOR_DESCRIPTION',		                'en_US','+3 [icon:YIELD_HAPPINESS] Happiness on Farms if a [icon:UNIT_NYGUITA_GAUCHO] Gaucho is on it.');
 
 INSERT OR IGNORE INTO LocalizedText 
        	(Language, Tag,                                       Text) 
