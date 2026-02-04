@@ -28,11 +28,8 @@ VALUES ('REQ_NYGUITA_ARGENTINA_HAS_3_LLAMAS_0', 'REQUIREMENT_PLAYER_TOTAL_IMPROV
 
 INSERT INTO RequirementArguments 
        (RequirementId,                          Name,     Value) 
-VALUES ('REQ_NYGUITA_ARGENTINA_HAS_3_LLAMAS_0', 'Amount', '3');
-
-INSERT INTO RequirementArguments 
-       (RequirementId,                          Name,           Value) 
-VALUES ('REQ_NYGUITA_ARGENTINA_HAS_3_LLAMAS_0', 'ResourceType', 'RESOURCE_LLAMAS');
+VALUES ('REQ_NYGUITA_ARGENTINA_HAS_3_LLAMAS_0', 'Amount', '3'),
+       ('REQ_NYGUITA_ARGENTINA_HAS_3_LLAMAS_0', 'ResourceType', 'RESOURCE_LLAMAS');
 
 INSERT INTO RequirementSetRequirements 
        (RequirementId,                          RequirementSetId) 
