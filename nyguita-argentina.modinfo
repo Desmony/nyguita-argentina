@@ -6,7 +6,7 @@
         <Authors>Nyguita</Authors>
 		<SpecialThanks>izica, orion, Civ'ed, slothoth, beezany, Icthiolavarunt</SpecialThanks>
         <Package>Mod</Package>
-        <Version>1.4.1</Version>
+        <Version>1.4.2</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <References>
@@ -51,18 +51,21 @@
             <AgeInUse>AGE_MODERN</AgeInUse>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-enable">
+            <ModInUse>orions-gridlock</ModInUse>
+        </Criteria>
+		<Criteria all="true" id="orion-gridlock-enable-shell">
             <ModIsEnabled>orions-gridlock</ModIsEnabled>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-antiquity-enable">
-            <ModIsEnabled>orions-gridlock</ModIsEnabled>
+            <ModInUse>orions-gridlock</ModInUse>
             <AgeInUse>AGE_ANTIQUITY</AgeInUse>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-exploration-enable">
-            <ModIsEnabled>orions-gridlock</ModIsEnabled>
+            <ModInUse>orions-gridlock</ModInUse>
             <AgeInUse>AGE_EXPLORATION</AgeInUse>
         </Criteria>
 		<Criteria all="true" id="orion-gridlock-modern-enable">
-            <ModIsEnabled>orions-gridlock</ModIsEnabled>
+            <ModInUse>orions-gridlock</ModInUse>
             <AgeInUse>AGE_MODERN</AgeInUse>
         </Criteria>
     </ActionCriteria>
@@ -359,9 +362,13 @@
             </Properties>
             <Actions>
                 <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
                     <Item>orion_gridlock/GLK-unlocks-antiquity.xml</Item>
                     <Item>orion_gridlock/GLK-descs-arg.sql</Item>
                 </UpdateDatabase>
+				<UpdateText>
+					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
+				</UpdateText>
             </Actions>
         </ActionGroup>
         <ActionGroup id="gridlock-argentina-game-exploration" scope="game" criteria="orion-gridlock-exploration-enable">
@@ -370,9 +377,13 @@
             </Properties>
             <Actions>
                 <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
                     <Item>orion_gridlock/GLK-unlocks-exploration.xml</Item>
                     <Item>orion_gridlock/GLK-descs-arg.sql</Item>
                 </UpdateDatabase>
+				<UpdateText>
+					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
+				</UpdateText>
             </Actions>
         </ActionGroup>
         <ActionGroup id="gridlock-argentina-game-modern" scope="game" criteria="orion-gridlock-modern-enable">
@@ -381,12 +392,16 @@
             </Properties>
             <Actions>
                 <UpdateDatabase>
+                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
                     <Item>orion_gridlock/GLK-unlocks-modern.xml</Item>
                     <Item>orion_gridlock/GLK-descs-arg.sql</Item>
                 </UpdateDatabase>
+				<UpdateText>
+					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
+				</UpdateText>
             </Actions>
         </ActionGroup>
-        <ActionGroup id="gridlock-argentina-shell" scope="shell" criteria="orion-gridlock-enable">
+        <ActionGroup id="gridlock-argentina-shell" scope="shell" criteria="orion-gridlock-enable-shell">
             <Properties>
                 <LoadOrder>1005</LoadOrder>
             </Properties>
