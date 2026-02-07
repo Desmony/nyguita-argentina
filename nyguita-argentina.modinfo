@@ -111,6 +111,7 @@
                     <Item>civilization-unlocks/from-inca/localizations.sql</Item>
                     <Item>civilization-unlocks/from-spain/localizations.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
+                    <Item>civilization-unlocks/has-4-silver/localizations.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/localizations.sql</Item>
                     <Item>traditions/nyguita-caudillism/localizations.sql</Item>
                     <Item>constructibles/nyguita-saladero/localizations.sql</Item>
@@ -126,6 +127,7 @@
                     <Item>civilization-unlocks/from-inca/game.sql</Item>
                     <Item>civilization-unlocks/from-spain/game.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/game.sql</Item>
+                    <Item>civilization-unlocks/has-4-silver/game.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/game.sql</Item>
                     <Item>traditions/nyguita-caudillism/game.sql</Item>
                     <Item>traditions/nyguita-conquest-of-the-desert/game.sql</Item>
@@ -240,6 +242,7 @@
                     <Item>civilization-unlocks/from-inca/localizations.sql</Item>
                     <Item>civilization-unlocks/from-spain/localizations.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
+                    <Item>civilization-unlocks/has-4-silver/localizations.sql</Item>
                     <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/localizations.sql</Item>
                     <Item>constructibles/nyguita-saladero/localizations.sql</Item>

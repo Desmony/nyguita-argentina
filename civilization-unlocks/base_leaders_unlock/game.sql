@@ -11,8 +11,8 @@ INSERT OR IGNORE INTO Unlocks
 VALUES ('UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA');
 
 INSERT OR IGNORE INTO UnlockRewards 
-       (UnlockType,                              Name,                                      Description,                         Icon) 
-VALUES ('UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'LOC_UNLOCK_MODERN_CIV_DESCRIPTION', 'CIVILIZATION_NYGUITA_ARGENTINA');
+       (UnlockType,                              Name,                                      Description,                         Icon,                           UnlockRewardKind, UnlockRewardType) 
+VALUES ('UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_CIVILIZATION_NYGUITA_ARGENTINA_NAME', 'LOC_UNLOCK_MODERN_CIV_DESCRIPTION', 'CIVILIZATION_NYGUITA_ARGENTINA', 'KIND_CIVILIZATION', 'CIVILIZATION_NYGUITA_ARGENTINA');
 
 INSERT INTO UnlockRequirements 
        (RequirementSetId,                             UnlockType,                              Description,                                                NarrativeText,                                                 ToolTip) 
