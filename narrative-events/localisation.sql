@@ -105,4 +105,12 @@ VALUES  ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_01_STORYTITLE', 'The Purpose of
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_16B_NAME', "The future only depends on the present."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_16B_DESCRIPTION', "{1_Reward}."),
         ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_16C_NAME', "I heard someone in France was interested."),
-        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_16C_DESCRIPTION', "{1_Reward} to the French Empire.");
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_16C_DESCRIPTION', "{1_Reward} to the French Empire."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17_STORYTITLE', "We Don't Need No Education"),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17_COMPLETION', "What should have been the day of going back to school has turned into strikes and protests, as students occupy the faculties' premises, so classes can not be started. Their concerns? A most needed education reform. The education system was mostly provided by the clergy with professors appointed for life by the government. They demand that the State does not interfere anymore in university administration, that curricula must be updated to introduce the most recent scientific discoveries, that tution must be removed to guarantee the right of eduction to every Argentinian citizens and that education programs be free of religious dogmatism. Their uprising has spread to every university in the country and the occupation of faculties won't stop until their demands are met."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17A_NAME', "Grant them autonomy."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17A_DESCRIPTION', "{1_reward}, but {2_reward} on all Science Buildings."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17B_NAME', "Grant free tuition for everybody."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17B_DESCRIPTION', "{1_reward}, but {2_reward} on all Science Buildings."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17C_NAME', "Send in the national army."),
+        ('en_US',   'LOC_EVENT_NYGUITA_ARGENTINA_17C_DESCRIPTION', "{1_reward}.");
