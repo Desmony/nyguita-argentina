@@ -200,6 +200,7 @@
             <Actions>
 				<ImportFiles>
 					<Item>narrative-events/assets/gw_argyrosaurus_bones.dds</Item>
+                    <Item>narrative-events/assets/gw_dante_death_mask.dds</Item>
 				</ImportFiles>
                 <UpdateDatabase>
                     <Item>progression-trees/nyguita-argentina/modern.sql</Item>
@@ -286,7 +287,7 @@
                 </UpdateIcons>
             </Actions>
         </ActionGroup>
-        <!--ActionGroup id="izica-visual-remaps-argentina-game" scope="game" criteria="always">
+        <ActionGroup id="izica-visual-remaps-argentina-game" scope="game" criteria="always">
             <Properties>
                 <LoadOrder>2000</LoadOrder>
             </Properties>
@@ -301,7 +302,7 @@
                     <Item>constructibles/visual-remaps.xml</Item>
                 </UpdateVisualRemaps>
             </Actions>
-        </ActionGroup-->
+        </ActionGroup>
         <ActionGroup id="gridlock-argentina-deletes-game" scope="game" criteria="orion-gridlock-enable">
             <Properties>
                 <LoadOrder>1000</LoadOrder>

@@ -6,6 +6,10 @@ insert into Types (Kind, Type) values ('KIND_CONSTRUCTIBLE', 'BUILDING_CANNERY_'
         UPDATE TypeTags
         SET Type = Type || '_'
         WHERE Type IN ('BUILDING_BANK', 'BUILDING_CANNERY');
+
+        UPDATE Constructible_BuildingCostProgressions
+        SET ConstructibleType = ConstructibleType || '_'
+        WHERE ConstructibleType IN ('BUILDING_BANK', 'BUILDING_CANNERY');
     
         UPDATE Constructibles
         SET ConstructibleType = ConstructibleType || '_'
