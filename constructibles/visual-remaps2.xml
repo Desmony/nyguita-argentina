@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Database>
+    <VisualRemaps>
+        <Row>
+            <ID>REMAP_BUILDING_BANK</ID>
+            <DisplayName>LOC_BUILDING_BANK_NAME</DisplayName>
+            <Kind>BUILDING</Kind>
+            <From>BUILDING_BANK_</From>
+            <To>BUILDING_BANK</To>
+        </Row>
+        <Row>
+            <ID>REMAP_BUILDING_CANNERY</ID>
+            <DisplayName>LOC_BUILDING_CANNERY_NAME</DisplayName>
+            <Kind>BUILDING</Kind>
+            <From>BUILDING_CANNERY_</From>
+            <To>BUILDING_CANNERY</To>
+        </Row>
+    </VisualRemaps>
+</Database>

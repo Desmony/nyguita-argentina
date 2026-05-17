@@ -6,7 +6,7 @@
         <Authors>Nyguita</Authors>
 		<SpecialThanks>izica, orion, Civ'ed, slothoth, beezany, Icthiolavarunt</SpecialThanks>
         <Package>Mod</Package>
-        <Version>1.4.2</Version>
+        <Version>1.4.5</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <References>
@@ -15,6 +15,7 @@
 		<Mod id="ged-ynamp" title=""/>
 		<Mod id="ml-city-states-expanded" title=""/>
 		<Mod id="orions-gridlock" title=""/>
+		<Mod id="capture_capital_narrative_events" title=""/>
 	</References>
     <ActionCriteria>
 		<Criteria id="antiquity-age-current">
@@ -67,6 +68,9 @@
 		<Criteria all="true" id="orion-gridlock-modern-enable">
             <ModInUse>orions-gridlock</ModInUse>
             <AgeInUse>AGE_MODERN</AgeInUse>
+        </Criteria>
+		<Criteria id="ccne-enable" all="true">
+            <ModInUse>capture_capital_narrative_events</ModInUse>
         </Criteria>
     </ActionCriteria>
     <ActionGroups>
@@ -219,6 +223,7 @@
                 </UpdateDatabase>
 				<UpdateVisualRemaps>
 					<Item>units/visual-remaps.xml</Item>
+                    <Item>constructibles/visual-remaps.xml</Item>
 				</UpdateVisualRemaps>
                 <UpdateText>
                     <Item>narrative-events/localisation.sql</Item>
@@ -299,7 +304,7 @@
                     <Item>constructibles/icons.sql</Item>
                 </UpdateIcons>
                 <UpdateVisualRemaps>
-                    <Item>constructibles/visual-remaps.xml</Item>
+                    <Item>constructibles/visual-remaps2.xml</Item>
                 </UpdateVisualRemaps>
             </Actions>
         </ActionGroup>
@@ -415,5 +420,16 @@
 				</UpdateText>
             </Actions>
         </ActionGroup>
+		<ActionGroup id="ccne-argentina" scope="game" criteria="ccne-enable">
+			<Actions>
+                <UpdateDatabase>
+					<Item>ccne/narrative-stories-argentina.xml</Item>
+					<Item>ccne/narrative-stories-gameeffects-argentina.xml</Item>
+                </UpdateDatabase>
+				<UpdateText>
+					<Item>ccne/NarrativeStoriesArgentinaText.xml</Item>
+				</UpdateText>
+            </Actions>
+		</ActionGroup>
     </ActionGroups>
 </Mod>

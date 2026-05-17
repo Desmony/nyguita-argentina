@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <EnglishText>
+        <Row Tag="LOC_CCNE_NYG_ARGA_STORYTITLE">
+            <Text>A Fallen Capital</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGA_COMPLETION">
+            <Text>Troops march in as you topple the Argentinian Capital. As plans to assimilate the new citizens are laid out a fight breaks out. One general argues that the Argentinians might have some ideas worth borrowing, while another insists that differences must be ironed out to ensure cohesion.</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGB_NAME">
+            <Text>If one can manage an army, they can surely manage a country.</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGB_DESCRIPTION">
+            <Text>Unlock a unique Argentinian Tradition, {LOC_TRADITION_NYGUITA_CAUDILLISM_DESCRIPTION}</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGC_NAME">
+            <Text>Focus on the smaller neighbors.</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGC_DESCRIPTION">
+            <Text>Unlock a unique Argentinian Tradition, {LOC_MOD_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_COMBAT_DESCRIPTION}</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGD_NAME">
+            <Text>Our music does not only inspire but also bring joy.</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGD_DESCRIPTION">
+            <Text>Unlock a unique Argentinian Tradition, {LOC_TRADITION_NYGUITA_NUEVO_TANGO_DESCRIPTION}</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGE_NAME">
+            <Text>Send the first general back to the field.</Text>
+        </Row>
+        <Row Tag="LOC_CCNE_NYG_ARGE_DESCRIPTION">
+            <Text>Free Promotion on a Commander.</Text>
+        </Row>
+    </EnglishText>
+</Database>

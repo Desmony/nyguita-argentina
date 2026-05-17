@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Database>
+    <Types>
+        <Row Type="CCNE_NYG_ARGA" Kind="KIND_NARRATIVE_STORY"/>
+        <Row Type="CCNE_NYG_ARGB" Kind="KIND_NARRATIVE_STORY"/>
+        <Row Type="CCNE_NYG_ARGC" Kind="KIND_NARRATIVE_STORY"/>
+        <Row Type="CCNE_NYG_ARGD" Kind="KIND_NARRATIVE_STORY"/>
+        <Row Type="CCNE_NYG_ARGE" Kind="KIND_NARRATIVE_STORY"/>
+        <Row Type="NARRATIVE_TAG_CCNE_NYG_ARGB" Kind="KIND_NARRATIVE_TAG"/>
+        <Row Type="NARRATIVE_TAG_CCNE_NYG_ARGC" Kind="KIND_NARRATIVE_TAG"/>
+        <Row Type="NARRATIVE_TAG_CCNE_NYG_ARGD" Kind="KIND_NARRATIVE_TAG"/>
+    </Types>
+    <NarrativeTags>
+        <Row NarrativeTagType="NARRATIVE_TAG_CCNE_NYG_ARGB"/>
+        <Row NarrativeTagType="NARRATIVE_TAG_CCNE_NYG_ARGC"/>
+        <Row NarrativeTagType="NARRATIVE_TAG_CCNE_NYG_ARGD"/>
+    </NarrativeTags>
+    <NarrativeStories>
+        <Row NarrativeStoryType="CCNE_NYG_ARGA" Name="LOC_CCNE_NYG_ARGA_NAME" Description="LOC_CCNE_NYG_ARGA_DESCRIPTION" Completion="LOC_CCNE_NYG_ARGA_COMPLETION" StoryTitle="LOC_CCNE_NYG_ARGA_STORYTITLE" Age="AGE_MODERN" Activation="AUTO" RequirementSetId="REQSET_CCNE_NYG_ARGA_NARRATIVE" UIActivation="STANDARD"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGB" Name="LOC_CCNE_NYG_ARGB_NAME" Description="LOC_CCNE_NYG_ARGB_DESCRIPTION" Completion="LOC_CCNE_NYG_ARGB_COMPLETION" Age="AGE_MODERN" Activation="LINKED" Hidden="TRUE" RequirementSetId="Met"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGC" Name="LOC_CCNE_NYG_ARGC_NAME" Description="LOC_CCNE_NYG_ARGC_DESCRIPTION" Completion="LOC_CCNE_NYG_ARGC_COMPLETION" Age="AGE_MODERN" Activation="LINKED" Hidden="TRUE" RequirementSetId="Met"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGD" Name="LOC_CCNE_NYG_ARGD_NAME" Description="LOC_CCNE_NYG_ARGD_DESCRIPTION" Completion="LOC_CCNE_NYG_ARGD_COMPLETION" Age="AGE_MODERN" Activation="LINKED" Hidden="TRUE" RequirementSetId="Met"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGE" Name="LOC_CCNE_NYG_ARGE_NAME" Description="LOC_CCNE_NYG_ARGE_DESCRIPTION" Completion="LOC_CCNE_NYG_ARGE_COMPLETION" Age="AGE_MODERN" Activation="LINKED" Hidden="TRUE" RequirementSetId="Met"/>
+    </NarrativeStories>
+    <NarrativeRewards>
+        <Row NarrativeRewardType="CCNE_NYG_ARGB_REWARD" ModifierID="CCNE_NYG_ARGB_NARRATIVE_MODIFIER"/>
+        <Row NarrativeRewardType="CCNE_NYG_ARGC_REWARD" ModifierID="CCNE_NYG_ARGC_NARRATIVE_MODIFIER"/>
+        <Row NarrativeRewardType="CCNE_NYG_ARGD_REWARD" ModifierID="CCNE_NYG_ARGD_NARRATIVE_MODIFIER"/>
+        <Row NarrativeRewardType="CCNE_NYG_ARGE_REWARD" ModifierID="CCNE_NYG_ARGE_NARRATIVE_MODIFIER"/>
+        <Row NarrativeRewardType="CCNE_NYG_ARGB_REWARD_TAG" ModifierID="CCNE_NYG_ARGB_NARRATIVE_MODIFIER_TAG"/>
+        <Row NarrativeRewardType="CCNE_NYG_ARGC_REWARD_TAG" ModifierID="CCNE_NYG_ARGC_NARRATIVE_MODIFIER_TAG"/>
+        <Row NarrativeRewardType="CCNE_NYG_ARGD_REWARD_TAG" ModifierID="CCNE_NYG_ARGD_NARRATIVE_MODIFIER_TAG"/>
+    </NarrativeRewards>
+    <NarrativeStory_Rewards>
+        <!-- Capital Captured -->
+        <Row NarrativeStoryType="CCNE_NYG_ARGB" NarrativeRewardType="CCNE_NYG_ARGB_REWARD_TAG" Activation="START"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGB" NarrativeRewardType="CCNE_NYG_ARGB_REWARD" Activation="START"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGC" NarrativeRewardType="CCNE_NYG_ARGC_REWARD_TAG" Activation="START"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGC" NarrativeRewardType="CCNE_NYG_ARGC_REWARD" Activation="START"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGD" NarrativeRewardType="CCNE_NYG_ARGD_REWARD_TAG" Activation="START"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGD" NarrativeRewardType="CCNE_NYG_ARGD_REWARD" Activation="START"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGE" NarrativeRewardType="CCNE_NYG_ARGE_REWARD" Activation="START"/>
+        <!-- Retain Traditions -->
+         <Row NarrativeStoryType="RETAIN_TRADITIONS_B" NarrativeRewardType="CCNE_NYG_ARGB_REWARD" Activation="START"/>
+        <Row NarrativeStoryType="RETAIN_TRADITIONS_B" NarrativeRewardType="CCNE_NYG_ARGC_REWARD" Activation="START"/>
+        <Row NarrativeStoryType="RETAIN_TRADITIONS_B" NarrativeRewardType="CCNE_NYG_ARGD_REWARD" Activation="START"/>
+    </NarrativeStory_Rewards>
+    <NarrativeRewardIcons>
+        <Row NarrativeStoryType="CCNE_NYG_ARGB" RewardIconType="TRADITION_SLOT"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGC" RewardIconType="TRADITION_SLOT"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGD" RewardIconType="TRADITION_SLOT"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGE" RewardIconType="PROMOTION"/>
+    </NarrativeRewardIcons>
+    <NarrativeStory_TextReplacements>
+        <Row NarrativeStoryType="CCNE_NYG_ARGB" NarrativeStoryTextType="REWARD" NarrativeTextReplacementType="REWARD" Priority="1"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGC" NarrativeStoryTextType="REWARD" NarrativeTextReplacementType="REWARD" Priority="1"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGD" NarrativeStoryTextType="REWARD" NarrativeTextReplacementType="REWARD" Priority="1"/>
+        <Row NarrativeStoryType="CCNE_NYG_ARGE" NarrativeStoryTextType="REWARD" NarrativeTextReplacementType="REWARD" Priority="1"/>
+    </NarrativeStory_TextReplacements>
+    <NarrativeStory_Links>
+        <Row FromNarrativeStoryType="CCNE_NYG_ARGA" ToNarrativeStoryType="CCNE_NYG_ARGB" Priority="0" Name="LOC_CCNE_NYG_ARGB_NAME" Description="LOC_CCNE_NYG_ARGB_DESCRIPTION"/>
+        <Row FromNarrativeStoryType="CCNE_NYG_ARGA" ToNarrativeStoryType="CCNE_NYG_ARGC" Priority="1" Name="LOC_CCNE_NYG_ARGC_NAME" Description="LOC_CCNE_NYG_ARGC_DESCRIPTION"/>
+        <Row FromNarrativeStoryType="CCNE_NYG_ARGA" ToNarrativeStoryType="CCNE_NYG_ARGD" Priority="1" Name="LOC_CCNE_NYG_ARGD_NAME" Description="LOC_CCNE_NYG_ARGD_DESCRIPTION"/>
+        <Row FromNarrativeStoryType="CCNE_NYG_ARGA" ToNarrativeStoryType="CCNE_NYG_ARGE" Priority="1" Name="LOC_CCNE_NYG_ARGE_NAME" Description="LOC_CCNE_NYG_ARGE_DESCRIPTION"/>
+    </NarrativeStory_Links>
+</Database>

@@ -167,6 +167,10 @@ insert into Types (Kind, Type) values ('KIND_CONSTRUCTIBLE', 'BUILDING_CANNERY_'
         SET ActionRequiresNoConstructibleTypeInCity = ActionRequiresNoConstructibleTypeInCity || '_'
         WHERE ActionRequiresNoConstructibleTypeInCity IN ('BUILDING_BANK', 'BUILDING_CANNERY');
     
+        UPDATE GreatPersonIndividuals
+        SET ActionRequiresConstructionTypePermission = ActionRequiresConstructionTypePermission || '_'
+        WHERE ActionRequiresConstructionTypePermission IN ('BUILDING_BANK', 'BUILDING_CANNERY');
+    
         UPDATE Improvements
         SET ConstructibleType = ConstructibleType || '_'
         WHERE ConstructibleType IN ('BUILDING_BANK', 'BUILDING_CANNERY');

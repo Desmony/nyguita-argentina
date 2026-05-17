@@ -45,7 +45,8 @@ VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BIOME_PLAINS', 15),
 
 INSERT OR IGNORE INTO StartBiasResources 
        (CivilizationType,                 ResourceType,      Score) 
-VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'RESOURCE_LLAMAS', 5);
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'RESOURCE_LLAMAS', 5),
+       ('CIVILIZATION_NYGUITA_ARGENTINA', 'RESOURCE_SILVER', 5);
 
 INSERT OR IGNORE INTO VisArt_CivilizationBuildingCultures 
        (CivilizationType,                 BuildingCulture) 
@@ -54,6 +55,45 @@ VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'BUILDING_CULTURE_SAM');
 INSERT OR IGNORE INTO VisArt_CivilizationUnitCultures 
        (CivilizationType,                 UnitCulture) 
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'SAmer');
+
+INSERT OR IGNORE INTO AiListTypes 
+       	(ListType) 
+VALUES 	('Nyguita Argentina Unit Biases'),
+		('Nyguita Argentina Constructibles Biases'),
+		('Nyguita Argentina Pseudoyields Biases'),
+		('Nyguita Argentina Tag Biases'),
+		('Nyguita Argentina Settlement Plot Evaluations');
+
+INSERT OR IGNORE INTO AiLists
+       	(ListType,											LeaderType,					System) 
+VALUES 	('Nyguita Argentina Unit Biases', 					'TRAIT_NYGUITA_ARGENTINA',	'UnitBiases'),
+		('Nyguita Argentina Constructibles Biases', 		'TRAIT_NYGUITA_ARGENTINA',	'ConstructibleBiases'),
+		('Nyguita Argentina Pseudoyields Biases', 			'TRAIT_NYGUITA_ARGENTINA',	'PseudoYieldBiases'),
+		('Nyguita Argentina Tag Biases', 					'TRAIT_NYGUITA_ARGENTINA',	'TagBiases'),
+		('Nyguita Argentina Settlement Plot Evaluations', 	'TRAIT_NYGUITA_ARGENTINA',	'SettlementPlotEvaluations');
+
+INSERT OR IGNORE INTO AiFavoredItems
+		(ListType,							Item,					Value)
+VALUES	('Nyguita Argentina Unit Biases',	'UNIT_NYGUITA_GAUCHO',	50),
+		('Nyguita Argentina Unit Biases',	'UNIT_NYGUITA_GAUCHO_2',	50),
+		('Nyguita Argentina Unit Biases',	'UNIT_NYGUITA_GAUCHO_3',	50),
+		('Nyguita Argentina Unit Biases',	'UNIT_TANK',	50),
+		('Nyguita Argentina Constructibles Biases',	'BUILDING_NYGUITA_SALADERO',	200),
+		('Nyguita Argentina Constructibles Biases',	'BUILDING_NYGUITA_BANCO_NACION',	200),
+		('Nyguita Argentina Constructibles Biases',	'WONDER_NYGUITA_PALACIO_BAROLO',	50),
+		('Nyguita Argentina Constructibles Biases',	'IMPROVEMENT_FARM',	50),
+		('Nyguita Argentina Constructibles Biases',	'IMPROVEMENT_PASTURE',	50),
+		('Nyguita Argentina Pseudoyields Biases',	'PSEUDOYIELD_RESOURCE',	50),
+		('Nyguita Argentina Pseudoyields Biases',	'PSEUDOYIELD_NEW_CITY',	25),
+		('Nyguita Argentina Tag Biases',	'FOOD',	100);
+
+INSERT OR IGNORE INTO AiFavoredItems
+		(ListType,											Item,				Favored,	Value,	StringVal,				TooltipString)
+VALUES	('Nyguita Argentina Settlement Plot Evaluations',	'Coastal',			0,			50,		null,					'LOC_SETTLEMENT_RECOMMENDATION_COAST'),
+		('Nyguita Argentina Settlement Plot Evaluations',	'Resource Class',	null,		5,		'RESOURCECLASS_BONUS',	'LOC_SETTLEMENT_RECOMMENDATION_STRATEGIC_RESOURCES'),
+		('Nyguita Argentina Settlement Plot Evaluations',	'Resource Class',	null,		5,		'RESOURCECLASS_CITY',	'LOC_SETTLEMENT_RECOMMENDATION_STRATEGIC_RESOURCES'),
+		('Nyguita Argentina Settlement Plot Evaluations',	'Resource Class',	null,		5,		'RESOURCECLASS_EMPIRE',	'LOC_SETTLEMENT_RECOMMENDATION_STRATEGIC_RESOURCES'),
+		('Nyguita Argentina Settlement Plot Evaluations',	'Resource Class',	null,		5,		'RESOURCECLASS_FACTORY','LOC_SETTLEMENT_RECOMMENDATION_STRATEGIC_RESOURCES');
 
 INSERT OR IGNORE INTO LeaderCivPriorities
        (Leader,             Civilization,                      Priority)
