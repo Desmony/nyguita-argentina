@@ -66,3 +66,7 @@ VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'MOD_NYGUITA_BANCO_NACION_GOLD_RURAL');
 INSERT INTO Constructible_Advisories
        (ConstructibleType,       AdvisoryClassType) 
 VALUES ('BUILDING_NYGUITA_BANCO_NACION', 'ADVISORY_CLASS_ECONOMIC');
+
+INSERT INTO Constructible_BuildingCostProgressions
+       (ConstructibleType, Percent)
+VALUES ('BUILDING_NYGUITA_BANCO_NACION', 5);

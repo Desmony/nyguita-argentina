@@ -2441,4 +2441,4 @@ VALUES	('EVENT_NYGUITA_ARGENTINA_29',	'BODY',						'CAPITAL',							1),
         ('EVENT_NYGUITA_ARGENTINA_29B',	'REWARD',					'REWARD',							2),
         ('EVENT_NYGUITA_ARGENTINA_29B',	'REWARD',					'REWARD',							3);
 
---- Event 30: Tertulias (Research Social Question but not Congress of Tucuman)
+--- Event 30: Tertulias TODO (Research Social Question but not Congress of Tucuman)

@@ -4,6 +4,8 @@ VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Argentinian Civics'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_NAME', 'Congress of Tucumán'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_NAME', 'Civilization and Barbarism'),
        ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_NAME', 'Tango and Poetry'),
+       ('en_US',  'LOC_NODE_CIVIC_AQ_NYGUITA_ARGENTINA_ORIGINS_NAME', 'Argentinian Origins'),
+       ('en_US',  'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_NAME', 'Argentinian Renaissance'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_QUOTE', 'The soldiers of our land know no luxury, but glory.'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_AUTHOR', 'José de San Martín'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_QUOTE', 'One does not renounce such an immense future, such a lofty mission, because of an accumulation of contradictions and difficulties. Difficulties are overcome: contradictions are overcome by contradicting them.'),
@@ -15,7 +17,11 @@ VALUES ('en_US',  'LOC_TREE_NYGUITA_ARGENTINA_NAME', 'Argentinian Civics'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_QUOTE_2', 'We shall seal with our blood and our swords, once and for ever, this Argentine nationality, which must develop like the Egyptian Pyramids and the power of Empires at the price of the blood and sweat of many generations.'),
        ('en_US',  'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_AUTHOR_2', 'Julio Argentino Roca'),
        ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_QUOTE_2', 'Let us admit, in any case, that among us now — if mostly still hidden — are many or all of the seeds of our future art, and not in museums overseas, and not in the homes of famous foreign dealers. Let us honor the rare ones, our rebellious spirits who, like this artist, before denying others, find affirmation in themselves; that instead of destroying, seek to build. Let us honor those who struggle so that the soul of our country can be more beautiful.'),
-       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR_2', 'Xul Solar');
+       ('en_US',  'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_AUTHOR_2', 'Xul Solar'),
+       ('en_US',  'LOC_NODE_CIVIC_AQ_NYGUITA_ARGENTINA_ORIGINS_QUOTE', 'You shall be what you should be or you will not be anything.'),
+       ('en_US',  'LOC_NODE_CIVIC_AQ_NYGUITA_ARGENTINA_ORIGINS_AUTHOR', 'José de San Martín'),
+       ('en_US',  'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_QUOTE', "Let's be realistic and do the impossible."),
+       ('en_US',  'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_AUTHOR', 'Che Guevara');
 
 INSERT INTO LocalizedText
         (Tag, Language, Text)

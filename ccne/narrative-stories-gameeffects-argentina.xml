@@ -2,7 +2,6 @@
 <GameEffects xmlns="GameEffects">
 
     <!-- Modifiers -->
-    <!-- Qajar -->
     <Modifier id="CCNE_NYG_ARGB_NARRATIVE_MODIFIER" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_UNLOCK_TRADITION" run-once="false" permanent="true">
         <SubjectRequirements>
             <Requirement type="REQUIREMENT_PLAYER_HAS_AT_LEAST_NUM_NARRATIVE_TAGS">
@@ -10,7 +9,7 @@
                 <Argument name="Amount">1</Argument>
             </Requirement>
         </SubjectRequirements>
-		<Argument name="Tradition">TRADITION_NYGUITA_CAUDILLISM</Argument>
+		<Argument name="Tradition">TRADITION_NYGUITA_CAUDILLISM_I</Argument>
 	</Modifier>
     <Modifier id="CCNE_NYG_ARGB_NARRATIVE_MODIFIER_TAG" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_GRANT_NARRATIVE_TAG" run-once="false" permanent="true">
         <Argument name="Amount">1</Argument>
@@ -23,7 +22,7 @@
                 <Argument name="Amount">1</Argument>
             </Requirement>
         </SubjectRequirements>
-		<Argument name="Tradition">TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT</Argument>
+		<Argument name="Tradition">TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_I</Argument>
 	</Modifier>
     <Modifier id="CCNE_NYG_ARGC_NARRATIVE_MODIFIER_TAG" collection="COLLECTION_OWNER" effect="EFFECT_PLAYER_GRANT_NARRATIVE_TAG" run-once="false" permanent="true">
         <Argument name="Amount">1</Argument>

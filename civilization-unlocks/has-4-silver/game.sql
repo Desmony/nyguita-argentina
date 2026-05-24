@@ -19,8 +19,8 @@ INSERT INTO RequirementSets
 VALUES ('REQSET_NYGUITA_ARGENTINA_HAS_4_SILVER', 'REQUIREMENTSET_TEST_ALL');
 
 INSERT OR IGNORE INTO UnlockRequirements 
-       (RequirementSetId,                        UnlockType,                              Description,                                                               NarrativeText,                                                                ToolTip) 
-VALUES ('REQSET_NYGUITA_ARGENTINA_HAS_4_SILVER', 'UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_UNLOCK_NYGUITA_ARGENTINA_HAS_4_SILVER_DESCRIPTION', 'LOC_UNLOCK_NYGUITA_ARGENTINA_HAS_4_SILVER_NARRATIVE_TEXT', 'LOC_UNLOCK_NYGUITA_ARGENTINA_HAS_4_SILVER_TOOLTIP');
+       (RequirementSetId,                        UnlockType,                              Description,                                                               NarrativeText,                                                                ToolTip, GameplayUnlock) 
+VALUES ('REQSET_NYGUITA_ARGENTINA_HAS_4_SILVER', 'UNLOCK_CIVILIZATION_NYGUITA_ARGENTINA', 'LOC_UNLOCK_NYGUITA_ARGENTINA_HAS_4_SILVER_DESCRIPTION', 'LOC_UNLOCK_NYGUITA_ARGENTINA_HAS_4_SILVER_NARRATIVE_TEXT', 'LOC_UNLOCK_NYGUITA_ARGENTINA_HAS_4_SILVER_TOOLTIP', 1);
 
 INSERT INTO Requirements 
        (RequirementId,                          RequirementType) 

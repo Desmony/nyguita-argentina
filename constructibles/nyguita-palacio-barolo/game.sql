@@ -14,6 +14,10 @@ INSERT INTO Constructible_ValidDistricts
        (ConstructibleType,               DistrictType) 
 VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'DISTRICT_WONDER');
 
+INSERT INTO TypeTags 
+       (Type,                        Tag) 
+VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'AGELESS');
+
 INSERT INTO Wonders
        (ConstructibleType, MaxWorldInstances)
 VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', '1');
@@ -29,43 +33,27 @@ VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_TYPE', 'COLLECTION_OWNER', 'EFFECT_CI
 
 INSERT INTO Modifiers 
        (ModifierId,                          ModifierType) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_TYPE');
+VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_TYPE'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_TYPE');
 
 INSERT INTO ModifierArguments 
        (ModifierId,                          Name,     Value) 
 VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'Amount', '3'),
        ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'YieldType', 'YIELD_GOLD'),
-       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'ConstructibleClass', 'WONDER');
-
-INSERT INTO ConstructibleModifiers 
-       (ConstructibleType,               ModifierId) 
-VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD');
-
---- Culture
-
-INSERT INTO Modifiers 
-       (ModifierId,                          ModifierType) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_TYPE');
-
-INSERT INTO ModifierArguments 
-       (ModifierId,                          Name,     Value) 
-VALUES ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'Amount', '3'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD', 'ConstructibleClass', 'WONDER'),
+       ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'Amount', '3'),
        ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'YieldType', 'YIELD_CULTURE'),
        ('MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE', 'ConstructibleClass', 'WONDER');
 
 INSERT INTO ConstructibleModifiers 
        (ConstructibleType,               ModifierId) 
-VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE');
+VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_GOLD'),
+       ('WONDER_NYGUITA_PALACIO_BAROLO', 'MOD_WONDER_NYGUITA_PALACIO_BAROLO_CULTURE');
 
 -- Quotes
 INSERT INTO TypeQuotes
        (Type,                                    Quote,                                           QuoteAuthor)
 VALUES ('WONDER_NYGUITA_PALACIO_BAROLO', 'LOC_WONDER_NYGUITA_PALACIO_BAROLO_QUOTE', 'LOC_WONDER_NYGUITA_PALACIO_BAROLO_AUTHOR');
-
-
-INSERT INTO CivilizationFavoredWonders
-       (CivilizationType, FavoredWonderType, FavoredWonderName)
-VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'WONDER_NYGUITA_PALACIO_BAROLO', 'LOC_WONDER_NYGUITA_PALACIO_BAROLO_NAME');
 
 INSERT INTO ProgressionTreeNodeUnlocks
        (ProgressionTreeNodeType, TargetKind, TargetType, UnlockDepth)

@@ -55,3 +55,7 @@ INSERT INTO Constructible_Advisories
        (ConstructibleType,       AdvisoryClassType) 
 VALUES ('BUILDING_NYGUITA_SALADERO', 'ADVISORY_CLASS_FOOD'),
        ('BUILDING_NYGUITA_SALADERO', 'ADVISORY_CLASS_ECONOMIC');
+
+INSERT INTO Constructible_BuildingCostProgressions
+       (ConstructibleType, Percent)
+VALUES ('BUILDING_NYGUITA_SALADERO', 5);

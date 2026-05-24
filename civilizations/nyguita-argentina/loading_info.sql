@@ -1,0 +1,4 @@
+
+INSERT INTO LoadingInfo_Civilizations 
+       (CivilizationType,                 Audio,               BackgroundImageHigh,                                                BackgroundImageLow,                                                 CivilizationText,                     ForegroundImage,                 Subtitle,                                    Tip)  
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA', 'VO_Loading_Mexico', 'fs://game/nyguita-argentina/argentina_background_1080.png', 'fs://game/nyguita-argentina/argentina_background.png', 'LOC_LOADING_NYGUITA_ARGENTINA_TEXT', 'fs://game/nyguita-argentina/civ_sym_nyguita_argentina.png', 'LOC_LOADING_NYGUITA_ARGENTINA_SUBTITLE', 'LOC_LOADING_CIV_TIPS_TEXT_NYGUITA_ARGENTINA');

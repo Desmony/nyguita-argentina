@@ -6,7 +6,7 @@
         <Authors>Nyguita</Authors>
 		<SpecialThanks>izica, orion, Civ'ed, slothoth, beezany, Icthiolavarunt</SpecialThanks>
         <Package>Mod</Package>
-        <Version>1.4.5</Version>
+        <Version>2.0.0</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <References>
@@ -105,9 +105,6 @@
             </Actions>
 		</ActionGroup>
         <ActionGroup id="game-always" scope="game" criteria="always">
-            <Properties>
-                <LoadOrder>500</LoadOrder>
-            </Properties>
             <Actions>
                 <UpdateText>
                     <Item>civilizations/nyguita-argentina/localizations.sql</Item>
@@ -120,25 +117,29 @@
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
                     <Item>civilization-unlocks/has-4-silver/localizations.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/localizations.sql</Item>
-                    <Item>traditions/nyguita-caudillism/localizations.sql</Item>
+                    <Item>traditions/traditions_localisation.sql</Item>
                     <Item>constructibles/nyguita-saladero/localizations.sql</Item>
-                    <Item>traditions/nyguita-conquest-of-the-desert/localizations.sql</Item>
                     <Item>constructibles/nyguita-banco-nacion/localizations.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
-                    <Item>traditions/nyguita-nuevo-tango/localizations.sql</Item>
                     <Item>progression-trees/nyguita-argentina/localizations.sql</Item>
                     <Item>unique-quarters/nyguita-plaza-de-mayo/localizations.sql</Item>
+                    <Item>narrative-events/tot-localisation.sql</Item>
                 </UpdateText>
                 <UpdateDatabase>
                     <Item>civilizations/nyguita-argentina/legacy.sql</Item>
+                    <Item>civilizations/nyguita-argentina/named_places.sql</Item>
                     <Item>civilization-unlocks/from-inca/game.sql</Item>
                     <Item>civilization-unlocks/from-spain/game.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/game.sql</Item>
                     <Item>civilization-unlocks/has-4-silver/game.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/game.sql</Item>
-                    <Item>traditions/nyguita-caudillism/game.sql</Item>
-                    <Item>traditions/nyguita-conquest-of-the-desert/game.sql</Item>
-                    <Item>traditions/nyguita-nuevo-tango/game.sql</Item>
+                    <Item>traditions/traditions.sql</Item>
+                    <Item>civilizations/nyguita-argentina/unlock-syncretism.sql</Item>
+                    <Item>civilizations/nyguita-argentina/citizen_names.sql</Item>
+                    <Item>civilizations/nyguita-argentina/civilization_shared.sql</Item>
+                    <Item>civilizations/nyguita-argentina/civilization_shared_effects.sql</Item>
+                    <Item>civilizations/nyguita-argentina/loading_info.sql</Item>
+                    <Item>narrative-events/tot-narrative-events.sql</Item>
                 </UpdateDatabase>
                 <ImportFiles>
                     <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
@@ -172,6 +173,22 @@
                     <Item>constructibles/nyguita-palacio-barolo/images.sql</Item>
                     <Item>progression-trees/nyguita-argentina/images.sql</Item>
                 </UpdateIcons>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="argentina-gameplay-antiquity" scope="game" criteria="antiquity-age-current">
+            <Actions>
+                <UpdateDatabase>
+                    <Item>civilizations/nyguita-argentina/antiquity.sql</Item>
+                    <Item>progression-trees/nyguita-argentina/antiquity.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="argentina-gameplay-exploration" scope="game" criteria="exploration-age-current">
+            <Actions>
+                <UpdateDatabase>
+                    <Item>civilizations/nyguita-argentina/exploration.sql</Item>
+                    <Item>progression-trees/nyguita-argentina/exploration.sql</Item>
+                </UpdateDatabase>
             </Actions>
         </ActionGroup>
         <ActionGroup id="bolivar_unlock" scope="game" criteria="has_bolivar_dlc">
@@ -231,9 +248,6 @@
             </Actions>
         </ActionGroup>
         <ActionGroup id="shell-always" scope="shell" criteria="always">
-            <Properties>
-                <LoadOrder>50</LoadOrder>
-            </Properties>
             <Actions>
                 <UpdateDatabase>
                     <Item>civilizations/nyguita-argentina/shell.sql</Item>
@@ -241,6 +255,8 @@
                     <Item>civilization-unlocks/from-spain/shell.sql</Item>
                     <Item>civilization-unlocks/by-bolivar/shell.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/shell.sql</Item>
+                    <Item>traditions/shell-traditions.xml</Item>
+                    <Item>civilizations/nyguita-argentina/unlock-syncretism.sql</Item>
                 </UpdateDatabase>
                 <UpdateText>
                     <Item>civilizations/nyguita-argentina/localizations.sql</Item>
@@ -258,6 +274,8 @@
                     <Item>constructibles/nyguita-banco-nacion/localizations.sql</Item>
                     <Item>constructibles/nyguita-palacio-barolo/localizations.sql</Item>
                     <Item>unique-quarters/nyguita-plaza-de-mayo/localizations.sql</Item>
+                    <Item>traditions/traditions_localisation.sql</Item>
+                    <Item>progression-trees/nyguita-argentina/localizations.sql</Item>
                 </UpdateText>
                 <ImportFiles>
                     <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
