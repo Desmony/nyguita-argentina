@@ -12,7 +12,8 @@ VALUES ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_NYGUITA_GAUCHO'),
        ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_MOUNTED'),
        ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_COMBAT'),
        ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_CAVALRY'),
-       ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_ELITE_CAVALRY');
+       ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_ELITE_CAVALRY'),
+       ('UNIT_NYGUITA_GAUCHO_3', 'UNIT_CLASS_UNIQUE');
 
 INSERT INTO Units 
        (UnitType,                BaseMoves, BaseSightRange, CoreClass,             Description,                             Domain,        FormationClass,                Maintenance, Name,                             ReligionEvictPercent, ReligiousHealCharges, ReligiousStrength, SpreadCharges, Tier, TraitType,                 UnitMovementClass) 
