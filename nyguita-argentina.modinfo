@@ -16,6 +16,7 @@
 		<Mod id="ml-city-states-expanded" title=""/>
 		<Mod id="orions-gridlock" title=""/>
 		<Mod id="capture_capital_narrative_events" title=""/>
+		<Mod id="custom-civ-art-fixes" title=""/>
 	</References>
     <ActionCriteria>
 		<Criteria id="antiquity-age-current">
@@ -71,6 +72,12 @@
         </Criteria>
 		<Criteria id="ccne-enable" all="true">
             <ModInUse>capture_capital_narrative_events</ModInUse>
+        </Criteria>
+		<Criteria id="ccaf-enable" all="true">
+            <ModInUse>custom-civ-art-fixes</ModInUse>
+        </Criteria>
+		<Criteria id="ccaf-enable-shell" all="true">
+            <ModIsEnabled>custom-civ-art-fixes</ModIsEnabled>
         </Criteria>
     </ActionCriteria>
     <ActionGroups>
@@ -447,6 +454,20 @@
 				<UpdateText>
 					<Item>ccne/NarrativeStoriesArgentinaText.xml</Item>
 				</UpdateText>
+            </Actions>
+		</ActionGroup>
+		<ActionGroup id="ccaf-argentina-game" scope="game" criteria="ccaf-enable">
+			<Actions>
+                <UpdateDatabase>
+					<Item>civ-icon-fixes/fixes.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+		</ActionGroup>
+		<ActionGroup id="ccaf-argentina-shell" scope="shell" criteria="ccaf-enable-shell">
+			<Actions>
+                <UpdateDatabase>
+					<Item>civ-icon-fixes/fixes.sql</Item>
+                </UpdateDatabase>
             </Actions>
 		</ActionGroup>
     </ActionGroups>
