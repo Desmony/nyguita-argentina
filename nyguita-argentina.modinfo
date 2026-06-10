@@ -339,37 +339,7 @@
             </Properties>
             <Actions>
                 <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
-                </UpdateDatabase>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="gridlock-argentina-antiquity-deletes-game" scope="game" criteria="orion-gridlock-antiquity-enable">
-            <Properties>
-                <LoadOrder>1000</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
-                </UpdateDatabase>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="gridlock-argentina-exploration-deletes-game" scope="game" criteria="orion-gridlock-exploration-enable">
-            <Properties>
-                <LoadOrder>1000</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
-                </UpdateDatabase>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="gridlock-argentina-modern-deletes-game" scope="game" criteria="orion-gridlock-modern-enable">
-            <Properties>
-                <LoadOrder>1000</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-deleter.sql</Item>
+                    <Item>orion_gridlock/GLK-A-unlocks-deleter.sql</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -379,53 +349,12 @@
             </Properties>
             <Actions>
                 <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
-                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
-                </UpdateDatabase>
-				<UpdateText>
-					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
-				</UpdateText>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="gridlock-argentina-game-antiquity" scope="game" criteria="orion-gridlock-antiquity-enable">
-            <Properties>
-                <LoadOrder>1005</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
-                    <Item>orion_gridlock/GLK-unlocks-antiquity.xml</Item>
-                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
-                </UpdateDatabase>
-				<UpdateText>
-					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
-				</UpdateText>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="gridlock-argentina-game-exploration" scope="game" criteria="orion-gridlock-exploration-enable">
-            <Properties>
-                <LoadOrder>1005</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
-                    <Item>orion_gridlock/GLK-unlocks-exploration.xml</Item>
-                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
-                </UpdateDatabase>
-				<UpdateText>
-					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
-				</UpdateText>
-            </Actions>
-        </ActionGroup>
-        <ActionGroup id="gridlock-argentina-game-modern" scope="game" criteria="orion-gridlock-modern-enable">
-            <Properties>
-                <LoadOrder>1005</LoadOrder>
-            </Properties>
-            <Actions>
-                <UpdateDatabase>
-                    <Item>orion_gridlock/GLK-unlocks-base-standard-arg.xml</Item>
-                    <Item>orion_gridlock/GLK-unlocks-modern.xml</Item>
-                    <Item>orion_gridlock/GLK-descs-arg.sql</Item>
+                    <Item>orion_gridlock/GLK-B-unlocks-base-standard-arg.xml</Item>
+                    <Item>orion_gridlock/GLK-G-descs-arg.sql</Item>
+                    <Item>orion_gridlock/GLK-H-sync.xml</Item>
+                    <Item>orion_gridlock/GLK-D-unlocks-antiquity.xml</Item>
+                    <Item>orion_gridlock/GLK-E-unlocks-exploration.xml</Item>
+                    <Item>orion_gridlock/GLK-C-unlocks-dual-antiquity-explo.xml</Item>
                 </UpdateDatabase>
 				<UpdateText>
 					<Item>orion_gridlock/GLK-UnlockText.sql</Item>
@@ -439,6 +368,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>orion_gridlock/GLK-config-arg.xml</Item>
+                    <Item>orion_gridlock/GLK-H-sync.xml</Item>
                 </UpdateDatabase>
 				<UpdateText>
 					<Item>orion_gridlock/GLK-UnlockText.sql</Item>

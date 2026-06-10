@@ -1,0 +1,13 @@
+<Database>
+    <LeaderSyncretismUnlocks>
+        <!--AM_SPachaNARG3Boliv-->
+        <InsertOrIgnore LeaderType="LEADER_PACHACUTI" UnlockCivilizationType="CIVILIZATION_NYGUITA_ARGENTINA"/>
+        <InsertOrIgnore LeaderType="LEADER_BOLIVAR" UnlockCivilizationType="CIVILIZATION_NYGUITA_ARGENTINA"/>
+    </LeaderSyncretismUnlocks>
+    <CivilizationSyncretismUnlocks>
+        <!--NARGINCASPAIHAWA0000000-->
+        <InsertOrIgnore CivilizationType="CIVILIZATION_INCA" UnlockCivilizationType="CIVILIZATION_NYGUITA_ARGENTINA"/>
+        <InsertOrIgnore CivilizationType="CIVILIZATION_SPAIN" UnlockCivilizationType="CIVILIZATION_NYGUITA_ARGENTINA"/>
+        <InsertOrIgnore CivilizationType="CIVILIZATION_HAWAII" UnlockCivilizationType="CIVILIZATION_NYGUITA_ARGENTINA"/>
+    </CivilizationSyncretismUnlocks>
+</Database>    
