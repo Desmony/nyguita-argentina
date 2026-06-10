@@ -17,3 +17,7 @@ INSERT INTO IconDefinitions
        (ID,                        Context,                               Path, IconSize)
 VALUES ('CIVILIZATION_NYGUITA_ARGENTINA','BACKGROUND',  'fs://game/nyguita-argentina/argentina_background_1080.png',   1080),
        ('CIVILIZATION_NYGUITA_ARGENTINA','BACKGROUND',  'fs://game/nyguita-argentina/argentina_background.png',   720);
+
+INSERT INTO IconDefinitions
+       (ID,                        Context,                               Path)
+VALUES ('CIVILIZATION_NYGUITA_ARGENTINA','BACKGROUND_VERT',  'fs://game/nyguita-argentina/argentina_background');
