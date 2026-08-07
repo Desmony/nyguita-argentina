@@ -146,7 +146,6 @@
                     <Item>civilizations/nyguita-argentina/civilization_shared.sql</Item>
                     <Item>civilizations/nyguita-argentina/civilization_shared_effects.sql</Item>
                     <Item>civilizations/nyguita-argentina/loading_info.sql</Item>
-                    <Item>narrative-events/tot-narrative-events.sql</Item>
                 </UpdateDatabase>
                 <ImportFiles>
                     <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
@@ -187,6 +186,7 @@
                 <UpdateDatabase>
                     <Item>civilizations/nyguita-argentina/antiquity.sql</Item>
                     <Item>progression-trees/nyguita-argentina/antiquity.sql</Item>
+                    <Item>narrative-events/tot-antiquity-narrative-events.sql</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -195,6 +195,7 @@
                 <UpdateDatabase>
                     <Item>civilizations/nyguita-argentina/exploration.sql</Item>
                     <Item>progression-trees/nyguita-argentina/exploration.sql</Item>
+                    <Item>narrative-events/tot-exploration-narrative-events.sql</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>

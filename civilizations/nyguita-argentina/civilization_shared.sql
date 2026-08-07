@@ -156,6 +156,8 @@ VALUES	('Nyguita Argentina Settlement Plot Evaluations',	'Coastal',			0,			50,		
 		('Nyguita Argentina Settlement Plot Evaluations',	'Resource Class',	null,		5,		'RESOURCECLASS_EMPIRE',	'LOC_SETTLEMENT_RECOMMENDATION_STRATEGIC_RESOURCES'),
 		('Nyguita Argentina Settlement Plot Evaluations',	'Resource Class',	null,		5,		'RESOURCECLASS_FACTORY','LOC_SETTLEMENT_RECOMMENDATION_STRATEGIC_RESOURCES');
 
+UPDATE Resources SET UnlocksCiv="true" WHERE ResourceType IN ('RESOURCE_SILVER', 'RESOURCE_LLAMAS');
+
 
 
 
