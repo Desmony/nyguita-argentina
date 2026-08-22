@@ -4,4 +4,4 @@
 
 INSERT INTO IconDefinitions 
        (ID,                          Path) 
-VALUES ('BUILDING_NYGUITA_SALADERO', 'fs://game/nyguita-argentina/Saladeros.png');
+VALUES ('BUILDING_NYGUITA_SALADERO', 'fs://game/nyguita-argentina/Saladeros.dds');

@@ -6,7 +6,7 @@
         <Authors>Nyguita</Authors>
 		<SpecialThanks>izica, orion, Civ'ed, slothoth, beezany, Icthiolavarunt, Maple_Leaves 枫叶</SpecialThanks>
         <Package>Mod</Package>
-        <Version>2.0.0</Version>
+        <Version>2.1.0</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <References>
@@ -17,6 +17,7 @@
 		<Mod id="orions-gridlock" title=""/>
 		<Mod id="capture_capital_narrative_events" title=""/>
 		<Mod id="custom-civ-art-fixes" title=""/>
+		<Mod id="zester-wales" title=""/>
 	</References>
     <ActionCriteria>
 		<Criteria id="antiquity-age-current">
@@ -79,6 +80,12 @@
 		<Criteria id="ccaf-enable-shell" all="true">
             <ModIsEnabled>custom-civ-art-fixes</ModIsEnabled>
         </Criteria>
+        <Criteria id="zester-wales-enable">
+            <ModInUse>zester-wales</ModInUse>
+        </Criteria>
+        <Criteria id="zester-wales-enable-shell">
+            <ModIsEnabled>zester-wales</ModIsEnabled>
+        </Criteria>
     </ActionCriteria>
     <ActionGroups>
         <ActionGroup id="rosetta_compatibility" scope="game" criteria="seelingcat-rosetta-enable">
@@ -119,8 +126,7 @@
                     <Item>units/nyguita-porteno/localizations.sql</Item>
                     <Item>units/nyguita-gaucho-2/localizations.sql</Item>
                     <Item>units/nyguita-gaucho-3/localizations.sql</Item>
-                    <Item>civilization-unlocks/from-inca/localizations.sql</Item>
-                    <Item>civilization-unlocks/from-spain/localizations.sql</Item>
+                    <Item>civilization-unlocks/base_civs_unlock/localizations.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
                     <Item>civilization-unlocks/has-4-silver/localizations.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/localizations.sql</Item>
@@ -135,8 +141,7 @@
                 <UpdateDatabase>
                     <Item>civilizations/nyguita-argentina/legacy.sql</Item>
                     <Item>civilizations/nyguita-argentina/named_places.sql</Item>
-                    <Item>civilization-unlocks/from-inca/game.sql</Item>
-                    <Item>civilization-unlocks/from-spain/game.sql</Item>
+                    <Item>civilization-unlocks/base_civs_unlock/game.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/game.sql</Item>
                     <Item>civilization-unlocks/has-4-silver/game.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/game.sql</Item>
@@ -148,10 +153,10 @@
                     <Item>civilizations/nyguita-argentina/loading_info.sql</Item>
                 </UpdateDatabase>
                 <ImportFiles>
-                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.dds</Item>
                     <Item>civilizations/nyguita-argentina/assets/argentina_background.png</Item>
                     <Item>civilizations/nyguita-argentina/assets/argentina_background_1080.png</Item>
-                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina.dds</Item>
                     <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon</Item>
                     <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
@@ -159,14 +164,12 @@
                     <Item>civilizations/nyguita-argentina/assets/bg-card-nyguita_argentina.png</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina.png</Item>
-                    <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
-                    <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
-                    <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
-                    <Item>units/nyguita-gaucho-3/assets/gaucho_unit_icon.png</Item>
-                    <Item>constructibles/nyguita-saladero/assets/Saladeros.png</Item>
-                    <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.png</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
+                    <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.dds</Item>
+                    <Item>units/nyguita-porteno/assets/porteno_unit_icon.dds</Item>
+                    <Item>constructibles/nyguita-saladero/assets/Saladeros.dds</Item>
+                    <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.dds</Item>
+                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.dds</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.dds</Item>
                 </ImportFiles>
                 <UpdateIcons>
                     <Item>civilizations/nyguita-argentina/images.sql</Item>
@@ -209,6 +212,19 @@
                 </UpdateText>
                 <UpdateDatabase>
                     <Item>civilization-unlocks/by-bolivar/game.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="zester-wales_unlock" scope="game" criteria="zester-wales-enable">
+            <Properties>
+                <LoadOrder>500</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateText>
+                    <Item>civilization-unlocks/from-wales-zester/localizations.sql</Item>
+                </UpdateText>
+                <UpdateDatabase>
+                    <Item>civilization-unlocks/from-wales-zester/game.sql</Item>
                 </UpdateDatabase>
             </Actions>
         </ActionGroup>
@@ -259,8 +275,7 @@
             <Actions>
                 <UpdateDatabase>
                     <Item>civilizations/nyguita-argentina/shell.sql</Item>
-                    <Item>civilization-unlocks/from-inca/shell.sql</Item>
-                    <Item>civilization-unlocks/from-spain/shell.sql</Item>
+                    <Item>civilization-unlocks/base_civs_unlock/shell.sql</Item>
                     <Item>civilization-unlocks/by-bolivar/shell.sql</Item>
                     <Item>civilization-unlocks/base_leaders_unlock/shell.sql</Item>
                     <Item>traditions/shell-traditions.xml</Item>
@@ -272,8 +287,7 @@
                     <Item>units/nyguita-porteno/localizations.sql</Item>
                     <Item>units/nyguita-gaucho-2/localizations.sql</Item>
                     <Item>units/nyguita-gaucho-3/localizations.sql</Item>
-                    <Item>civilization-unlocks/from-inca/localizations.sql</Item>
-                    <Item>civilization-unlocks/from-spain/localizations.sql</Item>
+                    <Item>civilization-unlocks/base_civs_unlock/localizations.sql</Item>
                     <Item>civilization-unlocks/has-3-llamas/localizations.sql</Item>
                     <Item>civilization-unlocks/has-4-silver/localizations.sql</Item>
                     <Item>civilization-unlocks/by-bolivar/localizations.sql</Item>
@@ -286,10 +300,10 @@
                     <Item>progression-trees/nyguita-argentina/localizations.sql</Item>
                 </UpdateText>
                 <ImportFiles>
-                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon.dds</Item>
                     <Item>civilizations/nyguita-argentina/assets/argentina_background.png</Item>
                     <Item>civilizations/nyguita-argentina/assets/argentina_background_1080.png</Item>
-                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina.png</Item>
+                    <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina.dds</Item>
                     <Item>civilizations/nyguita-argentina/assets/argentina_civ_icon</Item>
                     <Item>civilizations/nyguita-argentina/assets/dip_cs_nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/civ_sym_nyguita_argentina</Item>
@@ -297,14 +311,12 @@
                     <Item>civilizations/nyguita-argentina/assets/bg-card-nyguita_argentina.png</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina</Item>
                     <Item>civilizations/nyguita-argentina/assets/bg-panel-nyguita_argentina.png</Item>
-                    <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.png</Item>
-                    <Item>units/nyguita-porteno/assets/porteno_unit_icon.png</Item>
-                    <Item>units/nyguita-gaucho-2/assets/gaucho_unit_icon.png</Item>
-                    <Item>units/nyguita-gaucho-3/assets/gaucho_unit_icon.png</Item>
-                    <Item>constructibles/nyguita-saladero/assets/Saladeros.png</Item>
-                    <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.png</Item>
-                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.png</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
+                    <Item>units/nyguita-gaucho/assets/gaucho_unit_icon.dds</Item>
+                    <Item>units/nyguita-porteno/assets/porteno_unit_icon.dds</Item>
+                    <Item>constructibles/nyguita-saladero/assets/Saladeros.dds</Item>
+                    <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.dds</Item>
+                    <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.dds</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.dds</Item>
                 </ImportFiles>
                 <UpdateIcons>
                     <Item>civilizations/nyguita-argentina/images.sql</Item>
@@ -401,5 +413,15 @@
                 </UpdateDatabase>
             </Actions>
 		</ActionGroup>
+        <ActionGroup id="zester-wales-shell" scope="shell" criteria="zester-wales-enable-shell">
+            <Actions>
+                <UpdateDatabase>
+                    <Item>civilization-unlocks/from-wales-zester/shell.sql</Item>
+                </UpdateDatabase>
+                <UpdateText>
+                    <Item>civilization-unlocks/from-wales-zester/localizations.sql</Item>
+                </UpdateText>
+            </Actions>
+        </ActionGroup>
     </ActionGroups>
 </Mod>

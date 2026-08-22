@@ -4,7 +4,7 @@ VALUES ('cult_nyguita_argentina', 'DEFAULT');
 
 INSERT OR IGNORE INTO IconDefinitions 
        (ID,                       Context,   IconSize, Path) 
-VALUES ('cult_nyguita_argentina', 'DEFAULT', 256,        'fs://game/nyguita-argentina/cult_nyguita_argentina.png');
+VALUES ('cult_nyguita_argentina', 'DEFAULT', 256,        'fs://game/nyguita-argentina/cult_nyguita_argentina.dds');
 
 INSERT INTO IconAliases (ID, OtherID)
 VALUES  ('MOD_NYGUITA_GREAT_EUROPEAN_MIGRATION_WAVE',  	'MOD_GENERIC_BONUS'),

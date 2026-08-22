@@ -11,13 +11,13 @@
             <Text>If one can manage an army, they can surely manage a country.</Text>
         </Row>
         <Row Tag="LOC_CCNE_NYG_ARGB_DESCRIPTION">
-            <Text>Unlock a unique Argentinian Tradition, {LOC_TRADITION_NYGUITA_CAUDILLISM_DESCRIPTION}</Text>
+            <Text>Unlock a unique Argentinian Tradition, {LOC_TRADITION_NYGUITA_CAUDILLISM_I_DESCRIPTION}</Text>
         </Row>
         <Row Tag="LOC_CCNE_NYG_ARGC_NAME">
             <Text>Focus on the smaller neighbors.</Text>
         </Row>
         <Row Tag="LOC_CCNE_NYG_ARGC_DESCRIPTION">
-            <Text>Unlock a unique Argentinian Tradition, {LOC_MOD_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_COMBAT_DESCRIPTION}</Text>
+            <Text>Unlock a unique Argentinian Tradition, {LOC_MOD_TRADITION_NYGUITA_CONQUEST_OF_THE_DESERT_I_COMBAT_DESCRIPTION}</Text>
         </Row>
         <Row Tag="LOC_CCNE_NYG_ARGD_NAME">
             <Text>Our music does not only inspire but also bring joy.</Text>
