@@ -6,7 +6,7 @@
         <Authors>Nyguita</Authors>
 		<SpecialThanks>izica, orion, Civ'ed, slothoth, beezany, Icthiolavarunt, Maple_Leaves 枫叶</SpecialThanks>
         <Package>Mod</Package>
-        <Version>2.1.0</Version>
+        <Version>2.1.1</Version>
         <AffectsSavedGames>1</AffectsSavedGames>
     </Properties>
     <References>
@@ -169,7 +169,8 @@
                     <Item>constructibles/nyguita-saladero/assets/Saladeros.dds</Item>
                     <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.dds</Item>
                     <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.dds</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.dds</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina</Item>
                 </ImportFiles>
                 <UpdateIcons>
                     <Item>civilizations/nyguita-argentina/images.sql</Item>
@@ -316,7 +317,8 @@
                     <Item>constructibles/nyguita-saladero/assets/Saladeros.dds</Item>
                     <Item>constructibles/nyguita-banco-nacion/assets/Banco_Nacional.dds</Item>
                     <Item>constructibles/nyguita-palacio-barolo/assets/Palacio_Barolo.dds</Item>
-                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.dds</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina.png</Item>
+                    <Item>progression-trees/nyguita-argentina/assets/cult_nyguita_argentina</Item>
                 </ImportFiles>
                 <UpdateIcons>
                     <Item>civilizations/nyguita-argentina/images.sql</Item>

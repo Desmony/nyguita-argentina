@@ -14,8 +14,8 @@ INSERT INTO Types
 VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'KIND_TREE_NODE');
 
 INSERT INTO ProgressionTreeNodes 
-       (ProgressionTreeNodeType,             ProgressionTree,          Cost, Name,                                         IconString) 
-VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'TREE_NYGUITA_ARGENTINA', 2000, 'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_NAME', 'cult_nyguita_argentina');
+       (ProgressionTreeNodeType,             ProgressionTree,          Cost, Name,                                         IconString, CivInjectedIcon) 
+VALUES ('CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN', 'TREE_NYGUITA_ARGENTINA', 2000, 'LOC_CIVIC_NYGUITA_CONGRESS_OF_TUCUMAN_NAME', 'cult_nyguita_argentina', 1);
 
 INSERT INTO ProgressionTreeNodeUnlocks 
        (ProgressionTreeNodeType,             TargetType,                     Hidden, TargetKind,       UnlockDepth) 
@@ -76,8 +76,8 @@ INSERT INTO Types
 VALUES ('CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM', 'KIND_TREE_NODE');
 
 INSERT INTO ProgressionTreeNodes 
-       (ProgressionTreeNodeType,                    ProgressionTree,          Cost, Name,                                                IconString) 
-VALUES ('CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM', 'TREE_NYGUITA_ARGENTINA', 3000, 'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_NAME', 'cult_nyguita_argentina');
+       (ProgressionTreeNodeType,                    ProgressionTree,          Cost, Name,                                                IconString, CivInjectedIcon) 
+VALUES ('CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM', 'TREE_NYGUITA_ARGENTINA', 3000, 'LOC_CIVIC_NYGUITA_CIVILIZATION_AND_BARBARISM_NAME', 'cult_nyguita_argentina', 1);
 
 INSERT INTO ProgressionTreeNodeUnlocks 
        (ProgressionTreeNodeType,                    TargetType,                                 Hidden, TargetKind,       UnlockDepth) 
@@ -143,8 +143,8 @@ INSERT INTO Types
 VALUES ('CIVIC_NYGUITA_TANGO_AND_POETRY', 'KIND_TREE_NODE');
 
 INSERT INTO ProgressionTreeNodes 
-       (ProgressionTreeNodeType,          ProgressionTree,          Cost, Name,                                      IconString) 
-VALUES ('CIVIC_NYGUITA_TANGO_AND_POETRY', 'TREE_NYGUITA_ARGENTINA', 3000, 'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_NAME', 'cult_nyguita_argentina');
+       (ProgressionTreeNodeType,          ProgressionTree,          Cost, Name,                                      IconString, CivInjectedIcon) 
+VALUES ('CIVIC_NYGUITA_TANGO_AND_POETRY', 'TREE_NYGUITA_ARGENTINA', 3000, 'LOC_CIVIC_NYGUITA_TANGO_AND_POETRY_NAME', 'cult_nyguita_argentina', 1);
 
 INSERT INTO ProgressionTreeNodeUnlocks 
        (ProgressionTreeNodeType,          TargetType,                      Hidden, TargetKind,      UnlockDepth) 

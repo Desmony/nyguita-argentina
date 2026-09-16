@@ -7,8 +7,8 @@ INSERT INTO TypeQuotes
 VALUES ('NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE', 'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_QUOTE', 'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_AUTHOR');
 
 INSERT INTO ProgressionTreeNodes 
-       (ProgressionTreeNodeType,             ProgressionTree,          Cost, Name,                                         IconString) 
-VALUES ('NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE', 'TREE_CIVICS_EX_TEST_OF_TIME', 800, 'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_NAME', 'cult_nyguita_argentina');
+       (ProgressionTreeNodeType,             ProgressionTree,          Cost, Name,                                         IconString, CivInjectedIcon) 
+VALUES ('NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE', 'TREE_CIVICS_EX_TEST_OF_TIME', 800, 'LOC_NODE_CIVIC_EX_NYGUITA_ARGENTINA_RENAISSANCE_NAME', 'cult_nyguita_argentina', 1);
 
 INSERT INTO ProgressionTreeNodeUnlocks 
        (ProgressionTreeNodeType,             TargetType,                     Hidden, TargetKind,       UnlockDepth) 
