@@ -18,6 +18,7 @@
 		<Mod id="capture_capital_narrative_events" title=""/>
 		<Mod id="custom-civ-art-fixes" title=""/>
 		<Mod id="zester-wales" title=""/>
+        <Mod id="civ_background_framework_1" title="Civilization Background Framework"/>
 	</References>
     <ActionCriteria>
 		<Criteria id="antiquity-age-current">
@@ -85,6 +86,12 @@
         </Criteria>
         <Criteria id="zester-wales-enable-shell">
             <ModIsEnabled>zester-wales</ModIsEnabled>
+        </Criteria>
+        <Criteria id="tsl-enable">
+            <ModInUse>civ_background_framework_1</ModInUse>
+        </Criteria>
+        <Criteria id="tsl-enable-shell">
+            <ModIsEnabled>civ_background_framework_1</ModIsEnabled>
         </Criteria>
     </ActionCriteria>
     <ActionGroups>
@@ -376,6 +383,16 @@
 				</UpdateText>
             </Actions>
         </ActionGroup>
+        <ActionGroup id="tsl-game" scope="game" criteria="tsl-enable">
+            <Properties>
+                <LoadOrder>3000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>tsl/TSL_location.sql</Item>
+                </UpdateDatabase>
+            </Actions>
+        </ActionGroup>
         <ActionGroup id="gridlock-argentina-shell" scope="shell" criteria="orion-gridlock-enable-shell">
             <Properties>
                 <LoadOrder>1005</LoadOrder>
@@ -423,6 +440,16 @@
                 <UpdateText>
                     <Item>civilization-unlocks/from-wales-zester/localizations.sql</Item>
                 </UpdateText>
+            </Actions>
+        </ActionGroup>
+        <ActionGroup id="tsl-shell" scope="shell" criteria="tsl-enable-shell">
+            <Properties>
+                <LoadOrder>3000</LoadOrder>
+            </Properties>
+            <Actions>
+                <UpdateDatabase>
+                    <Item>tsl/TSL_location.sql</Item>
+                </UpdateDatabase>
             </Actions>
         </ActionGroup>
     </ActionGroups>
